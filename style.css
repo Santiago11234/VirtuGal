@@ -18,10 +18,14 @@ section {
     border:rgb(0, 0, 0);
     text-decoration: none;
     display:inline-block;
-    margin: 4px 2px;
+    margin: 4px 5px;
     font-size: large;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 4x;
+}
+.button:hover {
+    background-color: white;
+    color: black;
 }
 header{
     background-color: black;
