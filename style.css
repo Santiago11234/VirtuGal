@@ -1,20 +1,28 @@
 body {
     background-color: rgb(190, 229, 216);
+    padding: 0px;
 }
 h1 {
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
     font: size 13px;
     text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
 }
 section {
     color: rgb(0, 0, 0);
 }
-header nav ul a{
+.button{
     background-color: antiquewhite;
     color: black;
     text-align: center;
-    border: none;
+    border:rgb(0, 0, 0);
     text-decoration: none;
     display:inline-block;
     margin: 4px 2px;
+    font-size: large;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    background-color: black;
+    padding: 0px;
 }
