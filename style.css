@@ -1,10 +1,10 @@
 body {
-    background-color: aquamarine;
+    background-color: rgb(190, 229, 216);
 }
 h1 {
-    color:orange;
+    color:rgb(0, 0, 0);
     text-align: center;
 }
 section {
-    color: purple;
+    color: rgb(0, 0, 0);
 }
