@@ -38,7 +38,7 @@ section {
     border-radius: 4x;
 }
 header{
-    background-color: rgb(130, 174, 255);
+    background-color: rgb(29, 30, 31);
 }
 li {
     display: inline-block;
@@ -48,5 +48,12 @@ ul{
     padding: 10px;
 }
 section iframe {
-    margin-left: 600px;
+    margin-left: 2px;
+}
+img {
+    width: 175px;
+    height:175px;
+    margin-bottom: -1px;
+    margin-right:-146px
+    
 }
