@@ -20,23 +20,25 @@ section {
     padding-left: 10px;
 }
 .button{
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
-    border:rgb(0, 0, 0);
+    border:2px solid rgb(0, 0, 0);
     text-decoration: none;
     display:inline-block;
     margin: 4px 5px;
-    font-size: large;
+    font-size: medium;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 3px;
+    transition-duration: 0.5s;
 }
 .button:hover {
-    background-color: white;
-    color: black;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     border-radius: 4x;
 }
 header{
-    background-color: black;
+    background-color: rgb(130, 174, 255);
 }
 li {
     display: inline-block;
@@ -44,4 +46,7 @@ li {
 ul{
     list-style: none;
     padding: 10px;
+}
+section iframe {
+    margin-left: 600px;
 }
