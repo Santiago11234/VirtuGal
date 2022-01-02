@@ -15,7 +15,7 @@ h2 {
     padding-top: 5px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
-section {
+section.box {
     color: rgb(0, 0, 0);
     padding-left: 10px;
     padding-right: 200px;
@@ -23,11 +23,16 @@ section {
     padding: 20px;
     display: flex;
     flex-direction: row;
-
+    margin: 10px;
+    margin-top: -10px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: large;
-    transform: translate(13px, 10px);
+
     border-radius: 5px;
+}
+section.box:hover {
+    transform: translate(13px, 10px);
+    border: 2px solid black;
 }
 .button{
     background-color: rgb(255, 255, 255);
@@ -39,13 +44,14 @@ section {
     margin: 5px 5px;
     font-size: medium;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 3px;
+    padding: 5px;
     transition-duration: 0.5s;
+    border-radius: 7px;
+
 }
 .button:hover {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-    border-radius: 4x;
 }
 header{
     background-color: rgb(29, 30, 31);
