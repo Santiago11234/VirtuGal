@@ -36,10 +36,10 @@ section.box:hover {
     border: 2px solid black;
 }
 .button{
-    background-color: rgb(6, 68, 47);
+    background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     text-align: center;
-    border:2px solid rgb(0, 0, 0);
+    border:2px solid rgb(255, 255, 255);
     text-decoration: none;
     display:inline-block;
     margin: 5px 5px;
