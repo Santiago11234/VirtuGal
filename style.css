@@ -4,11 +4,7 @@ body {
     background-image: linear-gradient(rgb(4, 13, 95),rgb(29, 28, 28));
 }
 h1 {
-    color:rgb(24, 87, 8);
-    font: size 13px;
-    text-align: center;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-    padding: 20px;
+    <div style="background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Ffree-use&psig=AOvVaw1Qn259C2SjUiVIFu0-jVB1&ust=1642974432217000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLi94O2qxvUCFQAAAAAdAAAAABAN');">
 }
 h2 {
     color: rgb(14, 6, 90);
