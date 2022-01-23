@@ -4,7 +4,7 @@ body {
     background-image: linear-gradient(rgb(4, 13, 95),rgb(29, 28, 28));
 }
 h1 {
-    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Ffree-use&psig=AOvVaw1Qn259C2SjUiVIFu0-jVB1&ust=1642974432217000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLi94O2qxvUCFQAAAAAdAAAAABAN');
+    background-image: url();
 }
 h2 {
     color: rgb(14, 6, 90);
@@ -51,7 +51,7 @@ section.box:hover {
     color: rgb(255, 255, 255);
 }
 header{
-        background-image: url("../../media/examples/background.jpeg")
+        background-image: url("backgroundjpeg")
     
 }
 li {
