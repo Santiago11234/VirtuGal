@@ -1,9 +1,9 @@
 
 body {
-    --color-primary: rgb(1, 255, 65);
-    --color-primary-dark: #00f752;
-    --color-error: #cc3333;
-    --color-success: #4bb544;
+    --color-primary: rgb(0, 255, 0);
+    --color-primary-dark: rgb(0,255,0);
+    --color-error: rgb(255, 0, 0);
+    --color-success: rgb(0, 255, 0);
     --border-radius: 4px;
 
     margin: 0;
