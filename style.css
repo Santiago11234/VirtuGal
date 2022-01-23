@@ -1,6 +1,5 @@
 body {
-    background-image: url(file:///Users/santiagoe/Desktop/TSA%20website%20images%20folder/background.jpg);
-    margin: 0px;
+  
 }
 h1 {
     background-image: url(file:///Users/santiagoe/Desktop/TSA%20website%20images%20folder/background.jpg);
@@ -39,10 +38,7 @@ section.box:hover {
     background-color: rgb(6, 69, 163);
     color: rgb(255, 255, 255);
 }
-header{
-        background-image: url("backgroundjpeg")
-    
-}
+
 li {
     display: inline-block;
 }
@@ -76,9 +72,6 @@ section.box {
     background-image: rgb(255, 255, 255)
 }
 
-.bg image {
-    padding : 20px;
-    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Ffree-use&psig=AOvVaw1Qn259C2SjUiVIFu0-jVB1&ust=1642974432217000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLi94O2qxvUCFQAAAAAdAAAAABAN');
-}
+
 
 
