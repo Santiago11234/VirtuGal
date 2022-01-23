@@ -4,29 +4,19 @@ body {
     background-image: linear-gradient(rgb(4, 13, 95),rgb(29, 28, 28));
 }
 h1 {
-    background-image: url();
+    background-image: url(file:///Users/santiagoe/Desktop/TSA%20website%20images%20folder/background.jpg);
+    margin: 0px;
+    padding-top: 5px;
 }
 h2 {
-    color: rgb(14, 6, 90);
+    color: rgb(146, 143, 179);
     padding: 20px;
     padding-top: 5px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
-section.box {
-    color: rgb(0, 0, 0);
-    padding-left: 10px;
-    padding-right: 200px;
-    background: rgb(9, 48, 119);
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    margin: 10px;
-    margin-top: -10px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: large;
 
-    border-radius: 5px;
-}
+
+    
 section.box:hover {
     transform: translate(13px, 10px);
     border: 2px solid black;
@@ -86,3 +76,22 @@ p.main {
     padding : 20px;
     background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Ffree-use&psig=AOvVaw1Qn259C2SjUiVIFu0-jVB1&ust=1642974432217000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLi94O2qxvUCFQAAAAAdAAAAABAN');
 }
+
+
+
+
+
+/*
+section.box {
+    color: rgb(0, 0, 0);
+    padding-left: 10px;
+    padding-right: 200px;
+    background-image: rgb(0,0,0)
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    margin-top: -10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    */
