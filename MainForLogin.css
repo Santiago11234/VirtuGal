@@ -1,0 +1,17 @@
+body{
+    --color-primary: #007f67;
+    --color-primary-dark: #007f67;
+    --color-secondary: #252c6a;
+    --color-error: #ca2800;
+    --color-success:rgb(0, 255, 13)a;
+    --border-radius: 4px;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    font-size: 18px;
+    background: url(./loginbBackground.jpg);
+    background-size: cover;
+
+}
