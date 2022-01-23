@@ -1,6 +1,6 @@
 
 body {
-    --color-primary: #009579;
+    --color-primary: rgb(0, 149, 121);
     --color-primary-dark: #007f67;
     --color-secondary: #252c6a;
     --color-error: #cc3333;
@@ -128,4 +128,7 @@ body {
 
 .form__link:hover {
     text-decoration: underline;
+}
+.button {
+    align-self: flex-end;
 }
