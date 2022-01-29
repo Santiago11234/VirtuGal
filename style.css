@@ -1,29 +1,21 @@
-#myVideo{
-    width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
-}
-    
-    
+
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    box-shadow: 50px;
 }
-.section-2 { 
+.section-2{ 
         height: 100vh;
-        background-image: url(background-Image?.jpeg);
+        background-image: url(background.jpeg);
         background-size: cover;
         background-attachment: fixed;
 }
 .section-3{
-    background:rgb(0, 102, 255);
+    height: 100vh;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .box{
