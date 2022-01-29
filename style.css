@@ -14,14 +14,12 @@
 
 
 body {
-    
-
+    background-image: url(loginBackground.jpg);
 
    
   
 }
 h1 {
-    background-image: url(file:///Users/santiagoe/Desktop/TSA%20website%20images%20folder/background.jpg);
     margin: 0px;
     padding-top: 5px;
 }
@@ -33,11 +31,6 @@ h2 {
 }
 
 
-    
-section.box:hover {
-    transform: translate(13px, 10px);
-    border: 2px solid black;
-}
 .button{
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
