@@ -7,7 +7,7 @@
 }
 .section-2{ 
         height: 100vh;
-        background-image: url(background.jpeg);
+        background-image: url(background-Image?.jpeg);
         background-size: cover;
         background-attachment: fixed;
 }
@@ -28,6 +28,9 @@
 
 body {
     background-image: url(loginBackground.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
 
    
   
