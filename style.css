@@ -47,7 +47,7 @@ h2 {
 
 }
 .button:hover {
-    background-color: rgb(6, 69, 163);
+    background-color: rgb(0, 102, 255);
     color: rgb(255, 255, 255);
 }
 
@@ -69,6 +69,11 @@ img {
     margin-bottom: -1px;
     margin-right:-148.5px;
     
+}
+img.gallery {
+    width: 35%;
+    height: 35%;
+    margin: 40px;
 }
 p {
     font-family:Arial, Helvetica, sans-serif;
