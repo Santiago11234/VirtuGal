@@ -24,7 +24,15 @@
    
 }
 
+.section1 gallery{
+    width: 20%;
+    margin: auto;
+}
 
+input, button{
+    display: inline-block;
+    padding: 10px;
+}
 
 body {
     background-image: url(loginBackground.jpg);
