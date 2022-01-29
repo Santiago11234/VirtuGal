@@ -11,6 +11,27 @@
 }
     
     
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.section-2 { 
+        height: 100vh;
+        background-image: url(background-Image?.jpeg);
+        background-size: cover;
+        background-attachment: fixed;
+}
+.section-3{
+    background:rgb(0, 102, 255);
+}
+
+.box{
+    width: 100%;
+    height: 550px;
+   
+}
+
 
 
 body {
