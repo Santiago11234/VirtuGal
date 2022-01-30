@@ -55,14 +55,88 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-let btnUpVote = document.querySelector('#upVote');
-let input = document.querySelector('#input');
-let btnDownVote = document.querySelector('#downVote');
 
 
-btnDownVote.upVoteEventListener('click', () =>{
-    input.value = parseInt(input.value) - 1;
-});
-btnUpVote.upVoteEventListener('click', () =>{
-    input.value = parseInt(input.value) + 1;
-});
+function addButton1(){
+    var element = document.getElementById('amountOfVotes1');
+    var value = element.innerHTML;
+    ++value;
+    document.getElementById('amountOfVotes1').innerHTML = value;
+}
+function minusButton1(){
+    var element = document.getElementById('amountOfVotes1');
+    var value = element.innerHTML;
+    --value;
+    document.getElementById('amountOfVotes1').innerHTML = value;
+
+}
+
+
+
+function addButton2(){
+    var element = document.getElementById('amountOfVotes2');
+    var value = element.innerHTML;
+    ++value;
+    document.getElementById('amountOfVotes2').innerHTML = value;
+}
+function minusButton2(){
+    var element = document.getElementById('amountOfVotes2');
+    var value = element.innerHTML;
+    --value;
+    document.getElementById('amountOfVotes2').innerHTML = value;
+
+}
+
+
+
+
+function addButton3(){
+    var element = document.getElementById('amountOfVotes3');
+    var value = element.innerHTML;
+    ++value;
+    document.getElementById('amountOfVotes3').innerHTML = value;
+}
+function minusButton3(){
+    var element = document.getElementById('amountOfVotes3');
+    var value = element.innerHTML;
+    --value;
+    document.getElementById('amountOfVotes3').innerHTML = value;
+
+}
+
+
+
+
+
+function addButton4(){
+    var element = document.getElementById('amountOfVotes4');
+    var value = element.innerHTML;
+    ++value;
+    document.getElementById('amountOfVotes4').innerHTML = value;
+}
+function minusButton4(){
+    var element = document.getElementById('amountOfVotes4');
+    var value = element.innerHTML;
+    --value;
+    document.getElementById('amountOfVotes4').innerHTML = value;
+
+}
+
+
+
+
+
+
+function addButton5(){
+    var element = document.getElementById('amountOfVotes5');
+    var value = element.innerHTML;
+    ++value;
+    document.getElementById('amountOfVotes5').innerHTML = value;
+}
+function minusButton5(){
+    var element = document.getElementById('amountOfVotes5');
+    var value = element.innerHTML;
+    --value;
+    document.getElementById('amountOfVotes5').innerHTML = value;
+
+}

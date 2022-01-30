@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <link href="rating,css" rel="stylesheet">
-        <link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="rating.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="rating.js" rel="stylesheet">
+    <script src="rating. js"></script>
         <nav>
             <ul>
                 <li><a href="index.html" class="button">Home</a></li>
@@ -22,9 +25,9 @@
         <section>
             <img src="image1.jpg" alt="image 1" class="gallery">
             <section>
-                <button id="downVote">-</button>
-                <input type="number" value="0">
-                <button id="upVote">+</button>
+                <button class="button" onclick="minusButton1()"><img src="dislike.png" class="dislike"></button>
+                <h1 id="amountOfVotes1">0</h1>
+                <button class="button" onclick="addButton1()"><img src="like.png" class="like"></button>
                 
             </section>
             </section>
@@ -32,32 +35,78 @@
                 
             </section>
         </section>
+
+
+
+
+
+
+
         <section>
             <img src="image2.jpg" alt="image 2" class="gallery">
             <section>
-                <img src="like.png" class="like"> <img src="dislike.png" class="dislike">
+                <section>
+                <button class="button" onclick="minusButton2()"><img src="dislike.png" class="dislike"></button>
+                <h1 id="amountOfVotes2">0</h1>
+                <button class="button" onclick="addButton2()"><img src="like.png" class="like"></button>
+                
+            </section>
             </section>
         </section>
+
+
+
+
+
+
         <section>
             <img src="image3.jpg" alt="image 3" class="gallery">
             <section>
-                <img src="like.png" class="like"> <img src="dislike.png" class="dislike">
+                <section>
+                <button class="button" onclick="minusButton3()"><img src="dislike.png" class="dislike"></button>
+                <h1 id="amountOfVotes3">0</h1>
+                <button class="button" onclick="addButton3()"><img src="like.png" class="like"></button>
+                
+            </section>
             </section>
         </section>
+
+
+
+
+
         <section>
             <img src="image4.jpg" alt="image 4" class="gallery">
             <section>
-                <img src="like.png" class="like"> <img src="dislike.png" class="dislike">
+                <section>
+                <button class="button" onclick="minusButton4()"><img src="dislike.png" class="dislike"></button>
+                <h1 id="amountOfVotes4">0</h1>
+                <button class="button" onclick="addButton4()"><img src="like.png" class="like"></button>
+                
+            </section>
             </section>
         </section>
+
+
+
+
+
+
         <section>
             <img src="image5.jpg" alt="image 5" class="gallery">
             <section>
-                <img src="like.png" class="like"> <img src="dislike.png" class="dislike">
+                <section>
+                <button class="button" onclick="minusButton5()"><img src="dislike.png" class="dislike"></button>
+                <h1 id="amountOfVotes5">0</h1>
+                <button class="button" onclick="addButton5()"><img src="like.png" class="like"></button>
+                
+            </section>
             </section>
         </section>
-       
-        <script src="rating.js"></script>
+
+
+        
+        <script src="main.js"></script>
     </body>
 
 </html>
