@@ -6,7 +6,7 @@
     box-shadow: 50px;
 }
 .section-2{ 
-        height: 100vh;
+        height: 100px;
         background-image: url(background-Image?.jpeg);
         background-size: cover;
         background-attachment: fixed;
@@ -97,8 +97,8 @@ img {
     
 }
 img.gallery {
-    width: 35%;
-    height: 35%;
+    width: 50px;
+    height: 50px;
     margin: 40px;
 }
 p {
