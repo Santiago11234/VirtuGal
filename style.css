@@ -6,7 +6,7 @@
     box-shadow: 50px;
 }
 .section-2{ 
-        height: 100px;
+        height: 100vh;
         background-image: url(background-Image?.jpeg);
         background-size: cover;
         background-attachment: fixed;
