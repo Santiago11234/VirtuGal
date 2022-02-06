@@ -1,8 +1,12 @@
 <?php
 // database connection code
-// $con = mysqli_connect('localhost', 'database_user', 'database_password','database');
+// $con = mysqli_connect('localhost', 'database_user', 'database_password','database'); 
+   $host = "localhost";
+   $username  = "Santiago Espinoza";
+   $passwd = "santiago0216";
+   $dbname = "VirtuGal.2";
 
-$con = mysqli_connect('localhost', 'root', '','VirtuGal.2');
+$con = mysqli_connect('$host','$username','$password',  '$dbName');
 
 // get the post records
 $txtName = $_POST['txtName'];
