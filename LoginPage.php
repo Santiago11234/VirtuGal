@@ -90,6 +90,21 @@
     <script src="login.js"></script>
     <script src="index.js"></script>
    
+    <?php
+$servername = "VirtuGal";
+$username = "Santiago Espinoza";
+$password = "santiago0216";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+echo "Connected successfully";
+?>
+
 </body>
 
 
