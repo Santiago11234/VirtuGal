@@ -123,10 +123,6 @@ function minusButton4(){
 }
 
 
-
-
-
-
 function addButton5(){
     var element = document.getElementById('amountOfVotes5');
     var value = element.innerHTML;
@@ -140,3 +136,50 @@ function minusButton5(){
     document.getElementById('amountOfVotes5').innerHTML = value;
 
 }
+
+
+firebase.auth().onAuthStateChanged((user) => {
+    if (user) {
+      // User is signed in, see docs for a list of available properties
+      // https://firebase.google.com/docs/reference/js/firebase.User
+      var uid = user.uid;
+      // ...
+    } else {
+      // User is signed out
+      // ...
+    }
+  });
+
+
+function createUser(){
+
+    var usEmail = document.getElementById("email_feild").value;
+    var usPass = document.getElementById("password_feild").value;
+
+    firebase.auth().signInWithEmailAndPassword(usEmail, usPass)
+  .then((userCredential) => {
+    // Signed in
+    var user = userCredential.user;
+    // ...
+  })
+  .catch((error) => {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    alert("Error: "+" "+errorMessage);
+  });
+
+    // firebase.auth().createUserWithEmailAndPassword(usEmail, usPass)
+    // .then((userCredential) => {
+    // // Signed in 
+    // var user = userCredential.user;
+    // alert("Account created, signed in, shesh!");
+    // // ...
+    // })
+    // .catch((error) => {
+    // var errorCode = error.code;
+    // var errorMessage = error.message;
+    // alert(errorMessage);
+    // });
+
+}
+
