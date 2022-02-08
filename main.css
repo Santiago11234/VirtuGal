@@ -1,9 +1,9 @@
 
 body{
-    --color-primary: rgb(0, 255, 0);
-    --color-primary-dark: rgb(0,255,0);
+    --color-primary: #2776EA;
+    --color-primary-dark: #2776EA;
     --color-error: rgb(255, 0, 0);
-    --color-success: rgb(0, 255, 0);
+    --color-success: #2776EA;
     --border-radius: 4px;
 
     margin: 0;
@@ -16,7 +16,12 @@ body{
     background-size: cover;
 }
 
-.container,
+.container{
+    background-color:#ffffff;
+    padding: 42px 32px;
+    border-radius: 16px;
+    
+}
 .form__input,
 .form__button {
     font: 500 1rem 'serif', sans-serif;
