@@ -1,5 +1,5 @@
 
-body {
+body.Home{
     --color-primary: rgb(0, 255, 0);
     --color-primary-dark: rgb(0,255,0);
     --color-error: rgb(255, 0, 0);
@@ -13,6 +13,23 @@ body {
     justify-content: center;
     font-size: 18px;
     background-image: url(citybackground.png) ;
+    background-size: cover;
+}
+
+body.aboutUs{
+    --color-primary: rgb(0, 255, 0);
+    --color-primary-dark: rgb(0,255,0);
+    --color-error: rgb(255, 0, 0);
+    --color-success: rgb(0, 255, 0);
+    --border-radius: 4px;
+
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background-image: url(contactBackground.jpg) ;
     background-size: cover;
 }
 
