@@ -27,9 +27,14 @@ input, button{
     display: inline-block;
     padding: 10px;
 }
-
-body {
+body.Home {
     background-image: url(citybackground.png);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+body.aboutUs {
+    background-image: url(aboutUsBackground.jpg);
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
