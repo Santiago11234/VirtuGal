@@ -136,3 +136,7 @@ img.gallery {
     
   }
 
+  .carousel img {
+    max-height: 300px;
+    margin: 0 auto;
+}
