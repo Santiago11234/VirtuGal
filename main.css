@@ -21,8 +21,8 @@ body{
     padding: 42px 32px 24px;
     border-radius: 16px;
     line-height: 65%;
-    
 }
+
 .form__input,
 .form__button {
     font: 500 1rem 'serif', sans-serif;
