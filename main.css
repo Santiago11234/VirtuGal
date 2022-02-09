@@ -18,8 +18,9 @@ body{
 
 .container{
     background-color:#ffffff;
-    padding: 42px 32px;
+    padding: 42px 32px 24px;
     border-radius: 16px;
+    line-height: 65%;
     
 }
 .form__input,
