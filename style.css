@@ -142,3 +142,10 @@ img.gallery {
     max-height: 300px;
     margin: 0 auto;
 }
+.containerOne{
+    background-color:#810909;
+    padding: 42px 32px 24px;
+    border-radius: 16px;
+    line-height: 65%;
+    
+}
