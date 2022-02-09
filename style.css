@@ -150,7 +150,16 @@ img.gallery {
     padding: 42px 10px;
     border-radius: 32px;
     width: 800px;
-    height: 400px;
+    height: 520px;
     margin: 0 auto;
     opacity: 80%;
+}
+.contactBody{
+    background-color:#eeeeee;
+    padding: 42px 10px;
+    border-radius: 32px;
+    width: 600px;
+    height: 670px;
+    margin: 0 auto;
+ 
 }
