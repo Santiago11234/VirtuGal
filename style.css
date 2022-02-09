@@ -90,12 +90,20 @@ section iframe {
 
 }
 img {
-    width: 175px;
-    height:175px;
+    width: 15%;
+    height: 15%;
     margin-bottom: -1px;
     margin-right:-148.5px;
     
 }
+
+.logo-image{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-top: -6px;
+}
+
 img.like {
     width: 50px;
     height: 50px;
