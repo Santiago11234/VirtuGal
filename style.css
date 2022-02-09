@@ -108,6 +108,7 @@ img.dislike {
 }
 p {
     font-family:Arial, Helvetica, sans-serif;
+    opacity: 1;
 }
 p.main {
     font-size: large;
