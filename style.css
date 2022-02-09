@@ -98,10 +98,12 @@ img {
 }
 
 .logo-image{
-    width: 100%;
-    height: 100%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
     overflow: hidden;
     margin-top: -6px;
+    margin-left: -32px;
 }
 
 img.like {
@@ -155,11 +157,10 @@ img.gallery {
     opacity: 80%;
 }
 .contactBody{
-    background-color:#eeeeee;
-    padding: 42px 10px;
+    background-color:#f8f9fa;
+    padding: 42px 32px;
     border-radius: 32px;
     width: 600px;
-    height: 670px;
+    height: auto;
     margin: 0 auto;
- 
 }
