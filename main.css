@@ -25,6 +25,12 @@ body{
     width: fit-content;
 }
 
+.container-fluid{
+    margin-top: 0px;
+    margin-left: -25px;
+    height: 65px;
+}
+
 .form__input,
 .form__button {
     font: 500 1rem 'serif', sans-serif;
