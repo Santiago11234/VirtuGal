@@ -7,13 +7,12 @@ body{
     --border-radius: 4px;
 
     margin: 0;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 100px;
+
     font-size: 18px;
     background-image: url(citybackground.png) ;
     background-size: cover;
+    
 }
 
 .container{
@@ -21,7 +20,9 @@ body{
     padding: 42px 32px 24px;
     border-radius: 16px;
     line-height: 65%;
-    
+    align-items: center;
+    align-content: center;
+    width: fit-content;
 }
 .form__input,
 .form__button {
