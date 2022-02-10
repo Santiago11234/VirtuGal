@@ -102,6 +102,15 @@ img.dislike {
     height: 50px;
     margin: 10px;
 }
+
+img.card{
+    display:inline-block;
+    margin-left: 24px;
+    margin-right: 24px;
+    width: 200px;
+    height: 250px;
+}
+
 p {
     font-family:Arial, Helvetica, sans-serif;
     opacity: 1;
@@ -131,6 +140,7 @@ img.gallery {
 
 .carousel img {
     height: 760px;
+    margin: auto 0;
 }
 
 .container{
@@ -155,4 +165,10 @@ img.gallery {
     display:inline-block;
     margin-left: 30px;
     margin-right: 30px;
+    text-align: center;
+}
+
+.collapsible{
+    margin-left: 50px;
+    text-align-last: auto;
 }
