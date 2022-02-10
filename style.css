@@ -138,7 +138,7 @@ img.gallery {
     padding: 42px 10px;
     border-radius: 32px;
     width: 800px;
-    height: 520px;
+    height: 400px;
     margin: 0 auto;
     opacity: 80%;
 }
@@ -149,4 +149,10 @@ img.gallery {
     width: 600px;
     height: auto;
     margin: 0 auto;
+}
+
+.card {
+    display:inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
 }
