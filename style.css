@@ -86,24 +86,10 @@ ul{
 }
 section iframe {
     margin-left: 35%;
-
-
-}
-img {
-    width: 15%;
-    height: 15%;
-    margin-bottom: -1px;
-    margin-right:-148.5px;
-    
 }
 
-.logo-image{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-top: -6px;
-    margin-left: -32px;
+img{
+    margin-left: -20px;
 }
 
 img.like {
