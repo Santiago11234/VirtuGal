@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lite": "lite-server --port 8080",
+    "start": "npm run lite"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
     "mdb-ui-kit": "^3.10.2"
   },
   "devDependencies": {
+    "lite-server": "192.168.64.1",
     "webpack": "^5.68.0",
     "webpack-cli": "^4.9.2"
   }
