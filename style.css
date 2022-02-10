@@ -152,6 +152,14 @@ img.gallery {
     margin: 0 auto;
     opacity: 80%;
 }
+
+.container-comments{
+    float: left;
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
+    padding: 42px 10px;
+}
 .contactBody{
     background-color:#f8f9fa;
     padding: 42px 32px;
