@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
   <style>
     .navbar-custom{
       background-color: #002244;
@@ -63,8 +63,19 @@
 <html>
     <body class="Gallery">
       <link rel="stylesheet" href="">
-
-      <img src="logo.jpg"/>
+      <div class="cat">
+        
+        <img src="image4.jpg"/> 
+        <style>
+          .cat img{
+            margin-left: 69px;
+            margin-top: 98px;
+            width: 750px;
+            height: 1000px;
+            float: left;
+          }
+        </style>
+      </div>
       <section style="background-color: #eeeeee;">
         <div class="container-comments my-5 py-5">
           <style>
@@ -77,6 +88,8 @@
               width: 700px;
               height: 800px;
               float: right;
+              margin-right: 0px;
+              margin-left: -30px;
             }
           </style>
           <div class="row d-flex justify-content-center">
@@ -109,10 +122,7 @@
                         <a href="#!" class="link-muted"><i class="fas fa-heart ms-2"></i></a>
                       </div>
                       <p class="mb-0">
-                        &nbsp;&nbsp;&nbsp;Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry. Lorem Ipsum has been the industry's standard dummy text ever
-                        since the 1500s, when an unknown printer took a galley of type and
-                        scrambled it.
+                        &nbsp;&nbsp;&nbsp;comment
                       </p>
                     </div>
                   </div>
@@ -145,18 +155,13 @@
                         <a href="#!" class="link-danger"><i class="fas fa-heart ms-2"></i></a>
                       </div>
                       <p class="mb-0">
-                        &nbsp;&nbsp;&nbsp;Contrary to popular belief, Lorem Ipsum is not simply random text. It
-                        has roots in a piece of classical Latin literature from 45 BC, making it
-                        over 2000 years old. Richard McClintock, a Latin professor at
-                        Hampden-Sydney College in Virginia, looked up one of the more obscure
-                        Latin words, consectetur, from a Lorem Ipsum passage, and going through
-                        the cites.
+                        &nbsp;&nbsp;&nbsp;comment
                       </p>
                     </div>
                   </div>
                 </div>
       
-                <hr class="my-0" style="height: 1px;" />
+                <hr class="my-0"/>
       
                 <div class="card-body p-4">
                   <div class="d-flex flex-start">
@@ -181,10 +186,7 @@
                         <a href="#!" class="link-muted"><i class="fas fa-heart ms-2"></i></a>
                       </div>
                       <p class="mb-0">
-                        &nbsp;&nbsp;&nbsp;There are many variations of passages of Lorem Ipsum available, but the
-                        majority have suffered alteration in some form, by injected humour, or
-                        randomised words which don't look even slightly believable. If you are
-                        going to use a passage of Lorem Ipsum, you need to be sure.
+                        &nbsp;&nbsp;&nbsp;comment
                       </p>
                     </div>
                   </div>
@@ -215,19 +217,33 @@
                         <a href="#!" class="link-muted"><i class="fas fa-heart ms-2"></i></a>
                       </div>
                       <p class="mb-0">
-                        &nbsp;&nbsp;&nbsp;It uses a dictionary of over 200 Latin words, combined with a handful of
-                        model sentence structures, to generate Lorem Ipsum which looks
-                        reasonable. The generated Lorem Ipsum is therefore always free from
-                        repetition, injected humour, or non-characteristic words etc.
+                        &nbsp;&nbsp;&nbsp;comment
                       </p>
                     </div>
-                  </div>
+                  </div>                
                 </div>
+
+                <hr class="my-0" />
+                
+                <div class="card-body p-4">
+                  
+                  <style>
+                    .card-body{
+                      background-color: #fefefe
+                    }
+                  </style>
+                  <div class="d-flex flex-row align-items-start"><img class="rounded-circle" src="logo.png" width="40"><textarea class="form-control ml-1 shadow-none textarea"></textarea></div>
+                  <div class="mt-2 text-right"><button class="btn btn-primary btn-sm shadow-none" type="button">Post comment</button><button class="btn btn-outline-primary btn-sm ml-1 shadow-none" type="button">Cancel</button></div>
+
               </div>
             </div>
           </div>
         </div>
       </section>
+      
+      <div>
+
+      </div>
 
     </body>
 </html>
