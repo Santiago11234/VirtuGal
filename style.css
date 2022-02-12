@@ -152,6 +152,10 @@ img.gallery {
     margin: 0 auto;
     opacity: 80%;
 }
+
+.container-comments{
+    padding: 42px 10px;
+}
 .contactBody{
     background-color:#f8f9fa;
     padding: 42px 32px;
@@ -165,10 +169,7 @@ img.gallery {
     display:inline-block;
     margin-left: 30px;
     margin-right: 30px;
+    margin-top: 30px;
     text-align: center;
-}
-
-.collapsible{
-    margin-left: 50px;
-    text-align-last: auto;
+    
 }
