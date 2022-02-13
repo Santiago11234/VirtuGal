@@ -15,25 +15,25 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" aria-current="page" href="index.php">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Submissions.html">Submission</a>
+            <a class="nav-link" href="Submissions.php">Submission</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Gallery.html">Gallery</a>
+            <a class="nav-link" href="Gallery.php">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="voting.html">Vote</a>
+            <a class="nav-link" href="voting.php">Vote</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contactUs.html">Contact Us</a>
+            <a class="nav-link" href="contactUs.php">Contact Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="aboutUs.html">About Us</a>
+            <a class="nav-link" href="aboutUs.php">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="login.html">Login</a>
+            <a class="nav-link" href="login.php">Login</a>
           </li>
           
         </div>
