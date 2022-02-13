@@ -7,7 +7,7 @@
           background-color: #002244;
         }
       </style>
-        <div class="container-fluid">
+ <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="logo.png" width="80" height="80" class="d-inline-block align-top" alt="">
           </a>
@@ -15,30 +15,30 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Submissions.html">Submission</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Gallery.html">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="voting.html">Vote</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contactUs.html">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="aboutUs.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="login.html">Login</a>
-              </li>
-              
-            </div>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.php">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Submissions.php">Submission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Gallery.php">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="voting.php">Vote</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactUs.php">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutUs.php">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.php">Login</a>
+          </li>
+          
+        </div>
         </div>
        </nav>
        

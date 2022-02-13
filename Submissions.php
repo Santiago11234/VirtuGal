@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!doctype html>
 <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
   <style>
     .navbar-custom{
@@ -8,7 +7,7 @@
   </style>
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="logo.png" width="80" height="80" style="margin-left: 1px;"class="d-inline-block align-top" alt="">
+        <img src="logo.png" width="80" height="80" class="d-inline-block align-top" alt="">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -16,25 +15,25 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" aria-current="page" href="index.php">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Submissions.html">Submission</a>
+            <a class="nav-link" href="Submissions.php">Submission</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Gallery.html">Gallery</a>
+            <a class="nav-link" href="Gallery.php">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="voting.html">Vote</a>
+            <a class="nav-link" href="voting.php">Vote</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contactUs.html">Contact Us</a>
+            <a class="nav-link" href="contactUs.php">Contact Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="aboutUs.html">About Us</a>
+            <a class="nav-link" href="aboutUs.php">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="login.html">Login</a>
+            <a class="nav-link" href="login.php">Login</a>
           </li>
           
         </div>
@@ -43,64 +42,67 @@
 <html lang="en">
 <head>
     <style> 
-      body {
-          height: 100vh;
-          background-image: url("roads.jpg");
-          background-size: cover;
-          background-attachment: fixed;
+        body {
+            height: 100vh;
+            background-image: url(submissionBack.jpeg);
+            background-size: cover;
+            background-attachment: fixed;
         }
-    </style>
+        </style>
     
-<br>
-<br>
+    <link rel="stylesheet" href="./src/main.css">
+    
+    
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-
-    <link rel="stylesheet" href="style.css">
-   
-
-<div class="contactBody">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<h2><font size="10" font color="black" font face="Calibri">Contact Us</font></h2>
 
 <!-- Latest compiled and minified CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 
+<body class="bg-light">
+
+<div class="container">
+<div class="py-5 text-center">
+</div>
+
+
 <fieldset>
-  <form name="formContact" class="needs-validation " method="post" action="contact.php">
+  <div class="containerOne">
+    <form class="form" id="submit">
+        <h1>Submit Your Art</h1>
+  <form name="frmContact" class="needs-validation " method="post" action="contact.php">
     <p>
-      <label for="Name"><font font size="3" font face="Calibri" font color="#444444"><b>NAME</b></font></label>
+      <label for="Name">Your Name </label>
       <input type="text" class="form-control" name="txtName" id="txtName" placeholder="Name" value="" required>
 	  <div class="invalid-feedback">
       Valid first name is required.
     </div>
     </p>
     <p>
-      <label for="email"><font font size="3" font face="Calibri" font color="#444444"><b>EMAIL</b></font></label>
+      <label for="email">Your Email</label>
       <input type="text"  class="form-control"  name="txtEmail" id="txtEmail" placeholder="Email" value="" required>
     </p>
-    <p>
-      <label for="phone"><font font size="3" font face="Calibri" font color="#444444"><b>PHONE NUMBER</b></font></label>
-      <input type="text"  class="form-control" name="txtPhone" id="txtPhone" placeholder="Phone" value="" required>
+        <label for="image">Your Artwork</label>
+        </br>
+        <input type="file" name="upload" accept="application/pdf,application/vnd.ms-excel" />
     </p>
     <p>
-      <label for="message"></label><font font size="3" font face="Calibri" font color="#444444"><b>MESSAGE</b></font></label>
+      <label for="message">Small explanation/backstory</label>
       <textarea name="txtMessage" class="form-control"  id="txtMessage"  placeholder="Message" required></textarea>
     </p>
-
-    <p>
-     <input onclick="location.href='index.html'" type="submit" name="Submit" id="Submit" value="Submit"  class="btn btn-primary btn-lg btn-block">
-      
+    <p>&nbsp;</p>
+    <div>
+     <input onclick="location.href='index.html'" type="submit" name="Submit" id="Submit" value="Submit artwork"  class="btn btn-primary btn-lg btn-block">
+    </div>
     </p>
   </form>
 </fieldset>
-</div>
-
-<br>
-<br>
-
+  </div>
+    </form>
+    <script src="main.js"></script>
+    <script src="login.js"></script>
+    <script src="index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-</div>
+</body>
 </html>
