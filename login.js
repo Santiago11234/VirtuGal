@@ -83,4 +83,6 @@ createUserWithEmailAndPassword(auth, email, password)
   function logout(){
     firebase.auth().signOut();
   }
+
+
   
