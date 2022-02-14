@@ -180,8 +180,9 @@ img.gallery {
   
     animation: fadeInLeft;
     animation-duration: 2s;
-  }
-  .loading {
+}
+
+.loading {
 	animation-name: rotate;
 	animation-duration: 3s;
 	animation-timing-function: linear;
