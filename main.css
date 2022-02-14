@@ -15,6 +15,13 @@ body{
     
 }
 
+body.Submissions{
+    height: 100vh;
+    background-image: url(submissionBack.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .container{
     background-color:#ffffff;
     padding: 42px 32px 24px;
@@ -23,6 +30,15 @@ body{
     align-items: center;
     align-content: center;
     width: fit-content;
+}
+
+.container-submission{
+    background-color:#fefefe;
+    padding: 42px 32px 24px;
+    border-radius: 16px;
+    margin: 0 auto;
+    width: fit-content;
+    height: fit-content;
 }
 
 .container-fluid{
