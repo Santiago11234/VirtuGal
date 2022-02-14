@@ -34,6 +34,12 @@ body.aboutUs {
     background-size: cover;
     background-attachment: fixed;
 }
+body.Sources{
+    background-image: url(sources.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
 body.Gallery{
     background-image: url(galleryBackground.jpg);
     height: 100vh;
