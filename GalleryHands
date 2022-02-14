@@ -1,0 +1,249 @@
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+  <style>
+    .navbar-custom{
+      background-color: #002244;
+    }
+  </style>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="logo.png" width="80" height="80" class="d-inline-block align-top" alt="">
+      </a> . 
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Submissions.html">Submission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="voting.html">Vote</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactUs.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutUs.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+          
+        </div>
+    </div>
+   </nav>
+  
+  <html lang="en">
+    <head>
+      <title>Title</title>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+  </html>
+
+<!DOCTYPE html>
+<html>
+    <body class="Gallery">
+      <link rel="stylesheet" href="">
+      <div class="cat">
+        
+        <img src="image0.jpg"/> 
+        <style>
+          .cat img{
+            margin-left: 69px;
+            margin-top: 98px;
+            width: 750px;
+            height: 1000px;
+            float: left;
+          }
+        </style>
+      </div>
+      <section style="background-color: #eeeeee;">
+        <div class="container-comments my-5 py-5">
+          <style>
+            .container-comments{
+              background-color:#ffffff;
+              padding: 42px 32px 24px;
+              border-radius:;
+              align-items: center;
+              align-content: center;
+              width: 700px;
+              height: 800px;
+              float: right;
+              margin-right: 0px;
+              margin-left: -30px;
+            }
+          </style>
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-12 col-lg-10">
+              <div class="card text-dark">
+                <div class="card-body p-4">
+                  
+                  <h4 class="mb-0">Comments</h4>
+                  <p class="fw-light mb-4 pb-2">Latest Comments section by users</p>
+      
+                  <div class="d-flex flex-start">
+                    <img
+                      class="rounded-circle shadow-1-strong me-3"
+                      src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(23).webp"
+                      alt="avatar"
+                      width="60"
+                      height="60"
+                    />
+                    <div>
+                      <h6 class="fw-bold mb-1">&nbsp;&nbsp;&nbsp;Maggie Marsh</h6>
+                      <div class="d-flex align-items-center mb-3">
+                        <p class="mb-0">
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;March 07, 2021
+                          
+                        </p>
+                        <a href="#!" class="link-muted"
+                          ><i class="fas fa-pencil-alt ms-2"></i
+                        ></a>
+                        <a href="#!" class="link-muted"><i class="fas fa-redo-alt ms-2"></i></a>
+                        <a href="#!" class="link-muted"><i class="fas fa-heart ms-2"></i></a>
+                      </div>
+                      <p class="mb-0">
+                        &nbsp;&nbsp;&nbsp;comment
+                      </p>
+                    </div>
+                  </div>
+                </div>
+      
+                <hr class="my-0" />
+      
+                <div class="card-body p-4">
+                  <div class="d-flex flex-start">
+                    <img
+                      class="rounded-circle shadow-1-strong me-3"
+                      src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(26).webp"
+                      alt="avatar"
+                      width="60"
+                      height="60"
+                    />
+                    <div>
+                      <h6 class="fw-bold mb-1">&nbsp;&nbsp;&nbsp;Lara Stewart</h6>
+                      <div class="d-flex align-items-center mb-3">
+                        <p class="mb-0">
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;March 15, 2021
+                          
+                        </p>
+                        <a href="#!" class="link-muted"
+                          ><i class="fas fa-pencil-alt ms-2"></i
+                        ></a>
+                        <a href="#!" class="text-success"
+                          ><i class="fas fa-redo-alt ms-2"></i
+                        ></a>
+                        <a href="#!" class="link-danger"><i class="fas fa-heart ms-2"></i></a>
+                      </div>
+                      <p class="mb-0">
+                        &nbsp;&nbsp;&nbsp;comment
+                      </p>
+                    </div>
+                  </div>
+                </div>
+      
+                <hr class="my-0"/>
+      
+                <div class="card-body p-4">
+                  <div class="d-flex flex-start">
+                    <img
+                      class="rounded-circle shadow-1-strong me-3"
+                      src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(33).webp"
+                      alt="avatar"
+                      width="60"
+                      height="60"
+                    />
+                    <div>
+                      <h6 class="fw-bold mb-1">&nbsp;&nbsp;&nbsp;Alexa Bennett</h6>
+                      <div class="d-flex align-items-center mb-3">
+                        <p class="mb-0">
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;March 24, 2021
+                          
+                        </p>
+                        <a href="#!" class="link-muted"
+                          ><i class="fas fa-pencil-alt ms-2"></i
+                        ></a>
+                        <a href="#!" class="link-muted"><i class="fas fa-redo-alt ms-2"></i></a>
+                        <a href="#!" class="link-muted"><i class="fas fa-heart ms-2"></i></a>
+                      </div>
+                      <p class="mb-0">
+                        &nbsp;&nbsp;&nbsp;comment
+                      </p>
+                    </div>
+                  </div>
+                </div>
+      
+                <hr class="my-0" />
+                
+                <div class="card-body p-4">
+                  <div class="d-flex flex-start">
+                    <img
+                      class="rounded-circle shadow-1-strong me-3"
+                      src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(24).webp"
+                      alt="avatar"
+                      width="60"
+                      height="60"
+                    />
+                    <div>
+                      <h6 class="fw-bold mb-1">&nbsp;&nbsp;&nbsp;Betty Walker</h6>
+                      <div class="d-flex align-items-center mb-3">
+                        <p class="mb-0">
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;March 30, 2021
+                          
+                        </p>
+                        <a href="#!" class="link-muted"
+                          ><i class="fas fa-pencil-alt ms-2"></i
+                        ></a>
+                        <a href="#!" class="link-muted"><i class="fas fa-redo-alt ms-2"></i></a>
+                        <a href="#!" class="link-muted"><i class="fas fa-heart ms-2"></i></a>
+                      </div>
+                      <p class="mb-0">
+                        &nbsp;&nbsp;&nbsp;comment
+                      </p>
+                    </div>
+                  </div>                
+                </div>
+
+                <hr class="my-0" />
+                
+                <div class="card-body p-4">
+                  
+                  <style>
+                    .card-body{
+                      background-color: #fefefe
+                    }
+                  </style>
+                  <div class="d-flex flex-row align-items-start"><img class="rounded-circle" src="logo.png" width="40"><textarea class="form-control ml-1 shadow-none textarea"></textarea></div>
+                  <div class="mt-2 text-right"><button class="btn btn-primary btn-sm shadow-none" type="button">Post comment</button><button class="btn btn-outline-primary btn-sm ml-1 shadow-none" type="button">Cancel</button></div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <div>
+
+      </div>
+
+    </body>
+</html>
