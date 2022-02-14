@@ -86,7 +86,12 @@
         <input type="file" name="upload" accept="application/pdf,application/vnd.ms-excel" />
       </p>
       <p>
-       <input onclick="window.location.href='Submissions.html';" type="submit" name="Submit" class="btn btn-primary btn-lg btn-block">
+        <input onclick="myFunction()" type="submit" name="Submit" class="btn btn-primary btn-lg btn-block"> 
+        <script>
+          function myFunction() {
+            alert("Thank you for submitting your artwork\nWe look forward to reviewing it!!");
+          }
+          </script>
       </p>
     </form>
   </fieldset>

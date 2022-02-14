@@ -66,35 +66,44 @@
 </head>
 
 <fieldset>
-  <form name="formContact" class="needs-validation " method="post" action="contact.php">
-    <p>
-      <label for="Name"><font font size="3" font face="Calibri" font color="#444444"><b>NAME</b></font></label>
-      <input type="text" class="form-control" name="txtName" id="txtName" placeholder="Name" value="" required>
-	  <div class="invalid-feedback">
-      Valid first name is required.
-    </div>
-    </p>
-    <p>
-      <label for="email"><font font size="3" font face="Calibri" font color="#444444"><b>EMAIL</b></font></label>
-      <input type="text"  class="form-control"  name="txtEmail" id="txtEmail" placeholder="Email" value="" required>
-    </p>
-    <p>
-      <label for="phone"><font font size="3" font face="Calibri" font color="#444444"><b>PHONE NUMBER</b></font></label>
-      <input type="text"  class="form-control" name="txtPhone" id="txtPhone" placeholder="Phone" value="" required>
-    </p>
-    <p>
-      <label for="message"></label><font font size="3" font face="Calibri" font color="#444444"><b>MESSAGE</b></font></label>
-      <textarea name="txtMessage" class="form-control"  id="txtMessage"  placeholder="Message" required></textarea>
-    </p>
+  <P class="animate__animated animate__fadeInDown animate__delay-1s"> 
+    <form name="formContact" class="needs-validation " method="post" action="contact.php">
+      <p>
+        <label for="Name"><font font size="3" font face="Calibri" font color="#444444"><b>NAME</b></font></label>
+        <input type="text" class="form-control" name="txtName" id="txtName" placeholder="Name" value="" required>
+      <div class="invalid-feedback">
+        Valid first name is required.
+      </div>
+      </p>
+      <p>
+        <label for="email"><font font size="3" font face="Calibri" font color="#444444"><b>EMAIL</b></font></label>
+        <input type="text"  class="form-control"  name="txtEmail" id="txtEmail" placeholder="Email" value="" required>
+      </p>
+      <p>
+        <label for="phone"><font font size="3" font face="Calibri" font color="#444444"><b>PHONE NUMBER</b></font></label>
+        <input type="text"  class="form-control" name="txtPhone" id="txtPhone" placeholder="Phone" value="" required>
+      </p>
+      <p>
+        <label for="message"></label><font font size="3" font face="Calibri" font color="#444444"><b>MESSAGE</b></font></label>
+        <textarea name="txtMessage" class="form-control"  id="txtMessage"  placeholder="Message" required></textarea>
+      </p>
+          <input onclick="myFunction()" type="submit" name="Submit" class="btn btn-primary btn-lg btn-block"> 
+          <script>
+            function myFunction() {
+              alert("Thank you for your response, we will tend to your message soon.");
+            }
+            </script>
+    </form>
+  </fieldset>
+  </div>
+  </P>
+  
 
-    <p>
-     <input onclick="window.location.href='index.html';" type="submit" name="Submit"    class="btn btn-primary btn-lg btn-block">
-      
-    </p>
-  </form>
-</fieldset>
-</div>
-
+<script type='text/javascript'>
+function check() {
+    return false;
+}
+</script>
 <br>
 <br>
 
