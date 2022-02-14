@@ -173,3 +173,17 @@ img.gallery {
     text-align: center;
     
 }
+
+.my-element {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: fadeInLeft;
+    animation-duration: 2s;
+  }
+  .loading {
+	animation-name: rotate;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
