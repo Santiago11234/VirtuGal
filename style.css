@@ -29,7 +29,7 @@ body.Home {
     background-attachment: fixed;
 }
 body.aboutUs {
-    background-image: url(aboutUsBackground.jpg);
+    background-image: url(pexels-burst-374870.jpg);
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
@@ -40,6 +40,7 @@ body.Gallery{
     background-size: cover;
     background-attachment: fixed;
 }
+
 h1 {
     margin: 0px;
     padding-top: 5px;
@@ -105,8 +106,7 @@ img.dislike {
 
 img.card{
     display:inline-block;
-    margin-left: 24px;
-    margin-right: 24px;
+    margin: 0;
     width: 200px;
     height: 250px;
 }
@@ -139,7 +139,7 @@ img.gallery {
 }
 
 .carousel img {
-    height: 760px;
+    height: 660px;
     margin: auto 0;
 }
 
@@ -167,8 +167,8 @@ img.gallery {
 
 .card {
     display:inline-block;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 107px;
+    margin-right: 107px; 
     margin-top: 30px;
     text-align: center;
     
