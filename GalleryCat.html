@@ -240,7 +240,13 @@
                   </div>
                   <div class="mt-2 text-right">
                     <div style="text-align: center;">
-                      <button  id="liveAlertBtn" type="button" class="btn btn-primary btn-lg btn-block" style="margin-left: 10%;margin-right: 10%;margin-top: 4%; background-color: #023992; border-style: solid;border-color: #023992;border-radius: 5px; color:#000000;">Submit Comment</button>
+                      <style>
+                        .btn btn-primary btn-lg btn-block{
+                          width:50px;
+                          height:120px;
+                        }
+                      </style>
+                      <button  id="liveAlertBtn" type="button" class="btn btn-primary btn-lg btn-block" style=" background-color: #2776EA; border-style: solid;border-color: #2776EA;border-radius: 5px; color:#000000;">Submit Comment</button>
                       </div>
                   
                       <div id="liveAlertPlaceholder"></div>
@@ -250,7 +256,7 @@
                       
                       function alert(message, type) {
                         var wrapper = document.createElement('div')
-                        wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert"style="background-color: #023992; margin-left:10%; margin-right:10%;margin-top:2%;text-align:center;color: black">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" ></button></div>'
+                        wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert"style="background-color: #2E8B57;border-color: "black"; text-align:center;color: black">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" ></button></div>'
                       
                         alertPlaceholder.append(wrapper)
                       }
