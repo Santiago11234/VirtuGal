@@ -162,13 +162,14 @@ img.gallery {
 .container-comments{
     padding: 42px 10px;
 }
+
 .contactBody{
     background-color:#f8f9fa;
     padding: 42px 32px;
     border-radius: 32px;
     width: 600px;
-    height: auto;
-    margin: 0 auto;
+    margin: auto;
+    margin-top: 35px;
 }
 
 .center{
@@ -219,4 +220,16 @@ h2 {
 }
 .accordion-section .panel-default .panel-body {
     font-size: 1.2rem;
+}
+
+.comment {
+	display: block;
+	transition: all 1s;
+}
+
+.commentClicked {
+	min-height: 0px;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	padding: 5px 10px
 }
