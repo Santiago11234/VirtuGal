@@ -23,9 +23,6 @@
             <a class="nav-link" href="Gallery.html">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="voting.html">Vote</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="contactUs.html">Contact Us</a>
           </li>
           <li class="nav-item">
@@ -33,6 +30,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="FAQ.html">FAQ's Page</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="Sources.html">Sources</a>
@@ -112,7 +112,7 @@
                       height="60"
                     />
                     <div>
-                      <h6 class="fw-bold mb-1">&nbsp;&nbsp;&nbsp;Maggie Marsh</h6>
+                      <h6 class="fw-bold mb-1">&nbsp;&nbsp;&nbsp;Nabil Sloan</h6>
                       <div class="d-flex align-items-center mb-3">
                         <p class="mb-0">
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;March 07, 2021
@@ -143,7 +143,7 @@
                       height="60"
                     />
                     <div>
-                      <h6 class="fw-bold mb-1">&nbsp;&nbsp;&nbsp;Lara Stewart</h6>
+                      <h6 class="fw-bold mb-1">&nbsp;&nbsp;&nbsp;Iylah Hickman</h6>
                       <div class="d-flex align-items-center mb-3">
                         <p class="mb-0">
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;March 15, 2021
@@ -176,7 +176,7 @@
                       height="60"
                     />
                     <div>
-                      <h6 class="fw-bold mb-1">&nbsp;&nbsp;&nbsp;Alexa Bennett</h6>
+                      <h6 class="fw-bold mb-1">&nbsp;&nbsp;&nbsp;Andrea Frank</h6>
                       <div class="d-flex align-items-center mb-3">
                         <p class="mb-0">
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;March 24, 2021
@@ -204,43 +204,38 @@
                       background-color: #fefefe
                     }
                   </style>
+                  <div class="d-flex flex-row align-items-start"><img class="rounded-circle" src="profile.png" width="40"><textarea class="form-control ml-1 shadow-none textarea"></textarea>
+                  </div>
                   <div class="mt-2 text-right">
-                  </div>
-                  <div class="mt-2 text-right"><button id="liveAlertBtn" class="btn btn-primary btn-sm shadow-none" type="button">
-                  Post comment
-                  </button>
-                  <button class="btn btn-outline-primary btn-sm ml-1 shadow-none" type="button">
-                  Cancel
-                  </button>
-                  </div>
-              
-                  <div id="liveAlertPlaceholder"></div>
-                  <script>
-                      var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
-                  var alertTrigger = document.getElementById('liveAlertBtn')
+                    <div class="mt-2 text-right"><button id="liveAlertBtn" class="btn btn-primary btn-sm shadow-none" type="button">
+                      Post comment
+                      </button>
+                      <button class="btn btn-outline-primary btn-sm ml-1 shadow-none" type="button">
+                      Cancel
+                      </button>
                   
-                  function alert(message, type) {
-                    var wrapper = document.createElement('div')
-                    wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert"style="background-color: #023992; margin-left:10%; margin-right:10%;margin-top:2%;text-align:center;color: black">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" ></button></div>'
+                      <div id="liveAlertPlaceholder"></div>
+                      <script>
+                          var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+                      var alertTrigger = document.getElementById('liveAlertBtn')
+                      
+                      function alert(message, type) {
+                        var wrapper = document.createElement('div')
+                        wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert"style="background-color: #2E8B57;border-color: "black"; text-align:center;color: black">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" ></button></div>'
+                      
+                        alertPlaceholder.append(wrapper)
+                      }
+                      
+                      if (alertTrigger) {
+                        alertTrigger.addEventListener('click', function () {
+                          alert('Thank You For Your Responce, Your Comment Will Be Reviewed For Innapropriate Content First')
+                        })
+                      }
+                    </script>
                   
-                    alertPlaceholder.append(wrapper)
-                  }
-                  
-                  if (alertTrigger) {
-                    alertTrigger.addEventListener('click', function () {
-                      alert('Thank You For Your Responce, Your Comment Will Be Reviewed For Innapropriate Content First')
-                    })
-                  }
-                      </script>
-              
                   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
                       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
                       crossorigin="anonymous"></script>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
               </div>
             </div>
           </div>

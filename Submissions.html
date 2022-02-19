@@ -32,6 +32,9 @@
             <a class="nav-link" href="login.html">Login</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="FAQ.html">FAQ's Page</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="Sources.html">Sources</a>
           </li>
         </div>
@@ -66,7 +69,7 @@
   </head>
   
   <fieldset>
-    <form name="formContact" class="needs-validation " method="post" action="contact.php">
+    
       <p>
         <label for="Name"><font font size="3" font face="Calibri" font color="#444444"><b>NAME</b></font></label>
         <input type="text" class="form-control" name="txtName" id="txtName" placeholder="Name" value="" required>
@@ -79,13 +82,13 @@
         <input type="text"  class="form-control"  name="txtEmail" id="txtEmail" placeholder="Email" value="" required>
       </p>
       <p>
+        <label for="message"></label><font font size="3" font face="Calibri" font color="#444444"><b>YOUR ARTWORK</b></font></label>
+        <br>
+          <input type="file" name="upload" accept="application/pdf,application/vnd.ms-excel" />
+        </p>
+      <p>
         <label for="phone"><font font size="3" font face="Calibri" font color="#444444"><b>PHONE NUMBER</b></font></label>
         <input type="text"  class="form-control" name="txtPhone" id="txtPhone" placeholder="Phone" value="" required>
-      </p>
-      <p>
-      <label for="message"></label><font font size="3" font face="Calibri" font color="#444444"><b>YOUR ARTWORK</b></font></label>
-      <br>
-        <input type="file" name="upload" accept="application/pdf,application/vnd.ms-excel" />
       </p>
       <p>
         <input onclick="myFunction()" type="submit" name="Submit" class="btn btn-primary btn-lg btn-block"> 

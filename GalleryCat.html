@@ -32,6 +32,9 @@
             <a class="nav-link" href="login.html">Login</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="FAQ.html">FAQ's Page</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="Sources.html">Sources</a>
           </li>
           
@@ -239,13 +242,14 @@
                     </textarea>
                   </div>
                   <div class="mt-2 text-right">
-                      </div>
-                      <div class="mt-2 text-right"><button id="liveAlertBtn" class="btn btn-primary btn-sm shadow-none" type="button">
-                      Post comment
-                      </button>
-                      <button class="btn btn-outline-primary btn-sm ml-1 shadow-none" type="button">
-                      Cancel
-                      </button>
+                    <div style="text-align: center;">
+                      <style>
+                        .btn btn-primary btn-lg btn-block{
+                          width:50px;
+                          height:120px;
+                        }
+                      </style>
+                      <button  id="liveAlertBtn" type="button" class="btn btn-primary btn-lg btn-block" style=" background-color: #2776EA; border-style: solid;border-color: #2776EA;border-radius: 5px; color:#000000;">Submit Comment</button>
                       </div>
                   
                       <div id="liveAlertPlaceholder"></div>
@@ -255,7 +259,7 @@
                       
                       function alert(message, type) {
                         var wrapper = document.createElement('div')
-                        wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert"style="background-color: #023992; margin-left:10%; margin-right:10%;margin-top:2%;text-align:center;color: black">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" ></button></div>'
+                        wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert"style="background-color: #2E8B57;border-color: "black"; text-align:center;color: black">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" ></button></div>'
                       
                         alertPlaceholder.append(wrapper)
                       }
