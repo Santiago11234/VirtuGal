@@ -171,13 +171,13 @@ img.gallery {
     margin: 0 auto;
 }
 
+.center{
+    text-align: center;
+}
 .card {
     display:inline-block;
-    margin-left: 107px;
-    margin-right: 107px; 
-    margin-top: 30px;
+    margin: 3em;
     text-align: center;
-    
 }
 
 .my-element {
