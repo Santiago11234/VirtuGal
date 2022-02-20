@@ -435,11 +435,11 @@ h2 {
 }
 
 .carousel-control-prev {
-    margin-left: -45px;
+    margin-left: -50px;
 }
 
 .carousel-control-next {
-    margin-right: -45px;
+    margin-right: -50px;
 }
 
 .carousel .carousel-indicators li {  background-color: #ccc; }
