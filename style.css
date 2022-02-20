@@ -46,7 +46,12 @@ body.Gallery{
     background-size: cover;
     background-attachment: fixed;
 }
-
+body.Vote {
+    background-image: url(VotePage.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
 h1 {
     margin: 0px;
     padding-top: 5px;
