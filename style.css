@@ -76,6 +76,12 @@ body.login{
     font-size: 18px;
 }
 
+body.Vote {
+    background-image: url(VotePage.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
 h1 {
     margin: 0px;
     padding-top: 5px;
@@ -251,6 +257,7 @@ img.gallery {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
     text-align: center;
+    width: 100px;
 }
 
 .my-element {
