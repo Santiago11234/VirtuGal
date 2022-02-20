@@ -438,12 +438,12 @@ h2 {
 
 .carousel-control-prev {
     top: 110%;
-    margin-left: 170px;
+    margin-left: 180px;
 }
 
 .carousel-control-next {
     top: 110%;
-    margin-right: 170px;
+    margin-right: 180px;
 }
 
 .carousel .carousel-indicators li {  background-color: #ccc; }
