@@ -191,7 +191,6 @@ img.gallery {
     width: 800px;
     height: fit content;
     margin: 0 auto;
-    
 }
 
 .container-login{
@@ -226,7 +225,7 @@ img.gallery {
     width: 800px;
     margin: auto;
     height: 350px;
-    margin-top: 32px;
+    margin-top: 90px;
 }
 
 .container-FAQ{
