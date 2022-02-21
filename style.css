@@ -223,9 +223,10 @@ img.gallery {
     padding: 42px 32px;
     border-radius: 32px;
     width: 800px;
-    margin: auto;
+    margin: 0  auto;
     height: 350px;
-    margin-top: 90px;
+
+    margin-bottom: 100px;
 }
 
 .container-FAQ{
@@ -444,4 +445,3 @@ h2 {
 
 .carousel .carousel-indicators li {  background-color: #ccc; }
 .carousel-indicators li.active { background-color: #aaa}
-
