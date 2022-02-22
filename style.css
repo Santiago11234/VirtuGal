@@ -445,3 +445,10 @@ h2 {
 
 .carousel .carousel-indicators li {  background-color: #ccc; }
 .carousel-indicators li.active { background-color: #aaa}
+
+@-webkit-keyframes animate-positive{
+    0% { width: 0%; }
+}
+@keyframes animate-positive{
+    0% { width: 0%; }
+}
