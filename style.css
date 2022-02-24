@@ -184,7 +184,11 @@ img.gallery {
     margin: auto 0;
 }
 
-.container{
+/*
+i need to figure out how tf to vertically center these
+*/
+
+.container-home{
     background-color:#eeeeee;
     padding: 42px 42px;
     border-radius: 32px;
@@ -202,7 +206,6 @@ img.gallery {
     align-content: center;
     width: fit-content;
     margin: auto;
-    margin-top: 125px;
 }
 
 .container-comments{
@@ -215,7 +218,6 @@ img.gallery {
     border-radius: 32px;
     width: 600px;
     margin: auto;
-    margin-top: 32px;
 }
 
 .container-about{
@@ -223,10 +225,8 @@ img.gallery {
     padding: 42px 32px;
     border-radius: 32px;
     width: 800px;
-    margin: 0  auto;
+    margin: auto;
     height: 350px;
-
-    margin-bottom: 100px;
 }
 
 .container-FAQ{
@@ -235,7 +235,6 @@ img.gallery {
     border-radius: 32px;
     width: 800px;
     margin: auto;
-    margin-top: 90px;
 }
 
 .container-contact{
@@ -244,7 +243,6 @@ img.gallery {
     border-radius: 32px;
     width: 600px;
     margin: auto;
-    margin-top: 20px;
 }
 
 .container-sources{
@@ -252,7 +250,6 @@ img.gallery {
     border-radius: 32px;
     width: 600px;
     margin: auto;
-    margin-top: 100px;
 }
 
 .center{
