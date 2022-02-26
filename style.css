@@ -467,3 +467,10 @@ h2 {
 }
 
 
+#particles-js{
+    height: 1000px;
+    
+}
+.stuff{
+    position: absolute;
+}
