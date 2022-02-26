@@ -208,10 +208,6 @@ i need to figure out how tf to vertically center these
     margin: auto;
 }
 
-.container-comments{
-    padding: 42px 10px;
-}
-
 .container-submission{
     background-color:#f8f9fa;
     padding: 42px 32px;
@@ -449,3 +445,25 @@ h2 {
 @keyframes animate-positive{
     0% { width: 0%; }
 }
+
+.mb-n1 {
+    margin-top: -0.25rem !important;
+}
+
+.mb-n2 {
+    margin-top: -0.5rem !important;
+}
+
+.mb-n3 {
+    margin-top: -1rem !important;
+}
+
+.mb-n4 {
+    margin-top: -1.5rem !important;
+}
+
+.mb-n5 {
+    margin-top: -3rem !important;
+}
+
+

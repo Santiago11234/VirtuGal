@@ -92,10 +92,11 @@
           .cat img{
             float: left;
             width: 40.3%;
+            margin-bottom: 45px;
           }
         </style>
       </div>
-      <section style="background-color: #eeeeee;">
+      
         <div class="container-comments mx-5 mb-5">
           <style>
             .container-comments{
@@ -108,73 +109,16 @@
           <div class="">
             <div class="">
               <div class="card text-dark">
+                
                 <div class="card-body p-4">
-                  
                   <h4 class="mb-0">Comments</h4>
-                  <p class="fw-light mb-4 pb-2">Latest Comments section by users</p>
-      
-                  <div class="d-flex flex-start">
-                    <img
-                      class="rounded-circle shadow-1-strong me-3"
-                      src="profile.png"
-                      alt="avatar"
-                      width="60"
-                      height="60"
-                    />
-                    <div>
-                      <h6 class="fw-bold mb-1">&nbsp;&nbsp;&nbsp;Maggie Marsh</h6>
-                      <div class="d-flex align-items-center mb-3">
-                        <p class="mb-0">
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;March 07, 2021
-                          
-                        </p>
-                        <a href="#!" class="link-muted"
-                          ><i class="fas fa-pencil-alt ms-2"></i
-                        ></a>
-                        <a href="#!" class="link-muted"><i class="fas fa-redo-alt ms-2"></i></a>
-                        <a href="#!" class="link-muted"><i class="fas fa-heart ms-2"></i></a>
-                      </div>
-                      <p class="mb-0">
-                        &nbsp;&nbsp;&nbsp;Stunning!
-                      </p>
-                    </div>
-                  </div>
+                  <p class="fw-light mb-n4 pb-2">Latest Comments section by users</p>
                 </div>
-      
-                <hr class="my-0" />
-      
-                <div class="card-body p-4">
-                  <div class="d-flex flex-start">
-                    <img
-                      class="rounded-circle shadow-1-strong me-3"
-                      src="profile.png"
-                      alt="avatar"
-                      width="60"
-                      height="60"
-                    />
-                    <div>
-                      <h6 class="fw-bold mb-1">&nbsp;&nbsp;&nbsp;Lara Stewart</h6>
-                      <div class="d-flex align-items-center mb-3">
-                        <p class="mb-0">
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;March 15, 2021
-                          
-                        </p>
-                        <a href="#!" class="link-muted"
-                          ><i class="fas fa-pencil-alt ms-2"></i
-                        ></a>
-                        <a href="#!" class="text-success"
-                          ><i class="fas fa-redo-alt ms-2"></i
-                        ></a>
-                        <a href="#!" class="link-danger"><i class="fas fa-heart ms-2"></i></a>
-                      </div>
-                      <p class="mb-0">
-                        &nbsp;&nbsp;&nbsp;Wow, this is impressive. 
-                      </p>
-                    </div>
+
+                <!--comment should end up here-->
+                
+                  <div id="commentRoot">
                   </div>
-                </div>
-      
-                <hr class="my-0"/>
       
                 <div class="card-body p-4">
                   <div class="d-flex flex-start">
@@ -204,40 +148,9 @@
                     </div>
                   </div>
                 </div>
-      
-                <hr class="my-0" />
-                
-                <div class="card-body p-4">
-                  <div class="d-flex flex-start">
-                    <img
-                      class="rounded-circle shadow-1-strong me-3"
-                      src="profile.png"
-                      alt="avatar"
-                      width="60"
-                      height="60"
-                    />
-                    <div>
-                      <h6 class="fw-bold mb-1">&nbsp;&nbsp;&nbsp;Betty Walker</h6>
-                      <div class="d-flex align-items-center mb-3">
-                        <p class="mb-0">
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;March 30, 2021
-                          
-                        </p>
-                        <a href="#!" class="link-muted"
-                          ><i class="fas fa-pencil-alt ms-2"></i
-                        ></a>
-                        <a href="#!" class="link-muted"><i class="fas fa-redo-alt ms-2"></i></a>
-                        <a href="#!" class="link-muted"><i class="fas fa-heart ms-2"></i></a>
-                      </div>
-                      <p class="mb-0">
-                        &nbsp;&nbsp;&nbsp;Aww that cat is so cute (: 
-                      </p>
-                    </div>
-                  </div>                
-                </div>
 
-                <hr class="my-0" />
-                
+                <hr class="my-0"/>
+
                 <div class="card-body p-4">
                   
                   <style>
@@ -245,26 +158,42 @@
                       background-color: #fefefe
                     }
                   </style>
+                  
                   <div class="d-flex flex-row align-items-start">
                     <img class="rounded-circle" src="profile.png" width="40">
-                    <textarea class="form-control ml-1 shadow-none textarea">
-                    </textarea>
+                    <textarea class="form-control ml-1 shadow-none textarea" id="cmtText"></textarea>
                   </div>
+                  
                   <div class="mt-2 text-right">
                     <div style="text-align: center;">
                       <div class="mt-2 text-right">
-                        <button id="liveAlertBtn" class="btn btn-primary btn-sm shadow-none" v-on:click="addItem()" type="submit">
-                        Post comment
-                        </button>
+                        <div class="mt-2 text-right">
+                          <div id="comment">
+                            <button onclick="cmtFunction()" class="btn btn-primary btn-sm shadow-none" type="button">
+                            Post comment
+                            </button>
+                        
+                            <script>
+
+                              function cmtFunction(){
+                                var cmt = document.getElementById("cmtText").value;
+
+                                const node = document.createElement("div");
+                                node.innerHTML = '<div class="card-body p-4"><div class="d-flex flex-start"><img class="rounded-circle shadow-1-strong me-3" src="profile.png" alt="avatar" width="60" height="60"/><div><h6 class="fw-bold mb-1">&nbsp;&nbsp;&nbsp;Name</h6><div class="d-flex align-items-center mb-3"><p class="mb-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Month Day, Year</p><a href="#!" class="link-muted"><i class="fas fa-pencil-alt ms-2"></i></a><a href="#!" class="link-muted"><i class="fas fa-redo-alt ms-2"></i></a><a href="#!" class="link-muted"><i class="fas fa-heart ms-2"></i></a></div><p class="mb-0">&nbsp;&nbsp;&nbsp;' + cmt; + '</p>';
+                                node.innerHTML += '</div></div><hr class="my-0"/>';
+                                
+                                document.getElementById("commentRoot").prepend(node);
+                              }
+
+                            </script>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                      
+                  </div>      
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <script src="comment.js"></script>
+      
     </body>
 </html>
