@@ -1,4 +1,6 @@
 
+@import '~mdb-ui-kit/css/mdb.min.css';
+
 *{
     padding: 0px;
     margin: 0px;
@@ -27,6 +29,7 @@ body.Home {
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 body.aboutUs {
     background-image: url(pexels-burst-374870.jpg);
