@@ -6,7 +6,7 @@
     }
   </style>
     <div class="container-fluid">
-      <a class="navbar-brand me-2" href="https://mdbgo.com/">
+      <a class="navbar-brand me-2" href="index.html">
         <img
           src="logo.png"
           height="80px"
@@ -90,167 +90,102 @@
           }
         </style>
       </div>
-      <section style="background-color: #eeeeee;">
-        <div class="container-comments mx-5 mb-5">
-          <style>
-            .container-comments{
-              background-color:#ffffff;
-              
-              float: right;
-              width: 50%;
-            }
-          </style>
+      <div class="container-comments mx-5 mb-5">
+        <style>
+          .container-comments{
+            background-color:#ffffff;
+            
+            float: right;
+            width: 50%;
+          }
+        </style>
+        <div class="">
           <div class="">
-            <div class="">
-              <div class="card text-dark">
-                <div class="card-body p-4">
-                
-                  
-                  <h4 class="mb-0">Comments</h4>
-                  <p class="fw-light mb-4 pb-2">Latest Comments section by users</p>
-      
-                  <div class="d-flex flex-start">
-                    <img
-                      class="rounded-circle shadow-1-strong me-3"
-                      src="profile.png"
-                      alt="avatar"
-                      width="60"
-                      height="60"
-                    />
-                    <div>
-                      <h6 class="fw-bold mb-1">&nbsp;&nbsp;&nbsp;Luqman Olsen</h6>
-                      <div class="d-flex align-items-center mb-3">
-                        <p class="mb-0">
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;March 07, 2021
-                          
-                        </p>
-                        <a href="#!" class="link-muted"
-                          ><i class="fas fa-pencil-alt ms-2"></i
-                        ></a>
-                        <a href="#!" class="link-muted"><i class="fas fa-redo-alt ms-2"></i></a>
-                        <a href="#!" class="link-muted"><i class="fas fa-heart ms-2"></i></a>
-                      </div>
-                      <p class="mb-0">
-                        &nbsp;&nbsp;&nbsp;How do you do this?
-                      </p>
-                    </div>
-                  </div>
-                </div>
-      
-                <hr class="my-0" />
-      
-                <div class="card-body p-4">
-                  <div class="d-flex flex-start">
-                    <img
-                      class="rounded-circle shadow-1-strong me-3"
-                      src="profile.png"
-                      alt="avatar"
-                      width="60"
-                      height="60"
-                    />
-                    <div>
-                      <h6 class="fw-bold mb-1">&nbsp;&nbsp;&nbsp;Logan O'Sullivan</h6>
-                      <div class="d-flex align-items-center mb-3">
-                        <p class="mb-0">
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;March 15, 2021
-                          
-                        </p>
-                        <a href="#!" class="link-muted"
-                          ><i class="fas fa-pencil-alt ms-2"></i
-                        ></a>
-                        <a href="#!" class="text-success"
-                          ><i class="fas fa-redo-alt ms-2"></i
-                        ></a>
-                        <a href="#!" class="link-danger"><i class="fas fa-heart ms-2"></i></a>
-                      </div>
-                      <p class="mb-0">
-                        &nbsp;&nbsp;&nbsp;Incredible!!
-                      </p>
-                    </div>
-                  </div>
-                </div>
-      
-                <hr class="my-0" />
-                
-                <div class="card-body p-4">
-                  <div class="d-flex flex-start">
-                    <img
-                      class="rounded-circle shadow-1-strong me-3"
-                      src="profile.png"
-                      alt="avatar"
-                      width="60"
-                      height="60"
-                    />
-                    <div>
-                      <h6 class="fw-bold mb-1">&nbsp;&nbsp;&nbsp;Tia Mustafa</h6>
-                      <div class="d-flex align-items-center mb-3">
-                        <p class="mb-0">
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;March 30, 2021
-                          
-                        </p>
-                        <a href="#!" class="link-muted"
-                          ><i class="fas fa-pencil-alt ms-2"></i
-                        ></a>
-                        <a href="#!" class="link-muted"><i class="fas fa-redo-alt ms-2"></i></a>
-                        <a href="#!" class="link-muted"><i class="fas fa-heart ms-2"></i></a>
-                      </div>
-                      <p class="mb-0">
-                        &nbsp;&nbsp;&nbsp;I like the vibrant colors and swirl effect!
-                      </p>
-                    </div>
-                  </div>                
-                </div>
-
-                <hr class="my-0" />
-                
-                <div class="card-body p-4">
-                  
-                  <style>
-                    .card-body{
-                      background-color: #fefefe
-                    }
-                  </style>
-                  <div class="d-flex flex-row align-items-start"><img class="rounded-circle" src="profile.png" width="40"><textarea class="form-control ml-1 shadow-none textarea"></textarea></div>
-                  <div class="mt-2 text-right">
-                    <div class="mt-2 text-right"><button id="liveAlertBtn" class="btn btn-primary btn-sm shadow-none" type="button">
-                      Post comment
-                      </button>
-                      <button class="btn btn-outline-primary btn-sm ml-1 shadow-none" type="button">
-                      Cancel
-                      </button>
-                  
-                      <div id="liveAlertPlaceholder"></div>
-                      <script>
-                          var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
-                      var alertTrigger = document.getElementById('liveAlertBtn')
-                      
-                      function alert(message, type) {
-                        var wrapper = document.createElement('div')
-                        wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert"style="background-color: #2E8B57;border-color: "black"; text-align:center;color: black">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" ></button></div>'
-                      
-                        alertPlaceholder.append(wrapper)
-                      }
-                      
-                      if (alertTrigger) {
-                        alertTrigger.addEventListener('click', function () {
-                          alert('Thank You For Your Responce, Your Comment Will Be Reviewed For Innapropriate Content First')
-                        })
-                      }
-                    </script>
-                  
-                  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-                      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-                      crossorigin="anonymous"></script>
-
+            <div class="card text-dark">
+              
+              <div class="card-body p-4">
+                <h4 class="mb-0">Comments</h4>
+                <p class="fw-light mb-n4 pb-2">Latest Comments section by users</p>
               </div>
+
+              <!--comment should end up here-->
+              
+                <div id="commentRoot">
+                </div>
+    
+              <div class="card-body p-4">
+                <div class="d-flex flex-start">
+                  <img
+                    class="rounded-circle shadow-1-strong me-3"
+                    src="profile.png"
+                    alt="avatar"
+                    width="60"
+                    height="60"
+                  />
+                  <div>
+                    <h6 class="fw-bold mb-1">&nbsp;&nbsp;&nbsp;Trina Subrahmanya</h6>
+                    <div class="d-flex align-items-center mb-3">
+                      <p class="mb-0">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;February 14, 2022
+                        
+                      </p>
+                      <a href="#!" class="link-muted"
+                        ><i class="fas fa-pencil-alt ms-2"></i
+                      ></a>
+                      <a href="#!" class="link-muted"><i class="fas fa-redo-alt ms-2"></i></a>
+                      <a href="#!" class="link-muted"><i class="fas fa-heart ms-2"></i></a>
+                    </div>
+                    <p class="mb-0">
+                      &nbsp;&nbsp;&nbsp;I like the vibrant colors and swirl effect! 
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="my-0"/>
+
+              <div class="card-body p-4">
+                
+                <style>
+                  .card-body{
+                    background-color: #fefefe
+                  }
+                </style>
+                
+                <div class="d-flex flex-row align-items-start">
+                  <img class="rounded-circle" src="profile.png" width="40">
+                  <textarea class="form-control ml-1 shadow-none textarea" id="cmtText"></textarea>
+                </div>
+                
+                <div class="mt-2 text-right">
+                  <div style="text-align: center;">
+                    <div class="mt-2 text-right">
+                      <div class="mt-2 text-right">
+                        <div id="comment">
+                          <button onclick="cmtFunction()" class="btn btn-primary btn-sm shadow-none" type="button">
+                          Post comment
+                          </button>
+                      
+                          <script>
+
+                            function cmtFunction(){
+                              var cmt = document.getElementById("cmtText").value;
+
+                              const node = document.createElement("div");
+                              node.innerHTML = '<div class="card-body p-4"><div class="d-flex flex-start"><img class="rounded-circle shadow-1-strong me-3" src="profile.png" alt="avatar" width="60" height="60"/><div><h6 class="fw-bold mb-1">&nbsp;&nbsp;&nbsp;Name</h6><div class="d-flex align-items-center mb-3"><p class="mb-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Month Day, Year</p><a href="#!" class="link-muted"><i class="fas fa-pencil-alt ms-2"></i></a><a href="#!" class="link-muted"><i class="fas fa-redo-alt ms-2"></i></a><a href="#!" class="link-muted"><i class="fas fa-heart ms-2"></i></a></div><p class="mb-0">&nbsp;&nbsp;&nbsp;' + cmt; + '</p>';
+                              node.innerHTML += '</div></div><hr class="my-0"/>';
+                              
+                              document.getElementById("commentRoot").prepend(node);
+                            }
+
+                          </script>
+                      </div>
+                    </div>
+                  </div>
+                </div>      
             </div>
           </div>
         </div>
-      </section>
-      
-      <div>
-
       </div>
-
-    </body>
+  </body>
 </html>
