@@ -36,10 +36,11 @@ body.Home {
     overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 body.aboutUs {
-    background-image: url(pexels-burst-374870.jpg);
+    background-color: rgb(255, 255, 255);
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 body.Sources{
     background-image: url(sources.jpg);
@@ -48,10 +49,11 @@ body.Sources{
     background-attachment: fixed;
 }
 body.Gallery{
-    background-image: url(galleryBackground.jpg);
+    background-color: rgb(255, 255, 255);
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 body.contactUs {
     height: 100vh;
@@ -167,10 +169,7 @@ section.box {
     background-image: rgb(255, 255, 255)
 }
 
-img.gallery {
-    height: 30%;
-    width: 30%;
-}
+
 
 .center {
     display: block;
@@ -250,23 +249,6 @@ img.gallery {
 
 .center{
     text-align: center;
-}
-
-.card {
-    display:inline-block;
-    margin-left: 3em;
-    margin-right: 3em;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    text-align: center;
-    width: 100px;
-}
-
-img.card{
-    display:inline-block;
-    margin: 0;
-    width: 200px;
-    height: 250px;
 }
 
 .card-home{
@@ -489,6 +471,51 @@ h2 {
     margin-bottom: -3rem !important;
 }
 
+
+.mx-n1 {
+    margin-left: -0.25rem !important;
+    margin-right: -0.25rem !important;
+}
+
+.mx-n2 {
+    margin-left: -0.5rem !important;
+    margin-right: -0.25rem !important;
+}
+
+.mx-n3 {
+    margin-left: -1rem !important;
+    margin-right: -0.25rem !important;
+}
+
+.mx-n4 {
+    margin-left: -1.5rem !important;
+    margin-right: -0.25rem !important;
+}
+
+.mx-n5 {
+    margin-left: -3rem !important;
+    margin-right: -0.25rem !important;
+}
+
+.mr-n1 {
+    margin-right: -0.25rem !important;
+}
+
+.mr-n2 {
+    margin-right: -0.5rem !important;
+}
+
+.mr-n3 {
+    margin-right: -1rem !important;
+}
+
+.mr-n4 {
+    margin-right: -1.5rem !important;
+}
+
+.mr-n5 {
+    margin-right: -3rem !important;
+}
 
 #particles-js{
     height: 1000px;
