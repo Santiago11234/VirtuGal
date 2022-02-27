@@ -15,17 +15,21 @@
     background-attachment: fixed;
 }
 
-.box{
-    width: 100%;
-    height: 500px;
-}
-
 input, button{
     display: inline-block;
     padding: 10px;
 }
+
+.header{
+    height: 86vh;
+    width: 100%; 
+    background-image: url(citybackground.png); 
+    background-size: cover;
+    background-position-y: 50%;
+}
+
 body.Home {
-    background-image: url(citybackground.png);
+    background-color: rgb(255, 255, 255);
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
@@ -148,13 +152,6 @@ img.dislike {
     margin: 10px;
 }
 
-img.card{
-    display:inline-block;
-    margin: 0;
-    width: 200px;
-    height: 250px;
-}
-
 p {
     font-family:Arial, Helvetica, sans-serif;
     opacity: 1;
@@ -187,12 +184,12 @@ img.gallery {
     margin: auto 0;
 }
 
-/*
-i need to figure out how tf to vertically center these
-*/
+.container{
+    height: 67vh;
+}
 
 .container-home{
-    background-color:#eeeeee;
+    background-color:#f8f9fa;
     padding: 42px 42px;
     border-radius: 32px;
     width: 800px;
@@ -201,7 +198,7 @@ i need to figure out how tf to vertically center these
 }
 
 .container-login{
-    background-color:#ffffff;
+    background-color:#f8f9fa;
     padding: 42px 32px 24px;
     border-radius: 16px;
     line-height: 65%;
@@ -263,6 +260,29 @@ i need to figure out how tf to vertically center these
     margin-bottom: 1.5em;
     text-align: center;
     width: 100px;
+}
+
+img.card{
+    display:inline-block;
+    margin: 0;
+    width: 200px;
+    height: 250px;
+}
+
+.card-home{
+    display:inline-block;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    text-align: center;
+    width: 15%;
+}
+
+img.card-home{
+    display:inline-block;
+    margin: 0;
+    width: 50%;
 }
 
 .my-element {
@@ -450,23 +470,23 @@ h2 {
 }
 
 .mb-n1 {
-    margin-top: -0.25rem !important;
+    margin-bottom: -0.25rem !important;
 }
 
 .mb-n2 {
-    margin-top: -0.5rem !important;
+    margin-bottom: -0.5rem !important;
 }
 
 .mb-n3 {
-    margin-top: -1rem !important;
+    margin-bottom: -1rem !important;
 }
 
 .mb-n4 {
-    margin-top: -1.5rem !important;
+    margin-bottom: -1.5rem !important;
 }
 
 .mb-n5 {
-    margin-top: -3rem !important;
+    margin-bottom: -3rem !important;
 }
 
 
