@@ -91,10 +91,11 @@ body.Vote {
     background-size: cover;
     background-attachment: fixed;
 }
+
 h1 {
-    margin: 0px;
-    padding-top: 5px;
+    text-align: center;
 }
+
 h2 {
     color: rgb(146, 143, 179);
     padding: 20px;
@@ -425,14 +426,6 @@ h2 {
     align-self: flex-end;
 }
 
-.carousel-control-prev-icon{
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ccc' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-}
-
-.carousel-control-next-icon{
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ccc' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-}
-
 .carousel-control-prev {
     margin-left: -50px;
 }
@@ -440,9 +433,6 @@ h2 {
 .carousel-control-next {
     margin-right: -50px;
 }
-
-.carousel .carousel-indicators li {  background-color: #ccc; }
-.carousel-indicators li.active { background-color: #aaa}
 
 @-webkit-keyframes animate-positive{
     0% { width: 0%; }
