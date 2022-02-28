@@ -33,6 +33,7 @@ body.Home {
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
+    position:absolute;
     overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 body.aboutUs {
@@ -509,8 +510,4 @@ h2 {
 
 #particles-js{
     height: 1000px;
-    
-}
-.stuff{
-    position: absolute;
 }
