@@ -216,15 +216,6 @@ section.box {
     margin: auto;
 }
 
-.container-about{
-    background-color:#f8f9fa;
-    padding: 42px 32px;
-    border-radius: 32px;
-    width: 800px;
-    margin: auto;
-    height: 350px;
-}
-
 .container-FAQ{
     background-color:#f8f9fa;
     padding: 42px 32px;
@@ -241,11 +232,9 @@ section.box {
     margin: auto;
 }
 
-.container-sources{
-    padding: 42px 32px;
-    border-radius: 32px;
-    width: 600px;
-    margin: auto;
+.text-box{
+    height: 75vh;
+    background-image: linear-gradient(to right, navy, cornflowerblue);
 }
 
 .center{
@@ -510,4 +499,8 @@ h2 {
 #particles-js{
     height: 1000px;
     background-color: #002244;
+}
+
+.col{
+    padding: 0px !important;
 }
