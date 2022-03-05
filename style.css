@@ -176,7 +176,11 @@ section.box {
 }
 
 .container{
-    height: 67vh;
+    background-color:#fff;
+    padding: 42px 32px;
+    border-radius: 32px;
+    width: 800px;
+    margin: auto;
 }
 
 .container-home{
@@ -224,8 +228,30 @@ section.box {
 }
 
 .text-box{
-    height: 75vh;
-    background-image: linear-gradient(to right, navy, cornflowerblue);
+    height: 65vh;
+    background: linear-gradient(135deg, rgba(8,24,74,1) 50%, rgba(16,100,148,1) 50%);
+}
+
+.text-holder{
+    height: 15vh;
+    background: linear-gradient(135deg, rgba(8,24,74,1) 75%,rgba(0,0,0,0) 25%);
+}
+
+.text-holder-bottom{
+    height: 7.5vh;
+    background: linear-gradient(135deg, rgba(8,24,74,1) 50%,rgba(0,0,0,0) 50%);
+    margin-bottom: 5%;
+}
+
+.text-holder-right{
+    height: 15vh;
+    background: linear-gradient(225deg, rgba(8,24,74,1) 75%, rgba(0,0,0,0) 25%);
+}
+
+.text-holder-right-bottom{
+    height: 7.5vh;
+    background: linear-gradient(225deg, rgba(8,24,74,1) 50%,rgba(0,0,0,0) 50%);
+    margin-bottom: 5%;
 }
 
 .center{
