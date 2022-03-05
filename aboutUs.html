@@ -1,91 +1,125 @@
 
 <!DOCTYPE html>
 <header>
-<nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
-  <style>
-    .navbar-custom{
-      background-color: #002244;
-    }
-  </style>
-    <div class="container-fluid">
-      <a class="navbar-brand me-2" href="index.html">
-        <img
-          src="logo.png"
-          height="80px"
-          alt="VirtuGal logo"
-          loading="lazy"
-          style="margin-top: -1px;"
-        />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Gallery.html">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Vote.html">Vote</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Submissions.html">Submission</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="aboutUs.html">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contactUs.html">Contact Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="FAQ.html">FAQ's</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <div class="d-flex align-items-center">
-            <li class="nav-item">
-              <a class="nav-link" href="login.html">Login</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Sources.html">Sources</a>
-            </li>
-          </div>
-        </ul>
-      </div>
-    </div>
-   </nav>
 
-  <div
-  class="header"
-  style="height: 86vh"
-  >
-    <div class="d-flex justify-content-center align-items-center h-100">
-      <div class="text-white">
-        <h1 class="mb-3">About Us</h1>
-        <a
-          class="btn btn-outline-light btn-lg m-2"
-          href="FAQ.html"
-          role="button"
-        >FAQ'S</a
-        >
-        <a
-          class="btn btn-outline-light btn-lg ml-0 my-2 mr-2"
-          href="Submissions.html"
-          role="button"
-        >SUBMISSION</a
-        >
+  <div class="header">  
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong sticky-top">
+      
+      <div class="container-fluid">
+        
+        <a class="navbar-brand me-2" href="index.html">
+          <img
+            src="logo.png"
+            height="60px"
+            alt="VirtuGal logo"
+            loading="lazy"
+            style="margin-left: -20px; margin-right: -5px;"
+          />
+        </a>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"><font font face="Raleway">HOME</font></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="aboutUs.html"><font font face="Raleway">ABOUT US</font></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="Gallery.html"><font font face="Raleway">GALLERY</font></a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                
+                id="navbarDropdown"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+              <font font face="Raleway">CONTRIBUTE</font>
+              </a>
+              
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="Vote.html"><font font face="Raleway">VOTE</font></a>
+                </li>
+                <hr class="dropdown-divider"/>
+                <li>
+                  <a class="dropdown-item" href="Submissions.html"><font font face="Raleway">SUBMIT ART</font></a>
+                </li>
+                <hr class="dropdown-divider"/>
+                <li>
+                  <a class="dropdown-item" href="Auctions.html"><font font face="Raleway">AUCTIONS</font></a>
+                </li>
+                
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                
+                id="navbarDropdown"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+              <font font face="Raleway">HELP</font>
+              </a>
+              
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="FAQ.html"><font font face="Raleway">FAQ'S</font></a>
+                </li>
+                <hr class="dropdown-divider"/>
+                <li>
+                  <a class="dropdown-item" href="contactUs.html"><font font face="Raleway">CONTACT US</font></a>
+                </li>
+                
+              </ul>
+            </li>
+
+          </ul>
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <div class="d-flex align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="login.html"><font font face="Raleway">LOGIN</font></a>
+              </li>
+              <li class="nav-item" style="margin-right: -20px">
+                <a class="nav-link" href="Sources.html"><font font face="Raleway">SOURCES</font></a>
+              </li>
+            </div>
+          </ul>
+        </div>
+
+    </nav>
+    <div id="particles-js">
+      <div class="d-flex align-items-center position-absolute" style="top: 50%; transform: translateY(-50%); left: 50%; transform: translateX(-50%)">
+        <div class="text-white">
+          <h1 class="mb-3">
+            <font font face="Raleway">
+              ABOUT US
+            </font>
+          </h1>
+          <a class="btn btn-outline-light btn-lg m-1" href="contactUs.html" role="button" data-mdb-ripple-color="dark">
+            CONTACT US
+          </a>
+          <a class="btn btn-outline-light btn-lg m-1" href="contactUs.html" role="button" data-mdb-ripple-color="dark">
+            FAQ'S
+          </a>
+        </div>
       </div>
     </div>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
   </div>
 
 </header>
 
 <html lang="en">
   <head>
-    <title>Title</title>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -94,23 +128,116 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  </head>
-  <body>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+  </head>
+
 </html>
 <html>
   <body class="aboutUs">
   <link rel="stylesheet" href="style.css">
      
-    <div class="container-fluid">
-      
+    <div class="text-section">
+      <h1 style="text-align: center; padding-top: 2%">
+          <font font face="Raleway">
+            <b>OUR MISSION</b>
+          </font>
+        </h1>
+      <hr style="width: 30%; margin: auto; margin-top: -1%; margin-bottom: 2%;">
+
+      <div class="lightbox">
+        <div class="row">
+          <div class="col-lg-2">
+          </div>
+          <div class="col-lg-4">
+            <div class="container-text">
+              
+              <p>
+                <font font face="Calibri" font size="4">
+                  During the pandemic, quarantine separated us from loved 
+                  ones and prevented us from expressing ourselves. Art is
+                  a timeless way in which we can express ourselves and step
+                  into an immersive experience filled with wonder.  
+                  <br>
+                  <br>
+                  VirtuGal's mission is to cultivate a digital space for people  
+                  to connect, share, and explore artistic creations
+                </font>
+              </p>
+
+              <a class="btn btn-primary btn-lg shadow-1-strong" style="margin-left: 0" href="aboutUs.html" role="button">
+                LEARN MORE
+              </a>
+
+            </div>
+          </div>
+          <div class="col-lg-1">
+          </div>
+          <div class="col-lg-3 mt-n5">
+            <img src="logo.png" style="width: 100%; margin: auto;">
+          </div>
+        </div>
+      </div>
     </div>
+
+    <div class="text-box">
+      <div class="container">
+        
+      </div>
+    </div>
+
+    <div class="text-section">
+      <h1 style="text-align: center; padding-top: 2%">
+        <font font face="Raleway">
+          <b>AUCTIONS</b>
+        </font>
+      </h1>
+      <hr style="width: 30%; margin: auto; margin-top: -1%; margin-bottom: 2%;">
+
+      <div class="lightbox">
+        <div class="row">
+          <div class="col-lg-2">
+          </div>
+          <div class="col-lg-3 mt-n5">
+            <img src="logo.png" style="width: 100%; margin: auto;">
+          </div>
+        <div class="col-lg-1">
+        </div>
+        <div class="col-lg-4">
+          <div class="container-text"> 
+            <p style="text-align: right">
+              <font font face="Calibri" font size="4">
+                VirtuGal auctions let users buy and display art while simultaneously 
+                raising money for the Bill and Melinda Gates foundation. Auctions take
+                place from 8:00 AM to 10:00 PM and last around 1 hour each, although
+                you can leave at any time.
+                <br>
+                <br>
+                Here at VirtuGal, we aim to make the world outside us better as well.
+              </font>
+            </p>
+
+            <a class="btn btn-primary btn-lg shadow-1-strong" href="aboutUs.html" role="button" style="float: right; margin-right: 0">
+              LEARN MORE
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer style="background-color: #002850" class="text-center text-white">
+      <div class="text-center p-3" style="background-color: #001140;">
+        VirtuGal | Seven Lakes High School TSA | Webmaster
+      </div>
+    </footer>
 
   </body>
 </html> 
