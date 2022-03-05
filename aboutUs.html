@@ -1,5 +1,3 @@
-
-<!DOCTYPE html>
 <header>
 
   <div class="header">  
@@ -13,7 +11,7 @@
             height="60px"
             alt="VirtuGal logo"
             loading="lazy"
-            style="margin-left: -20px; margin-right: -5px;"
+            style="margin-top: -5px; margin-left: -20px; margin-right: -5px;"
           />
         </a>
     
@@ -38,6 +36,30 @@
                 data-mdb-toggle="dropdown"
                 aria-expanded="false"
               >
+              <font font face="Raleway">EVENTS</font>
+              </a>
+              
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="Vote.html"><font font face="Raleway">AUCTIONS</font></a>
+                </li>
+                <hr class="dropdown-divider"/>
+                <li>
+                  <a class="dropdown-item" href="Submissions.html"><font font face="Raleway">EXHIBITS</font></a>
+                </li>
+                
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                
+                id="navbarDropdown"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
               <font font face="Raleway">CONTRIBUTE</font>
               </a>
               
@@ -48,10 +70,6 @@
                 <hr class="dropdown-divider"/>
                 <li>
                   <a class="dropdown-item" href="Submissions.html"><font font face="Raleway">SUBMIT ART</font></a>
-                </li>
-                <hr class="dropdown-divider"/>
-                <li>
-                  <a class="dropdown-item" href="Auctions.html"><font font face="Raleway">AUCTIONS</font></a>
                 </li>
                 
               </ul>
@@ -93,22 +111,25 @@
             </div>
           </ul>
         </div>
-
     </nav>
     <div id="particles-js">
       <div class="d-flex align-items-center position-absolute" style="top: 50%; transform: translateY(-50%); left: 50%; transform: translateX(-50%)">
-        <div class="text-white">
+        <div class="text-white animate__animated animate__fadeInUp animate__delay-0.5s">
           <h1 class="mb-3">
             <font font face="Raleway">
               ABOUT US
             </font>
           </h1>
-          <a class="btn btn-outline-light btn-lg m-1" href="contactUs.html" role="button" data-mdb-ripple-color="dark">
-            CONTACT US
-          </a>
-          <a class="btn btn-outline-light btn-lg m-1" href="contactUs.html" role="button" data-mdb-ripple-color="dark">
-            FAQ'S
-          </a>
+          <a
+            class="btn-contact-us btn btn-lg btn-outline-light m-2 animate__animated animate__fadeInRight animate__delay-0.5s" 
+            href="contactUs.html"
+            role="button"
+          >CONTACT US</a>
+          <a
+            class="btn-FAQ btn btn-lg btn-outline-light ml-0 my-2 mr-2 animate__animated animate__fadeInLeft animate__delay-0.5s"
+            href="FAQ.html"
+            role="button"
+          >FAQ'S</a>
         </div>
       </div>
     </div>
@@ -127,16 +148,17 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-
-
-      
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" >
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"
+    ></script>
   </head>
 
 </html>
@@ -172,7 +194,7 @@
                 </font>
               </p>
 
-              <a class="btn btn-primary btn-lg shadow-1-strong" style="margin-left: 0" href="aboutUs.html" role="button">
+              <a class="btn-learn-more btn btn-primary btn-lg shadow-1-strong" style="margin-left: 0" href="#" role="button">
                 LEARN MORE
               </a>
 
@@ -188,9 +210,7 @@
     </div>
 
     <div class="text-box">
-      <div class="container">
-        
-      </div>
+      <!--There will be a text box here-->
     </div>
 
     <div class="text-section">
@@ -224,7 +244,7 @@
               </font>
             </p>
 
-            <a class="btn btn-primary btn-lg shadow-1-strong" href="aboutUs.html" role="button" style="float: right; margin-right: 0">
+            <a class="btn-learn-more btn btn-primary btn-lg shadow-1-strong" href="#" role="button" style="float: right; margin-right: 0">
               LEARN MORE
             </a>
 
@@ -233,11 +253,10 @@
       </div>
     </div>
 
-    <footer style="background-color: #002850" class="text-center text-white">
+    <footer class="text-center text-white">
       <div class="text-center p-3" style="background-color: #001140;">
         VirtuGal | Seven Lakes High School TSA | Webmaster
       </div>
     </footer>
-
   </body>
 </html> 
