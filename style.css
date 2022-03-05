@@ -8,11 +8,6 @@
     box-shadow: 50px;
 }
 
-input, button{
-    display: inline-block;
-    padding: 10px;
-}
-
 .header{
     height: 100vh;
     width: 100%; 
@@ -102,30 +97,30 @@ h2 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-.button1{
-    height: 20px;
-    width: 20px;
-    color:rgb(0, 0, 0);
+a.btn-learn-more{
+    max-width: 180.2px;
+    max-height: 54.7px;
 }
 
-.button{
-    transition: box-shadow .3s;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    text-align: center;
-    border:2px solid rgb(255, 255, 255);
-    text-decoration: none;
-    display:inline-block;
-    margin: 5px 5px;
-    font-size: medium;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 5px;
-    transition-duration: 0.5s;
-    border-radius: 7px;
+a.btn-contact-us{
+    max-width: 177.13px;
+    max-height: 54.7px;
 }
 
-.button:hover {
-    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+a.btn-FAQ{
+    max-width: 123.78px;
+    max-height: 54.7px;
+}   
+
+a.btn-vote{
+    max-width: 121.74px;
+    max-height: 54.7px;
+}
+
+
+a.btn-submit-art{
+    max-width: 170.46px;
+    max-height: 54.7px;
 }
 
 .nav-item{
@@ -260,10 +255,9 @@ section.box {
 
 .card-home{
     display:inline-block;
-    margin-left: 3em;
-    margin-right: 3em;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
+    margin-bottom: 15pxs;
+    margin-left: -5px;
+    margin-right: -5px;
     text-align: center;
     width: 15%;
 }
@@ -427,9 +421,6 @@ h2 {
 
 .form__link:hover {
     text-decoration: underline;
-}
-.button2{
-    align-self: flex-end;
 }
 
 .carousel-control-prev {
