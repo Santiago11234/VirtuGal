@@ -249,18 +249,6 @@ section.box {
     font-size: 0.875rem;
 }
 
-.comments-page-2{
-    display: none
-}
-
-.comments-page-3{
-    display: none
-}
-
-.comments-page-4{
-    display: none
-}
-
 .text-box{
     height: 65vh;
     background: linear-gradient(135deg, rgba(8,24,74,1) 50%, rgba(16,100,148,1) 50%);
