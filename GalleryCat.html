@@ -133,6 +133,8 @@
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"
     ></script>
+
+    <script src="GalleryCmtPage.js"></script>
     </body>
   </html>
 
@@ -146,17 +148,19 @@
           <img src="image4.jpg" style="width: 100%; min-width: 100%"> 
         </div>
         <div class="col-lg-8">
-          <div class="container-comments">
+          <div class="container-comments" id="comments-page-1">
             <div class="card text-dark">
-              <div class="card-body p-4">
-                <h5 class="mb-0 me-5" style="float: left">Comments</h5>
-                <nav class="mb-n5" style="margin-top: -15px; float: right">
+              <div class="card-body p-3">
+                <h5 class="mb-0 me-5" style="float: left"><font font face="Raleway">COMMENTS</font></h5>
+                <nav class="mb-n5 mr-n3" style="margin-top: -15px; float: right">
                   <ul class="pagination">
                     <li class="page-item active" aria-current="page">
-                      <a class="page-link" href="#">1<span class="visually-hidden"></span></a>
+                      <a class="page-link" onclick="click1()">1<span class="visually-hidden"></span></a>
                     </li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" onclick="click2()">2</a></li>
+                    <li class="page-item"><a class="page-link" onclick="click3()">3</a></li>
+                    <li class="page-item"><a class="page-link" onclick="click4()">4</a></li>
+                    <li class="page-item"><a class="page-link" onclick="click5()">5</a></li>
                   </ul>
                 </nav>
               </div>
@@ -167,7 +171,7 @@
               <div id="commentRoot">
               </div>
               
-              <div class="card-body p-4">
+              <div class="cmt card-body p-3">
                 <div class="d-flex flex-start">
                   <img
                     class="rounded-circle shadow-1-strong me-3"
@@ -193,20 +197,19 @@
 
               <hr class="my-0"/>
 
-              <div class="card-body p-4">
+              <div class="card-body pt-3 pl-3 pr-3 pb-2">
                 <div class="comment-area d-flex flex-row align-items-start">
                   <img class="rounded-circle" src="profile.png" width="40">
-                  <textarea class="form-control ml-1 shadow-none textarea" id="cmtText" maxlength="200" style="resize: none"></textarea>
+                  <textarea class="form-control ml-1 shadow-none textarea" id="cmtText" maxlength="150" style="resize: none"></textarea>
                   <div id="count">
                   </div>
                 </div>
                 <span id="current" style="margin-left: 42px">0</span>
-                <span id="maximum">/ 200</span>
+                <span id="maximum">/ 150</span>
                 <button onclick="cmtFunction()" class="btn-post-comment btn btn-primary btn-sm shadow-none mt-2 mr-0" type="button"
                 style="float: right">
-                Post comment
+                  Post comment
                 </button>
-            
                 <script>
                   $('textarea').keyup(function() {
                   var characterCount = $(this).val().length,
@@ -214,26 +217,329 @@
                       maximum = $('#maximum'),
                       theCount = $('#count');
                       current.text(characterCount);
-                  });
+                  }); 
 
                   function cmtFunction(){
                     var cmt = document.getElementById("cmtText").value;
                     
                     const node = document.createElement("div");
-                    node.innerHTML = '<div class="card-body p-4"><div class="d-flex flex-start"><img class="rounded-circle shadow-1-strong me-3" src="profile.png" alt="avatar" width="60" height="60"/><div><h6 class="fw-bold mb-1">&nbsp;&nbsp;&nbsp;Name</h6><div class="d-flex align-items-center mb-3"><p class="mb-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Month Day, Year</p></div><p class="mb-0">&nbsp;&nbsp;&nbsp;' + cmt; + '</p>';
+                    node.innerHTML = '<div class="cmt card-body p-3"><div class="d-flex flex-start"><img class="rounded-circle shadow-1-strong me-3" src="profile.png" alt="avatar" width="60" height="60"/><div><h6 class="fw-bold mb-1">&nbsp;&nbsp;&nbsp;Name</h6><div class="d-flex align-items-center mb-3"><p class="mb-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Month Day, Year</p></div><p class="mb-0">&nbsp;&nbsp;&nbsp;' + cmt; + '</p>';
                     node.innerHTML += '</div></div><hr class="my-0"/>';
-                    
-                    document.getElementById("commentRoot").prepend(node);
-                  }
 
+                    var numCmts = $('.cmt').length;
+
+                    if(numCmts < 3){
+                      document.getElementById("commentRoot").prepend(node);
+                    } else if (numCmts < 6){
+                      document.getElementById("commentRoot2").prepend(node);
+                    } else if (numCmts < 9){
+                      document.getElementById("commentRoot3").prepend(node);
+                    } else if (numCmts < 12){
+                      document.getElementById("commentRoot5").prepend(node);
+                    } else if (numCmts < 15){
+                      document.getElementById("commentRoot4").prepend(node);
+                    } else {
+                      alert("Comment limit has been reached!")
+                    }
+                  }
                 </script>
               </div>
             </div>
           </div>
+          
+          <div class="container-comments form--hidden" id="comments-page-2">
+            <div class="card text-dark">
+              <div class="card-body p-3">
+                <h5 class="mb-0 me-5" style="float: left"><font font face="Raleway">COMMENTS</font></h5>
+                <nav class="mb-n5 mr-n3" style="margin-top: -15px; float: right">
+                  <ul class="pagination">
+                    <li class="page-item"><a class="page-link" onclick="click1()">1</a></li>
+                    <li class="page-item active" aria-current="page">
+                      <a class="page-link" onclick="click2()">2<span class="visually-hidden"></span></a>
+                    </li>
+                    <li class="page-item"><a class="page-link" onclick="click3()">3</a></li>
+                    <li class="page-item"><a class="page-link" onclick="click4()">4</a></li>
+                    <li class="page-item"><a class="page-link" onclick="click5()">5</a></li>
+                  </ul>
+                </nav>
+              </div>
+
+              <!--pg 2 comment should end up here-->
+
+              <hr class="my-0"/>
+              <div id="commentRoot2">
+              </div>
+
+              <div class="card-body pt-3 pl-3 pr-3 pb-2">
+                <div class="comment-area d-flex flex-row align-items-start">
+                  <img class="rounded-circle" src="profile.png" width="40">
+                  <textarea class="form-control ml-1 shadow-none textarea" id="cmtText" maxlength="150" style="resize: none"></textarea>
+                  <div id="count">
+                  </div>
+                </div>
+                <span id="current" style="margin-left: 42px">0</span>
+                <span id="maximum">/ 150</span>
+                <button onclick="cmtFunction()" class="btn-post-comment btn btn-primary btn-sm shadow-none mt-2 mr-0" type="button"
+                style="float: right">
+                  Post comment
+                </button>
+                <script>
+                  $('textarea').keyup(function() {
+                  var characterCount = $(this).val().length,
+                      current = $('#current'),
+                      maximum = $('#maximum'),
+                      theCount = $('#count');
+                      current.text(characterCount);
+                  }); 
+
+                  function cmtFunction(){
+                    var cmt = document.getElementById("cmtText").value;
+                    
+                    const node = document.createElement("div");
+                    node.innerHTML = '<div class="cmt card-body p-3"><div class="d-flex flex-start"><img class="rounded-circle shadow-1-strong me-3" src="profile.png" alt="avatar" width="60" height="60"/><div><h6 class="fw-bold mb-1">&nbsp;&nbsp;&nbsp;Name</h6><div class="d-flex align-items-center mb-3"><p class="mb-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Month Day, Year</p></div><p class="mb-0">&nbsp;&nbsp;&nbsp;' + cmt; + '</p>';
+                    node.innerHTML += '</div></div><hr class="my-0"/>';
+
+                    var numCmts = $('.cmt').length;
+
+                    if(numCmts < 3){
+                      document.getElementById("commentRoot").prepend(node);
+                    } else if (numCmts < 6){
+                      document.getElementById("commentRoot2").prepend(node);
+                    } else if (numCmts < 9){
+                      document.getElementById("commentRoot3").prepend(node);
+                    } else if (numCmts < 12){
+                      document.getElementById("commentRoot4").prepend(node);
+                    } else if (numCmts < 15){
+                      document.getElementById("commentRoot5").prepend(node);
+                    } else {
+                      alert("Comment limit has been reached!")
+                    }
+                  }
+                </script>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-comments form--hidden" id="comments-page-3">
+            <div class="card text-dark">
+              <div class="card-body p-3">
+                <h5 class="mb-0 me-5" style="float: left"><font font face="Raleway">COMMENTS</font></h5>
+                <nav class="mb-n5 mr-n3" style="margin-top: -15px; float: right">
+                  <ul class="pagination">
+                    <li class="page-item"><a class="page-link" onclick="click1()">1</a></li>
+                    <li class="page-item"><a class="page-link" onclick="click2()">2</a></li>
+                    <li class="page-item active" aria-current="page">
+                      <a class="page-link" onclick="click3()">3<span class="visually-hidden"></span></a>
+                    </li>
+                    <li class="page-item"><a class="page-link" onclick="click4()">4</a></li>
+                    <li class="page-item"><a class="page-link" onclick="click5()">5</a></li>
+                  </ul>
+                </nav>
+              </div>
+
+              <!--pg 3 comment should end up here-->
+
+              <hr class="my-0"/>
+              <div id="commentRoot3">
+              </div>
+
+              <div class="card-body pt-3 pl-3 pr-3 pb-2">
+                <div class="comment-area d-flex flex-row align-items-start">
+                  <img class="rounded-circle" src="profile.png" width="40">
+                  <textarea class="form-control ml-1 shadow-none textarea" id="cmtText" maxlength="150" style="resize: none"></textarea>
+                  <div id="count">
+                  </div>
+                </div>
+                <span id="current" style="margin-left: 42px">0</span>
+                <span id="maximum">/ 150</span>
+                <button onclick="cmtFunction()" class="btn-post-comment btn btn-primary btn-sm shadow-none mt-2 mr-0" type="button"
+                style="float: right">
+                  Post comment
+                </button>
+                <script>
+                  $('textarea').keyup(function() {
+                  var characterCount = $(this).val().length,
+                      current = $('#current'),
+                      maximum = $('#maximum'),
+                      theCount = $('#count');
+                      current.text(characterCount);
+                  }); 
+
+                  function cmtFunction(){
+                    var cmt = document.getElementById("cmtText").value;
+                    
+                    const node = document.createElement("div");
+                    node.innerHTML = '<div class="cmt card-body p-3"><div class="d-flex flex-start"><img class="rounded-circle shadow-1-strong me-3" src="profile.png" alt="avatar" width="60" height="60"/><div><h6 class="fw-bold mb-1">&nbsp;&nbsp;&nbsp;Name</h6><div class="d-flex align-items-center mb-3"><p class="mb-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Month Day, Year</p></div><p class="mb-0">&nbsp;&nbsp;&nbsp;' + cmt; + '</p>';
+                    node.innerHTML += '</div></div><hr class="my-0"/>';
+
+                    var numCmts = $('.cmt').length;
+
+                    if(numCmts < 3){
+                      document.getElementById("commentRoot").prepend(node);
+                    } else if (numCmts < 6){
+                      document.getElementById("commentRoot2").prepend(node);
+                    } else if (numCmts < 9){
+                      document.getElementById("commentRoot3").prepend(node);
+                    } else if (numCmts < 12){
+                      document.getElementById("commentRoot4").prepend(node);
+                    } else if (numCmts < 15){
+                      document.getElementById("commentRoot5").prepend(node);
+                    } else {
+                      alert("Comment limit has been reached!")
+                    }
+                  }
+                </script>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-comments form--hidden" id="comments-page-4">
+            <div class="card text-dark">
+              <div class="card-body p-3">
+                <h5 class="mb-0 me-5" style="float: left"><font font face="Raleway">COMMENTS</font></h5>
+                <nav class="mb-n5 mr-n3" style="margin-top: -15px; float: right">
+                  <ul class="pagination">
+                    <li class="page-item"><a class="page-link" onclick="click1()">1</a></li>
+                    <li class="page-item"><a class="page-link" onclick="click2()">2</a></li>
+                    <li class="page-item"><a class="page-link" onclick="click3()">3</a></li>
+                    <li class="page-item active" aria-current="page">
+                      <a class="page-link" onclick="click4()">4<span class="visually-hidden"></span></a>
+                    </li>
+                    <li class="page-item"><a class="page-link" onclick="click5()">5</a></li>
+                  </ul>
+                </nav>
+              </div>
+
+              <!--pg 4 comment should end up here-->
+
+              <hr class="my-0"/>
+              <div id="commentRoot4">
+              </div>
+
+              <div class="card-body pt-3 pl-3 pr-3 pb-2">
+                <div class="comment-area d-flex flex-row align-items-start">
+                  <img class="rounded-circle" src="profile.png" width="40">
+                  <textarea class="form-control ml-1 shadow-none textarea" id="cmtText" maxlength="150" style="resize: none"></textarea>
+                  <div id="count">
+                  </div>
+                </div>
+                <span id="current" style="margin-left: 42px">0</span>
+                <span id="maximum">/ 150</span>
+                <button onclick="cmtFunction()" class="btn-post-comment btn btn-primary btn-sm shadow-none mt-2 mr-0" type="button"
+                style="float: right">
+                  Post comment
+                </button>
+                <script>
+                  $('textarea').keyup(function() {
+                  var characterCount = $(this).val().length,
+                      current = $('#current'),
+                      maximum = $('#maximum'),
+                      theCount = $('#count');
+                      current.text(characterCount);
+                  }); 
+
+                  function cmtFunction(){
+                    var cmt = document.getElementById("cmtText").value;
+                    
+                    const node = document.createElement("div");
+                    node.innerHTML = '<div class="cmt card-body p-3"><div class="d-flex flex-start"><img class="rounded-circle shadow-1-strong me-3" src="profile.png" alt="avatar" width="60" height="60"/><div><h6 class="fw-bold mb-1">&nbsp;&nbsp;&nbsp;Name</h6><div class="d-flex align-items-center mb-3"><p class="mb-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Month Day, Year</p></div><p class="mb-0">&nbsp;&nbsp;&nbsp;' + cmt; + '</p>';
+                    node.innerHTML += '</div></div><hr class="my-0"/>';
+
+                    var numCmts = $('.cmt').length;
+
+                    if(numCmts < 3){
+                      document.getElementById("commentRoot").prepend(node);
+                    } else if (numCmts < 6){
+                      document.getElementById("commentRoot2").prepend(node);
+                    } else if (numCmts < 9){
+                      document.getElementById("commentRoot3").prepend(node);
+                    } else if (numCmts < 12){
+                      document.getElementById("commentRoot4").prepend(node);
+                    } else if (numCmts < 15){
+                      document.getElementById("commentRoot5").prepend(node);
+                    } else {
+                      alert("Comment limit has been reached!")
+                    }
+                  }
+                </script>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-comments form--hidden" id="comments-page-5">
+            <div class="card text-dark">
+              <div class="card-body p-3">
+                <h5 class="mb-0 me-5" style="float: left"><font font face="Raleway">COMMENTS</font></h5>
+                <nav class="mb-n5 mr-n3" style="margin-top: -15px; float: right">
+                  <ul class="pagination">
+                    <li class="page-item"><a class="page-link" onclick="click1()">1</a></li>
+                    <li class="page-item"><a class="page-link" onclick="click2()">2</a></li>
+                    <li class="page-item"><a class="page-link" onclick="click3()">3</a></li>
+                    <li class="page-item"><a class="page-link" onclick="click4()">4</a></li>
+                    <li class="page-item active" aria-current="page">
+                      <a class="page-link" onclick="click5()">5<span class="visually-hidden"></span></a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+
+              <!--pg 5 comment should end up here-->
+
+              <hr class="my-0"/>
+              <div id="commentRoot5">
+              </div>
+
+              <div class="card-body pt-3 pl-3 pr-3 pb-2">
+                <div class="comment-area d-flex flex-row align-items-start">
+                  <img class="rounded-circle" src="profile.png" width="40">
+                  <textarea class="form-control ml-1 shadow-none textarea" id="cmtText" maxlength="150" style="resize: none"></textarea>
+                  <div id="count">
+                  </div>
+                </div>
+                <span id="current" style="margin-left: 42px">0</span>
+                <span id="maximum">/ 150</span>
+                <button onclick="cmtFunction()" class="btn-post-comment btn btn-primary btn-sm shadow-none mt-2 mr-0" type="button"
+                style="float: right">
+                  Post comment
+                </button>
+                <script>
+                  $('textarea').keyup(function() {
+                  var characterCount = $(this).val().length,
+                      current = $('#current'),
+                      maximum = $('#maximum'),
+                      theCount = $('#count');
+                      current.text(characterCount);
+                  }); 
+
+                  function cmtFunction(){
+                    var cmt = document.getElementById("cmtText").value;
+                    
+                    const node = document.createElement("div");
+                    node.innerHTML = '<div class="cmt card-body p-3"><div class="d-flex flex-start"><img class="rounded-circle shadow-1-strong me-3" src="profile.png" alt="avatar" width="60" height="60"/><div><h6 class="fw-bold mb-1">&nbsp;&nbsp;&nbsp;Name</h6><div class="d-flex align-items-center mb-3"><p class="mb-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Month Day, Year</p></div><p class="mb-0">&nbsp;&nbsp;&nbsp;' + cmt; + '</p>';
+                    node.innerHTML += '</div></div><hr class="my-0"/>';
+
+                    var numCmts = $('.cmt').length;
+
+                    if(numCmts < 3){
+                      document.getElementById("commentRoot").prepend(node);
+                    } else if (numCmts < 6){
+                      document.getElementById("commentRoot2").prepend(node);
+                    } else if (numCmts < 9){
+                      document.getElementById("commentRoot3").prepend(node);
+                    } else if (numCmts < 12){
+                      document.getElementById("commentRoot4").prepend(node);
+                    } else if (numCmts < 15){
+                      document.getElementById("commentRoot5").prepend(node);
+                    } else {
+                      alert("Comment limit has been reached!")
+                    }
+                  }
+                </script>
+              </div>
+            </div>
+          </div>
+
         </div>
-
-          <!--later comment pages will be here-->
-
       </div>
     </div>
   </body>
