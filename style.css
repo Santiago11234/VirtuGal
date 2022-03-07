@@ -72,7 +72,7 @@ body.Submissions{
 }
 body.login{
     height: 100vh;
-    background-image: url("loginBack.jpg");
+    background-color:white;
     background-size: cover;
     background-attachment: fixed;
 
