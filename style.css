@@ -165,6 +165,12 @@ a.btn-purchase-a-ticket{
     max-height: 46.31px;
 }
 
+a.btn-exhibits{
+    width: 150px;
+    max-width: 150px;
+    max-height: 54.7px;
+}
+
 .nav-item{
     text-align: center;
     font-weight: normal;
@@ -215,7 +221,7 @@ section.box {
     background-color:#fff;
     padding: 42px 32px;
     border-radius: 32px;
-    width: 800px;
+    width: 80%;
     margin: auto;
 }
 
@@ -271,6 +277,11 @@ section.box {
 
 .text-box{
     height: 65vh;
+    background: linear-gradient(135deg, rgba(8,24,74,1) 50%, rgba(16,100,148,1) 50%);
+}
+
+.text-box-lg{
+    height: 93vh;
     background: linear-gradient(135deg, rgba(8,24,74,1) 50%, rgba(16,100,148,1) 50%);
 }
 
