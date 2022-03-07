@@ -21,14 +21,14 @@ body.Home {
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-x: hidden;
 }
 body.aboutUs {
     background-color: rgb(255, 255, 255);
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-x: hidden;
 }
 body.Sources{
     background-image: url(sources.jpg);
@@ -41,7 +41,15 @@ body.Gallery{
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-x: hidden;
+}
+body.Gallery-Comments{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 body.contactUs {
     height: 100vh;
@@ -94,33 +102,48 @@ h2 {
     color: rgb(146, 143, 179);
     padding: 20px;
     padding-top: 5px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 a.btn-learn-more{
-    max-width: 180.2px;
+    width: 181px;
+    max-width: 181px;
     max-height: 54.7px;
 }
 
 a.btn-contact-us{
     max-width: 180.13px;
+    width: 177.13px;
+    max-width: 177.13px;
     max-height: 54.7px;
 }
 
 a.btn-FAQ{
+    width: 177.13px;
     max-width: 123.78px;
     max-height: 54.7px;
 }   
 
 a.btn-vote{
+    width: 121.74px;
     max-width: 121.74px;
     max-height: 54.7px;
 }
 
-
 a.btn-submit-art{
     max-width: 175.46px;
     max-height: 54.7px;
+}
+
+a.btn-comments{
+    width: 144.07px;
+    max-width: 144.07px;
+    max-height: 46.31px;
+}
+
+.btn-post-comment{
+    width: 134.64px;
+    max-width: 134.64px;
+    max-height: 31.35px;
 }
 
 .nav-item{
@@ -145,6 +168,7 @@ p {
     font-family:Arial, Helvetica, sans-serif;
     opacity: 1;
 }
+
 p.main {
     font-size: large;
 }
@@ -155,8 +179,6 @@ section.box {
     padding-right: 200px;
     background-image: rgb(255, 255, 255)
 }
-
-
 
 .center {
     display: block;
@@ -220,6 +242,12 @@ section.box {
     border-radius: 32px;
     width: 600px;
     margin: auto;
+}
+
+#the-count {
+    
+    padding: 0.1rem 0 0 0;
+    font-size: 0.875rem;
 }
 
 .text-box{
@@ -307,18 +335,6 @@ h2 {
 }
 .accordion-section .panel-default .panel-body {
     font-size: 1.2rem;
-}
-
-.comment {
-	display: block;
-	transition: all 1s;
-}
-
-.commentClicked {
-	min-height: 0px;
-	border: 1px solid #eee;
-	border-radius: 5px;
-	padding: 5px 10px
 }
 
 .form__input,
