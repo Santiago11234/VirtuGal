@@ -281,7 +281,7 @@ section.box {
 }
 
 .text-box-lg{
-    height: 93vh;
+    height: fit-content;
     background: linear-gradient(135deg, rgba(8,24,74,1) 50%, rgba(16,100,148,1) 50%);
 }
 
