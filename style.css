@@ -104,10 +104,11 @@ body.login{
 }
 
 body.Vote {
-    background-image: url(pexels-aleksandar-pasaric-325185\(1\).jpg);
+    background-color: rgb(255, 255, 255);
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -140,6 +141,7 @@ ul{
     list-style: none;
     padding: 10px;
 }
+
 section iframe {
     margin-left: 35%;
 }

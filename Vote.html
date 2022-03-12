@@ -1,182 +1,297 @@
-<!DOCTYPE html>
 <header>
-  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
-    <style>
-      .navbar-custom{
-        background-color: #002244;
-      }
-    </style>
+
+  <div class="header" style="background-image: url(citybackground.png)">  
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong sticky-top">
+      
       <div class="container-fluid">
+        
         <a class="navbar-brand me-2" href="index.html">
           <img
             src="logo.png"
-            height="80px"
+            height="60px"
             alt="VirtuGal logo"
             loading="lazy"
-            style="margin-top: -1px;"
+            style="margin-top: -5px; margin-left: -20px; margin-right: -5px;"
           />
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" aria-current="page" href="index.html"><font font face="Raleway">HOME</font></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Gallery.html">Gallery</a>
+              <a class="nav-link" aria-current="page" href="aboutUs.html"><font font face="Raleway">ABOUT US</font></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="button" href="Vote.html">Vote</a>
+              <a class="nav-link" aria-current="page" href="Gallery.html"><font font face="Raleway">GALLERY</font></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Submissions.html">Submission</a>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                
+                id="navbarDropdown"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+              <font font face="Raleway">EVENTS</font>
+              </a>
+              
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="Auctions.html"><font font face="Raleway">AUCTIONS</font></a>
+                </li>
+                <hr class="dropdown-divider"/>
+                <li>
+                  <a class="dropdown-item" href="Exhibits.html"><font font face="Raleway">EXHIBITS</font></a>
+                </li>
+                
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="aboutUs.html">About Us</a>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                
+                id="navbarDropdown"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+              <font font face="Raleway">CONTRIBUTE</font>
+              </a>
+              
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="Vote.html"><font font face="Raleway">VOTE</font></a>
+                </li>
+                <hr class="dropdown-divider"/>
+                <li>
+                  <a class="dropdown-item" href="Submissions.html"><font font face="Raleway">SUBMIT ART</font></a>
+                </li>
+                
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contactUs.html">Contact Us</a>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                
+                id="navbarDropdown"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+              <font font face="Raleway">HELP</font>
+              </a>
+              
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="FAQ.html"><font font face="Raleway">FAQ'S</font></a>
+                </li>
+                <hr class="dropdown-divider"/>
+                <li>
+                  <a class="dropdown-item" href="contactUs.html"><font font face="Raleway">CONTACT US</font></a>
+                </li>
+                
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="FAQ.html">FAQ's</a>
-            </li>
+
           </ul>
           <ul class="navbar-nav mb-2 mb-lg-0">
             <div class="d-flex align-items-center">
               <li class="nav-item">
-                <a class="nav-link" href="login.html">Login</a>
+                <a class="nav-link" href="login.html"><font font face="Raleway">LOGIN</font></a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Sources.html">Sources</a>
+              <li class="nav-item" style="margin-right: -20px">
+                <a class="nav-link" href="Sources.html"><font font face="Raleway">SOURCES</font></a>
               </li>
             </div>
           </ul>
         </div>
-      </div>
-     </nav>
-
-   <div
-  id="intro-example"
-  class="jumbotron bg-transparent p-5 text-center"
-  style="height: 82vh"
-  >
-    <div class="d-flex justify-content-center align-items-center h-100">
-      <div class="text-black">
-        <h1 class="mb-3">Vote</h1>
-        <a
-          class="btn btn-outline-dark btn-lg m-2"
-          href="Gallery.html"
-          role="button"
-        >GALLERY</a
-        >
-        <a
-        class="btn btn-outline-dark btn-lg ml-0 my-2 mr-2"
-        href="leaderboard.html"
-      >LEADERBOARD</a
-      >
+    </nav>
+    <div id="particles-js">
+      <div class="d-flex align-items-center position-absolute" style="top: 50%; transform: translateY(-50%); left: 50%; transform: translateX(-50%)">
+        <div class="text-white animate__animated animate__fadeInUp animate__delay-0.5s">
+          <h1 class="mb-3">
+            <font font face="Raleway">
+              VOTE
+            </font>
+          </h1>
+          <a href="Gallery.html">
+            <input type="button" value="GALLERY" 
+            class="btn btn-lg btn-outline-light ml-0 my-2 mr-2 animate__animated animate__fadeInLeft animate__delay-0.5s" 
+            role="button">
+          </a>
+          <a href="Submissions.html">
+            <input type="button" value="SUBMIT ART" 
+            class="btn-demo btn btn-lg btn-outline-light ml-0 my-2 mr-2 animate__animated animate__fadeInLeft animate__delay-0.5s"
+            role="button">
+          </a>
+        </div>
       </div>
     </div>
+    </div>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
   </div>
-</div>
-<html>
-    <body class = "Vote">
-        <link rel="stylesheet" href="style.css" >
-              <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <style>
-      form {
-        margin-bottom: 10px;
-        margin-left: -150px;
-      }
-      button {
-        width: 55px;
-        height: 40px;
-        border-radius: 5px;
-        font-size: x-small;
-        margin-top: -40px;
-        translate: 200px;
-      }
-      div.card {
-        outline-style: solid;
-        width: 350px;
-        margin: 0 auto;
-      }
-      .col-lg-4 {
-        margin: auto;
-      }
-    </style>
-    <div class="col-lg-4">
-      <div class="card">
-        <img src="image0.jpg" class="card-img-top" style="margin: auto; width: 90%; padding-top: 5%">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text"></p>
-          <a href="#!" class="btn btn-primary">Button</a>
+</header>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" >
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"
+    ></script>
+  </head>
+</html>
+  <body class="Vote">
+    <div id="vote">
+      <h1 style="text-align: center; padding-top: 3%">
+        <font font face="Raleway">
+          VOTE FOR YOUR FAVORITE PIECE
+        </font>
+      </h1>
+
+      <div class="lightbox m-5">
+        <div class="row">
+          <div class="col-lg-4">
+              <div class="card">
+                <div class="shadow-5-strong">
+                  <img src="image4.jpg" class="card-img-top" style="margin: auto; width: 100%; padding-top: 5%; padding-left: 5%; padding-right: 5%">
+                </div>
+                <div class="card-body shadow-5-strong">
+                  <h5 class="card-title"><font font face="Raleway">PURFECTION</font></h5>
+                  <p class="card-text">By: UrMom69420</p>
+                  <a href="GalleryCat.html" >
+                    <input type="button" value="VOTE" class="btn btn-lg btn-outline-primary" style="margin: 0">
+                  </a>
+                </div>
+              </div>
+              <br>
+              <div class="card">
+                <div class="shadow-5-strong">
+                  <img src="image2.jpg" class="card-img-top" style="margin: auto; width: 100%; padding-top: 5%; padding-left: 5%; padding-right: 5%">
+                </div>
+                <div class="card-body shadow-5-strong">
+                  <h5 class="card-title"><font font face="Raleway">CARD TITLE</font></h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="GalleryFlowers.html" >
+                    <input type="button" value="VOTE" class="btn btn-lg btn-outline-primary" style="margin: 0">
+                  </a>
+                </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="shadow-5-strong">
+                <img src="image3.jpg" class="card-img-top" style="margin: auto; width: 100%; padding-top: 5%; padding-left: 5%; padding-right: 5%">
+              </div>
+              <div class="card-body shadow-5-strong">
+                <h5 class="card-title"><font font face="Raleway">CARD TITLE</font></h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="GallerySkateboard.html" >
+                  <input type="button" value="VOTE" class="btn btn-lg btn-outline-primary" style="margin: 0">
+                </a>
+              </div>
+            </div>
+            <br>
+            <div class="card">
+              <div class="shadow-5-strong">
+                <img src="image1.jpg" class="card-img-top" style="margin: auto; width: 100%; padding-top: 5%; padding-left: 5%; padding-right: 5%">
+              </div>
+              <div class="card-body shadow-5-strong">
+                <h5 class="card-title"><font font face="Raleway">CARD TITLE</font></h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="GalleryWhirl.html" >
+                  <input type="button" value="VOTE" class="btn btn-lg btn-outline-primary" style="margin: 0">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="shadow-5-strong">
+                <img src="image0.jpg" class="card-img-top" style="margin: auto; width: 100%; padding-top: 5%; padding-left: 5%; padding-right: 5%">
+              </div>
+              <div class="card-body shadow-5-strong">
+                <h5 class="card-title"><font font face="Raleway">CARD TITLE</font></h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="GalleryHands.html">
+                  <input type="button" value="VOTE" class="btn btn-lg btn-outline-primary" style="margin: 0">
+                </a>
+              </div>
+            </div>
+            <br>
+            <div class="card">
+              <div class="shadow-5-strong">
+                <img src="image5.jpg" class="card-img-top" style="margin: auto; width: 100%; padding-top: 5%; padding-left: 5%; padding-right: 5%">
+              </div>
+              <div class="card-body shadow-5-strong">
+                <h5 class="card-title"><font font face="Raleway">CARD TITLE</font></h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="GalleryRoses.html">
+                  <input type="button" value="VOTE" class="btn btn-lg btn-outline-primary" style="margin: 0">
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <br>
-    <br>
-    <div class="col-lg-4">
-      <div class="card">
-        <img src="image1.jpg" class="card-img-top" style="margin: auto; width: 90%; padding-top: 5%">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text"></p>
-          <a href="#!" class="btn btn-primary">Button</a>
-        </div>
+
+      <div class="d-flex justify-content-center align-items-center mb-5">
+        <button type="button" class="btn btn-lg btn-primary" onclick="showLeaderboard()" 
+        style="width: 17%; max-width: 17%; height: 55px; max-height: 55px">SHOW LEADERBOARD</button>
+        <script>
+          function showLeaderboard(){
+            const vote = document.querySelector("#vote");
+            const leaderboard = document.querySelector("#leaderboard");
+            vote.classList.add("form--hidden");
+            leaderboard.classList.remove("form--hidden");   
+          }
+        </script>
       </div>
     </div>
-    <br>
-    <br>
-    <div class="col-lg-4">
-      <div class="card">
-        <img src="image2.jpg" class="card-img-top" style="margin: auto; width: 90%; padding-top: 5%">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text"></p>
-          <a href="#!" class="btn btn-primary">Button</a>
-        </div>
+
+    <div id="leaderboard" class="form--hidden">
+      <p>
+        hi
+      </p>
+
+      <div class="d-flex justify-content-center align-items-center mb-5">
+        <button type="button" class="btn btn-lg btn-primary" onclick="Vote()"
+        style="width: 9%; max-width: 9%; height: 55px; max-height: 55px">VOTE</button>
+        <script>
+          function Vote(){
+            const vote = document.querySelector("#vote");
+            const leaderboard = document.querySelector("#leaderboard");
+            vote.classList.remove("form--hidden");
+            leaderboard.classList.add("form--hidden");   
+          }
+        </script>
       </div>
+
     </div>
-    <br>
-    <br>
-    <div class="col-lg-4">
-      <div class="card">
-        <img src="image3.jpg" class="card-img-top" style="margin: auto; width: 90%; padding-top: 5%">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text"></p>
-          <a href="#!" class="btn btn-primary">Button</a>
-        </div>
+
+    <footer class="text-center text-white">
+      <div class="text-center p-3" style="background-color: #001140">
+        VirtuGal | Seven Lakes High School TSA | Webmaster
       </div>
-    </div>
-    <br>
-    <br>
-    <div class="col-lg-4">
-      <div class="card">
-        <img src="image4.jpg" class="card-img-top" style="margin: auto; width: 90%; padding-top: 5%">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text"></p>
-          <a href="#!" class="btn btn-primary">Button</a>
-        </div>
-      </div>
-    </div>
-    <br>
-    <br>
-    <div class="col-lg-4">
-      <div class="card">
-        <img src="image5.jpg" class="card-img-top" style="margin: auto; width: 90%; padding-top: 5%">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text"></p>
-          <a href="#!" class="btn btn-primary">Button</a>
-        </div>
-      </div>
-    </div>
-    </body>
+    </footer>
+  </body>
 </html>
