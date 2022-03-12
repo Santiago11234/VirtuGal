@@ -126,66 +126,6 @@ h2 {
     padding-top: 5px;
 }
 
-a.btn-learn-more{
-    width: 181px;
-    max-width: 181px;
-    max-height: 54.7px;
-}
-
-a.btn-contact-us{
-    width: 178px;
-    max-width: 178px;
-    max-height: 54.7px;
-}
-
-a.btn-FAQ{
-    width: 124px;
-    max-width: 124px;
-    max-height: 54.7px;
-}   
-
-a.btn-vote{
-    width: 122px;
-    max-width: 122px;
-    max-height: 54.7px;
-}
-
-a.btn-submit-art{
-    width: 171px;
-    max-width: 171px;
-    max-height: 54.7px;
-}
-
-a.btn-comments{
-    width: 145px;
-    max-width: 145px;
-    max-height: 46.31px;
-}
-
-.btn-post-comment{
-    width: 135px;
-    max-width: 135px;
-    max-height: 31.35px;
-}
-
-a.btn-auctions{
-    width: 159x;
-    max-width: 159px;
-    max-height: 54.7px;
-}
-
-a.btn-purchase-a-ticket{
-    width: 201px;
-    max-width: 201px;
-    max-height: 46.31px;
-}
-
-a.btn-exhibits{
-    width: 150px;
-    max-width: 150px;
-    max-height: 54.7px;
-}
-
 .nav-item{
     text-align: center;
     font-weight: normal;
