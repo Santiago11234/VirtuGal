@@ -280,7 +280,7 @@ section.box {
     background: linear-gradient(135deg, rgba(8,24,74,1) 50%, rgba(16,100,148,1) 50%);
 }
 
-.text-box-lg{
+.text-box-colored-lg{
     height: fit-content;
     background: linear-gradient(135deg, rgba(8,24,74,1) 50%, rgba(16,100,148,1) 50%);
 }
