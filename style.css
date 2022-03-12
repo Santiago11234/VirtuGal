@@ -16,6 +16,14 @@
     background-position-y: 50%;
 }
 
+.header2{
+    height: 50vh;
+    width: 100%; 
+    background-image: url(french.jpg);
+    background-size: cover;
+    background-position-y: 50%;
+}
+
 body{
     background-color: rgb(255, 255, 255);
     height: 100vh;
@@ -45,6 +53,13 @@ body.Sources{
 }
 body.Gallery{
     background-color: rgb(255, 255, 255);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+body.Purchase{
+    background-color: #fff;
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
