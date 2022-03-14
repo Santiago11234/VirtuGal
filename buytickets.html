@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <header>
   <div class="header" style="background-image: url(citybackground.png)">  
     <nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong sticky-top">
@@ -161,28 +162,26 @@
     ></script>
   </head>
 </html>
+  
 
 
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-  </head>
-
-<body class="login">
-    <div class="container-login">
-        <form class="form" id="login">
-            <h1 class="form__title"><font size="10" font color="black" font face="Calibri">How Much Will I Have To Spend</font></h1>
-
-            <label for="event" accesskey="s">Exhibit?</label>
+  <!DOCTYPE html>
+  <div class="container-fluid  buyTickets-container">
+    <div class="demo">
+        <h2><font font color="white">Cost For You</font></h2>
+        <form>
+            <div class="mb-3"> 
+              <label for="event" accesskey="s"><font font size="5" font color="white">Exhibit? </font></label>
               <select name="event" id="event">
-	              <option value=""> -- choose one --
-	            	<option value="Modern">Modern Art
-	            	<option value="abstract">Abstract Art
-            	</optgroup>
-	            	<option value="b&w">Black And White
-            	</optgroup>
+                  <option value=""> -- choose one --
+                    <option value="Modern">Modern Art
+                    <option value="abstract">Abstract Art
+                </optgroup>
+                    <option value="b&w">Black And White
+                </optgroup>
             </select>
-            <label for="child" accesskey="s">How Many Children?</label>
+            <br>
+            <label for="child" accesskey="s"><font font size="5" font color="white">How Many Children?</font></label>
             <select name="child" id="Child Amount(1-12)">
               <option value=""> -- choose one --
               <option value="one"> One Child
@@ -193,7 +192,9 @@
                <option value="Six">Six Children
             </optgroup>
           </select>
-          <label for="adult" accesskey="s">How Many Adults?</label>
+          <br>
+          <label for="adult" accesskey="s"> <font font size="5" font color="white">How Many Adults? </font>
+          </label>
             <select name="adult" id="Child Amount(1-12)">
               <option value=""> -- choose one --
               <option value="oneAdults"> One Adult
@@ -204,7 +205,9 @@
                <option value="SixAdults">Six Adults
             </optgroup>
           </select>
-          <label for="time" accesskey="s">What Time?</label>
+          <br>
+          <label for="time" accesskey="s"> <font font size="5" font color="white">What Time? </font>
+            </label>
             <select name="time" id="Child Amount(1-12)">
               <option value=""> -- choose one --
               <option value="firstTime"> 10:15-11:15 AM
@@ -215,44 +218,8 @@
                <option value="sixthTime">4:45-5:45 PM
             </optgroup>
           </select>
-
-            
-            <p class="form__text">
-              <a class="form__link" href="./" id="linkResults"><font font color="blue"font face="Calibri" font size="3">Create Account</font></a>
-            </p>
-        </form>
-        <div>
           <br>
-          <br>
-          <br>
-        </div>
-
-
-
-
-
-        <form class="form form--hidden" id="results">
-            <h1 class="form__title"><font size="10" font color="black" font face="Calibri">Sign Up</font></h1>
-            <div class="form__input-group">
-              <input type="text" id="email_feild" class="form__input" autofocus placeholder="Email...">
-            </div>
-            <div class="form__input-group">
-              <input type="password" id="password_feild" class="form__input" autofocus placeholder="Password...">
-            </div>
-            <button onclick="createUser()" class="form__button" type="submit">Continue</button>
-            <br>
-            <br>
-            <p class="form__text">
-                <a class="form__link" href="./" id="linkLogin"><font font color="blue"font face="Verdana" font size="2">Already have an account? Log in</font></a>
-            </p>
-        </form>
-        <br>
-        <br>
+            <a onclick="login();" class="btn btn-primary" style="margin-top: 2em;">Submit</a>
+          </form>
     </div>
-    <div>
-    </div>
-    <script src="main.js"></script>
-    <script src="login.js"></script>
-    <script src="index.js"></script>
-</body>
-
+</div>

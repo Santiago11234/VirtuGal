@@ -831,3 +831,34 @@ html {
   }
 
 
+
+
+.buyTickets-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.demo-container {
+    min-height: 0;
+    height: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    opacity: 0;
+}
+
+.demo {
+    min-height: fit-content;
+    background: darkblue;
+    padding: 2em;
+    padding-right: 4em;
+    padding-left: 4em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -151,6 +151,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" >
@@ -171,7 +172,7 @@
       <div class="lightbox m-5">
         <div class="row">
           <div class="col-lg-4">
-              <div class="card">
+              <div class="card" data-aos="zoom-in-up">
                 <div class="shadow-5-strong">
                   <img src="image4.jpg" class="card-img-top" style="margin: auto; width: 100%; padding-top: 5%; padding-left: 5%; padding-right: 5%">
                 </div>
@@ -184,7 +185,7 @@
                 </div>
               </div>
               <br>
-              <div class="card">
+              <div class="card" data-aos="zoom-in-up">
                 <div class="shadow-5-strong">
                   <img src="image2.jpg" class="card-img-top" style="margin: auto; width: 100%; padding-top: 5%; padding-left: 5%; padding-right: 5%">
                 </div>
@@ -198,7 +199,7 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="card">
+            <div class="card" data-aos="zoom-in-up">
               <div class="shadow-5-strong">
                 <img src="image3.jpg" class="card-img-top" style="margin: auto; width: 100%; padding-top: 5%; padding-left: 5%; padding-right: 5%">
               </div>
@@ -211,7 +212,7 @@
               </div>
             </div>
             <br>
-            <div class="card">
+            <div class="card" data-aos="zoom-in-up">
               <div class="shadow-5-strong">
                 <img src="image1.jpg" class="card-img-top" style="margin: auto; width: 100%; padding-top: 5%; padding-left: 5%; padding-right: 5%">
               </div>
@@ -225,7 +226,7 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="card">
+            <div class="card" data-aos="zoom-in-up">
               <div class="shadow-5-strong">
                 <img src="image0.jpg" class="card-img-top" style="margin: auto; width: 100%; padding-top: 5%; padding-left: 5%; padding-right: 5%">
               </div>
@@ -238,7 +239,7 @@
               </div>
             </div>
             <br>
-            <div class="card">
+            <div class="card" data-aos="zoom-in-up">
               <div class="shadow-5-strong">
                 <img src="image5.jpg" class="card-img-top" style="margin: auto; width: 100%; padding-top: 5%; padding-left: 5%; padding-right: 5%">
               </div>
@@ -257,6 +258,13 @@
       <div class="d-flex justify-content-center align-items-center mb-5">
         <button type="button" class="btn btn-lg btn-primary" onclick="showLeaderboard()" 
         style="width: 17%; max-width: 17%; height: 55px; max-height: 55px">SHOW LEADERBOARD</button>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({
+            offset: 200,
+            duration: 1400
+          });
+        </script>
         <script>
           function showLeaderboard(){
             const vote = document.querySelector("#vote");
@@ -265,6 +273,7 @@
             leaderboard.classList.remove("form--hidden");   
           }
         </script>
+        
       </div>
     </div>
 
@@ -290,7 +299,7 @@
 
     <footer class="text-center text-white">
       <div class="text-center p-3" style="background-color: #001140">
-        VirtuGal | Seven Lakes High School TSA | Webmaster
+        VirtuGal | Webmaster
       </div>
     </footer>
   </body>
