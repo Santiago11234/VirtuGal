@@ -169,11 +169,6 @@ section.box {
     
 }
 
-.carousel img {
-    height: 660px;
-    margin: auto 0;
-}
-
 .container{
     background-color:#fff;
     padding: 42px 32px;
@@ -426,13 +421,7 @@ h2 {
     text-decoration: underline;
 }
 
-.carousel-control-prev {
-    margin-left: -50px;
-}
 
-.carousel-control-next {
-    margin-right: -50px;
-}
 
 @-webkit-keyframes animate-positive{
     0% { width: 0%; }
