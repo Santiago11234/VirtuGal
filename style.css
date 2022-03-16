@@ -19,7 +19,6 @@
 .header2{
     height: 50vh;
     width: 100%; 
-    background-image: url(french.jpg);
     background-size: cover;
     background-position-y: 50%;
 }
