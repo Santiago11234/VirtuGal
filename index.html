@@ -169,145 +169,139 @@
 <!DOCTYPE html>
 
 <html>
-  <title>VirtuGal | Home</title>
+  <body class="Main">    
+    <div>
+      <h1 style="text-align: center; padding-top: 2%">
+        <font font face="Raleway">
+          THE PROCESS
+        </font>
+      </h1>
+      
+      <div class="lightbox mt-4 pl-4 pr-4">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="card" data-mdb-toggle="modal" data-mdb-target="#exampleModal" style="background-image: url(Explore.jpg);background-size: cover; background-position-y: 50%;"  data-aos="fade-down">
+              <div class="card-body shadow-5-strong text-white" style="background-color: rgba(200, 200, 200, 0.5);">
+                <img src="eye.png" style="width: 10%; float: right">
+                <h3>
+                  <font font face="Raleway">
+                    <u>1: EXPLORE</u>
+                  </font>
+                </h3>
+                <p class="card-text text-white"><font font face="Raleway">CHECK OUT UNIQUE ARTWORK SUBMITTED BY USERS LIKE YOU</font></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card" data-mdb-toggle="modal" data-mdb-target="#exampleModal" style=" background-image: url(Share.jpg);background-size: cover; background-position-y: 50%;"  data-aos="fade-down">
+              <div class="card-body shadow-5-strong text-white" style="background-color: rgba(200, 200, 200, 0.5);">
+                <img src="pencil.png" style="width: 15%; float: right; margin-top: -3%; margin-left: -3%">
+                <h3>
+                  <font font face="Raleway">
+                    <u>2: SHARE</u>
+                  </font>
+                </h3>
+                <p class="card-text text-white"><font font face="Raleway">POST COMMENTS AND VOTE FOR YOUR FAVORITE PIECES</font></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card" data-mdb-toggle="modal" data-mdb-target="#exampleModal" style=" background-image: url(Visit.jpg);background-size: cover; background-position-y: 50%;"  data-aos="fade-down">
+              <div class="card-body shadow-5-strong text-white" style="background-color: rgba(200, 200, 200, 0.5);">
+                <img src="car.png" style="width: 10%; float: right">
+                <h3>
+                  <font font face="Raleway">
+                    <u>3: VISIT</u>
+                  </font>
+                </h3>
+                <p class="card-text text-white"><font font face="Raleway">SUPPORT THOSE IN NEED BY VISITING EXHIBITS AND AUCTIONS</font></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card" data-mdb-toggle="modal" data-mdb-target="#exampleModal" style=" background-image: url(Contribute.jpg);background-size: cover; background-position-y: 50%;"  data-aos="fade-down">
+              <div class="card-body shadow-5-strong text-white" style="background-color: rgba(200, 200, 200, 0.5);">
+                <img src="art.png" style="width: 10%; float: right">
+                <h3>
+                  <font font face="Raleway">
+                    <u>4: CONTRIBUTE</u>
+                  </font>
+                </h3>
+                <p class="card-text text-white"><font font face="Raleway">CONTRIBUTE TO THE COMMUNITY - POST YOUR OWN ARTWORK</font></p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
 
-    <body class="Home">    
+      <div class="d-flex justify-content-center align-items-center my-4">
+        <a>
+          <input type="button" value="LEARN MORE" class="btn btn-lg btn-primary" class="text-center" data-mdb-toggle="modal" data-mdb-target="#exampleModal2">
+        </a>
+        <div class="modal top fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2Label" aria-hidden="true" data-mdb-backdrop="true" data-mdb-keyboard="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title">
+                  <font font face="Raleway">
+                    MORE DETAILS
+                  </font>
+                </h3>
+              </div>
+              <div class="modal-body">                  
+                <div class="lightbox">
+                  <div id="step1" class="row mx-1">
+                    <div class="col-lg-12" style="position: relative; background-image: url(Explore.jpg);
+                    background-size: cover; background-position-y: 50%; height: 50vh; 
+                    border-top-left-radius: 2px; border-bottom-left-radius: 2px;">
+                      <ul class="pagination">
+                        <li class="page-item">
+                          <a class="page-link text-white" onclick="p1Prev()"
+                          style="position: absolute; top: 50%; transform: translateY(-50%); left: 5%; transform: translateX(-50%); 
+                          text-align: center">
+                            <span aria-hidden="true">&laquo;</span>
+                          </a>
 
-      <div>
-        <h1 style="text-align: center; padding-top: 3%">
-          <font font face="Raleway">
-            THE PROCESS
-          </font>
-        </h1>
-        
+                          <script>
+                            function p1Prev(){
+                              const step1 = document.querySelector("#step1");
+                              const step4 = document.querySelector("#step4");
+                              step1.classList.add("form--hidden");
+                              step4.classList.remove("form--hidden");
+                            }
+                          </script>
 
+                        </li>
+                      </ul>
+                      <h3 class="card-title text-white"
+                        style="position: absolute; top: 50%; transform: translateY(-50%); left: 50%; transform: translateX(-50%); 
+                        text-align: center; background-color: rgba(200, 200, 200, 0.75)">
+                        <font font face="Raleway">STEP ONE: EXPLORE</font>
+                      </h3>
+                      <ul class="pagination">
+                        <li class="page-item">
+                          <a class="page-link text-white" onclick="p1Next()"
+                          style="position: absolute; top: 50%; transform: translateY(-50%); left: 95%; transform: translateX(-50%); 
+                          text-align: center">
+                            <span aria-hidden="true">&raquo;</span>
+                          </a>
 
-        <div class="d-flex justify-content-center align-items-center my-4">
-          <a>
-            <input type="button" value="LEARN MORE" class="btn btn-lg btn-primary" class="text-center p-3" data-mdb-toggle="modal" data-mdb-target="#exampleModal2">
-          </a>
-          <div class="modal top fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2Label" aria-hidden="true" data-mdb-backdrop="true" data-mdb-keyboard="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h3 class="modal-title">
-                    <font font face="Raleway">
-                      MORE DETAILS
-                    </font>
-                  </h3>
-                </div>
-                <div class="modal-body">                  
-                  <div class="lightbox">
-                    <div id="step1" class="row mx-1">
-                      <div class="col-lg-12" style="position: relative; background-image: url(painting1.jpg);
-                      background-size: cover; background-position-y: 50%; height: 50vh; 
-                      border-top-left-radius: 2px; border-bottom-left-radius: 2px;">
-                        <ul class="pagination">
-                          <li class="page-item">
-                            <a class="page-link text-white" onclick="p1Prev()"
-                            style="position: absolute; top: 50%; transform: translateY(-50%); left: 5%; transform: translateX(-50%); 
-                            text-align: center">
-                              <span aria-hidden="true">&laquo;</span>
-                            </a>
+                          <script>
+                            function p1Next(){
+                              const step1 = document.querySelector("#step1");
+                              const step2 = document.querySelector("#step2");
+                              step1.classList.add("form--hidden");
+                              step2.classList.remove("form--hidden");
+                            }
+                          </script>
 
-                            <script>
-                              function p1Prev(){
-                                const step1 = document.querySelector("#step1");
-                                const step4 = document.querySelector("#step4");
-                                step1.classList.add("form--hidden");
-                                step4.classList.remove("form--hidden");
-                              }
-                            </script>
-
-                          </li>
-                        </ul>
-                        <h3 class="card-title text-white"
-                          style="position: absolute; top: 50%; transform: translateY(-50%); left: 50%; transform: translateX(-50%); text-align: center">
-                          <font font face="Raleway">STEP ONE: EXPLORE</font>
-                        </h3>
-                        <ul class="pagination">
-                          <li class="page-item">
-                            <a class="page-link text-white" onclick="p1Next()"
-                            style="position: absolute; top: 50%; transform: translateY(-50%); left: 95%; transform: translateX(-50%); 
-                            text-align: center">
-                              <span aria-hidden="true">&raquo;</span>
-                            </a>
-
-                            <script>
-                              function p1Next(){
-                                const step1 = document.querySelector("#step1");
-                                const step2 = document.querySelector("#step2");
-                                step1.classList.add("form--hidden");
-                                step2.classList.remove("form--hidden");
-                              }
-                            </script>
-
-                          </li>
-                        </ul>
-                      </div>
-
-                      <div class="col-lg-12 pt-4 p-2" style="position: relative; height: fit-content;
-                      border-top-right-radius: 2px; border-bottom-right-radius: 2px;">
-                          <h4 class="mb-2"><font font face="Raleway">CHECK OUT UNIQUE ARTWORK SUBMITTED BY USERS LIKE YOU</font></h4>
-                          <p style="text-align: center">
-                            <font font face="Raleway">
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </font>
-                          </p>
-                        </div>
-                      </div>
+                        </li>
+                      </ul>
                     </div>
 
-                    <div id="step2" class="row mx-1 form--hidden">
-                      <div class="col-lg-12" style="position: relative; background-image: url(painting1.jpg);
-                      background-size: cover; background-position-y: 50%; height: 50vh; 
-                      border-top-left-radius: 2px; border-bottom-left-radius: 2px;">
-                        <ul class="pagination">
-                          <li class="page-item">
-                            <a class="page-link text-white" onclick="p2Prev()"
-                            style="position: absolute; top: 50%; transform: translateY(-50%); left: 5%; transform: translateX(-50%); 
-                            text-align: center">
-                              <span aria-hidden="true">&laquo;</span>
-                            </a>
-
-                            <script>
-                              function p2Prev(){
-                                const step1 = document.querySelector("#step1");
-                                const step2 = document.querySelector("#step2");
-                                step1.classList.remove("form--hidden");
-                                step2.classList.add("form--hidden");
-                              }
-                            </script>
-
-                          </li>
-                        </ul>
-                        <h3 class="card-title text-white"
-                          style="position: absolute; top: 50%; transform: translateY(-50%); left: 50%; transform: translateX(-50%); text-align: center">
-                          <font font face="Raleway">STEP TWO: SHARE</font>
-                        </h3>
-                        <ul class="pagination">
-                          <li class="page-item">
-                            <a class="page-link text-white" onclick="p2Next()"
-                            style="position: absolute; top: 50%; transform: translateY(-50%); left: 95%; transform: translateX(-50%); 
-                            text-align: center">
-                              <span aria-hidden="true">&raquo;</span>
-                            </a>
-
-                            <script>
-                              function p2Next(){
-                                const step2 = document.querySelector("#step2");
-                                const step3 = document.querySelector("#step3");
-                                step2.classList.add("form--hidden");
-                                step3.classList.remove("form--hidden");
-                              }
-                            </script>
-
-                          </li>
-                        </ul>
-                      </div>
-
-                      <div class="col-lg-12 pt-4 p-2" style="position: relative; height: fit-content;
-                      border-top-right-radius: 2px; border-bottom-right-radius: 2px;">
+                    <div class="col-lg-12 pt-4 p-2" style="position: relative; height: fit-content;
+                    border-top-right-radius: 2px; border-bottom-right-radius: 2px;">
                         <h4 class="mb-2"><font font face="Raleway">CHECK OUT UNIQUE ARTWORK SUBMITTED BY USERS LIKE YOU</font></h4>
                         <p style="text-align: center">
                           <font font face="Raleway">
@@ -315,144 +309,212 @@
                           </font>
                         </p>
                       </div>
-                    </div>
-
-                    <div id="step3" class="row mx-1 form--hidden">
-                      <div class="col-lg-12" style="position: relative; background-image: url(painting1.jpg);
-                      background-size: cover; background-position-y: 50%; height: 50vh; 
-                      border-top-left-radius: 2px; border-bottom-left-radius: 2px;">
-                        <ul class="pagination">
-                          <li class="page-item">
-                            <a class="page-link text-white" onclick="p3Prev()"
-                            style="position: absolute; top: 50%; transform: translateY(-50%); left: 5%; transform: translateX(-50%); 
-                            text-align: center">
-                              <span aria-hidden="true">&laquo;</span>
-                            </a>
-
-                            <script>
-                              function p3Prev(){
-                                const step2 = document.querySelector("#step2");
-                                const step3 = document.querySelector("#step3");
-                                step2.classList.remove("form--hidden");
-                                step3.classList.add("form--hidden");
-                              }
-                            </script>
-
-                          </li>
-                        </ul>
-                        <h3 class="card-title text-white"
-                          style="position: absolute; top: 50%; transform: translateY(-50%); left: 50%; transform: translateX(-50%); text-align: center">
-                          <font font face="Raleway">STEP THREE: VISIT</font>
-                        </h3>
-                        <ul class="pagination">
-                          <li class="page-item">
-                            <a class="page-link text-white" onclick="p3Next()"
-                            style="position: absolute; top: 50%; transform: translateY(-50%); left: 95%; transform: translateX(-50%); 
-                            text-align: center">
-                              <span aria-hidden="true">&raquo;</span>
-                            </a>
-
-                            <script>
-                              function p3Next(){
-                                const step3 = document.querySelector("#step3");
-                                const step4 = document.querySelector("#step4");
-                                step3.classList.add("form--hidden");
-                                step4.classList.remove("form--hidden");
-                              }
-                            </script>
-
-                          </li>
-                        </ul>
-                      </div>
-
-                      <div class="col-lg-12 pt-4 p-2" style="position: relative; height: fit-content;
-                      border-top-right-radius: 2px; border-bottom-right-radius: 2px;">
-                        <h4 class="mb-2"><font font face="Raleway">CHECK OUT UNIQUE ARTWORK SUBMITTED BY USERS LIKE YOU</font></h4>
-                        <p style="text-align: center">
-                          <font font face="Raleway">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                          </font>
-                        </p>
-                      </div>
-                    </div>
-
-                    <div id="step4" class="row mx-1 form--hidden">
-                      <div class="col-lg-12" style="position: relative; background-image: url(painting1.jpg);
-                      background-size: cover; background-position-y: 50%; height: 50vh; 
-                      border-top-left-radius: 2px; border-bottom-left-radius: 2px;">
-                        <ul class="pagination">
-                          <li class="page-item">
-                            <a class="page-link text-white" onclick="p4Prev()"
-                            style="position: absolute; top: 50%; transform: translateY(-50%); left: 5%; transform: translateX(-50%); 
-                            text-align: center">
-                              <span aria-hidden="true">&laquo;</span>
-                            </a>
-
-                            <script>
-                              function p4Prev(){
-                                const step3 = document.querySelector("#step3");
-                                const step4 = document.querySelector("#step4");
-                                step3.classList.remove("form--hidden");
-                                step4.classList.add("form--hidden");
-                              }
-                            </script>
-
-                          </li>
-                        </ul>
-                        <h3 class="card-title text-white"
-                          style="position: absolute; top: 50%; transform: translateY(-50%); left: 50%; transform: translateX(-50%); text-align: center">
-                          <font font face="Raleway">STEP FOUR: CONTRIBUTE</font>
-                        </h3>
-                        <ul class="pagination">
-                          <li class="page-item">
-                            <a class="page-link text-white" onclick="p4Next()"
-                            style="position: absolute; top: 50%; transform: translateY(-50%); left: 95%; transform: translateX(-50%); 
-                            text-align: center">
-                              <span aria-hidden="true">&raquo;</span>
-                            </a>
-
-                            <script>
-                              function p4Next(){
-                                const step1 = document.querySelector("#step1");
-                                const step4 = document.querySelector("#step4");
-                                step1.classList.remove("form--hidden");
-                                step4.classList.add("form--hidden");
-                              }
-                            </script>
-
-                          </li>
-                        </ul>
-                      </div>
-
-                      <div class="col-lg-12 pt-4 p-2" style="position: relative; height: fit-content;
-                      border-top-right-radius: 2px; border-bottom-right-radius: 2px;">
-                        <h4 class="mb-2"><font font face="Raleway">CHECK OUT UNIQUE ARTWORK SUBMITTED BY USERS LIKE YOU</font></h4>
-                        <p style="text-align: center">
-                          <font font face="Raleway">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                          </font>
-                        </p>
-                      </div>
-                    </div>
-                    
-                    <div class="modal-footer">
-                      <a>
-                        <input type="button" class="btn btn-outline-primary mr-0" data-mdb-dismiss="modal" style="float: right" value="CLOSE">
-                      </a>
                     </div>
                   </div>
+
+                  <div id="step2" class="row mx-1 form--hidden">
+                    <div class="col-lg-12" style="position: relative; background-image: url(Share.jpg);
+                    background-size: cover; background-position-y: 50%; height: 50vh; 
+                    border-top-left-radius: 2px; border-bottom-left-radius: 2px;">
+                      <ul class="pagination">
+                        <li class="page-item">
+                          <a class="page-link text-white" onclick="p2Prev()"
+                          style="position: absolute; top: 50%; transform: translateY(-50%); left: 5%; transform: translateX(-50%); 
+                          text-align: center">
+                            <span aria-hidden="true">&laquo;</span>
+                          </a>
+
+                          <script>
+                            function p2Prev(){
+                              const step1 = document.querySelector("#step1");
+                              const step2 = document.querySelector("#step2");
+                              step1.classList.remove("form--hidden");
+                              step2.classList.add("form--hidden");
+                            }
+                          </script>
+
+                        </li>
+                      </ul>
+                      <h3 class="card-title text-white"
+                        style="position: absolute; top: 50%; transform: translateY(-50%); left: 50%; transform: translateX(-50%); text-align: center
+                        ; background-color: rgba(200, 200, 200, 0.75)">
+                        <font font face="Raleway">STEP TWO: SHARE</font>
+                      </h3>
+                      <ul class="pagination">
+                        <li class="page-item">
+                          <a class="page-link text-white" onclick="p2Next()"
+                          style="position: absolute; top: 50%; transform: translateY(-50%); left: 95%; transform: translateX(-50%); 
+                          text-align: center">
+                            <span aria-hidden="true">&raquo;</span>
+                          </a>
+
+                          <script>
+                            function p2Next(){
+                              const step2 = document.querySelector("#step2");
+                              const step3 = document.querySelector("#step3");
+                              step2.classList.add("form--hidden");
+                              step3.classList.remove("form--hidden");
+                            }
+                          </script>
+
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="col-lg-12 pt-4 p-2" style="position: relative; height: fit-content;
+                    border-top-right-radius: 2px; border-bottom-right-radius: 2px;">
+                      <h4 class="mb-2"><font font face="Raleway">POST COMMENTS AND VOTE FOR YOUR FAVORITE PIECES</font></h4>
+                      <p style="text-align: center">
+                        <font font face="Raleway">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </font>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div id="step3" class="row mx-1 form--hidden">
+                    <div class="col-lg-12" style="position: relative; background-image: url(Visit.jpg);
+                    background-size: cover; background-position-y: 50%; height: 50vh; 
+                    border-top-left-radius: 2px; border-bottom-left-radius: 2px;">
+                      <ul class="pagination">
+                        <li class="page-item">
+                          <a class="page-link text-white" onclick="p3Prev()"
+                          style="position: absolute; top: 50%; transform: translateY(-50%); left: 5%; transform: translateX(-50%); 
+                          text-align: center">
+                            <span aria-hidden="true">&laquo;</span>
+                          </a>
+
+                          <script>
+                            function p3Prev(){
+                              const step2 = document.querySelector("#step2");
+                              const step3 = document.querySelector("#step3");
+                              step2.classList.remove("form--hidden");
+                              step3.classList.add("form--hidden");
+                            }
+                          </script>
+
+                        </li>
+                      </ul>
+                      <h3 class="card-title text-white"
+                        style="position: absolute; top: 50%; transform: translateY(-50%); left: 50%; transform: translateX(-50%); text-align: center
+                        ; background-color: rgba(200, 200, 200, 0.75)">
+                        <font font face="Raleway">STEP THREE: VISIT</font>
+                      </h3>
+                      <ul class="pagination">
+                        <li class="page-item">
+                          <a class="page-link text-white" onclick="p3Next()"
+                          style="position: absolute; top: 50%; transform: translateY(-50%); left: 95%; transform: translateX(-50%); 
+                          text-align: center">
+                            <span aria-hidden="true">&raquo;</span>
+                          </a>
+
+                          <script>
+                            function p3Next(){
+                              const step3 = document.querySelector("#step3");
+                              const step4 = document.querySelector("#step4");
+                              step3.classList.add("form--hidden");
+                              step4.classList.remove("form--hidden");
+                            }
+                          </script>
+
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="col-lg-12 pt-4 p-2" style="position: relative; height: fit-content;
+                    border-top-right-radius: 2px; border-bottom-right-radius: 2px;">
+                      <h4 class="mb-2"><font font face="Raleway">SUPPORT THOSE IN NEED BY VISITING EXHIBITS AND AUCTIONS</font></h4>
+                      <p style="text-align: center">
+                        <font font face="Raleway">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </font>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div id="step4" class="row mx-1 form--hidden">
+                    <div class="col-lg-12" style="position: relative; background-image: url(Contribute.jpg);
+                    background-size: cover; background-position-y: 50%; height: 50vh; 
+                    border-top-left-radius: 2px; border-bottom-left-radius: 2px;">
+                      <ul class="pagination">
+                        <li class="page-item">
+                          <a class="page-link text-white" onclick="p4Prev()"
+                          style="position: absolute; top: 50%; transform: translateY(-50%); left: 5%; transform: translateX(-50%); 
+                          text-align: center">
+                            <span aria-hidden="true">&laquo;</span>
+                          </a>
+
+                          <script>
+                            function p4Prev(){
+                              const step3 = document.querySelector("#step3");
+                              const step4 = document.querySelector("#step4");
+                              step3.classList.remove("form--hidden");
+                              step4.classList.add("form--hidden");
+                            }
+                          </script>
+
+                        </li>
+                      </ul>
+                      <h3 class="card-title text-white"
+                        style="position: absolute; top: 50%; transform: translateY(-50%); left: 50%; transform: translateX(-50%); 
+                        text-align: center; background-color: rgba(200, 200, 200, 0.75)">
+                        <font font face="Raleway">STEP FOUR: CONTRIBUTE</font>
+                      </h3>
+                      <ul class="pagination">
+                        <li class="page-item">
+                          <a class="page-link text-white" onclick="p4Next()"
+                          style="position: absolute; top: 50%; transform: translateY(-50%); left: 95%; transform: translateX(-50%); 
+                          text-align: center">
+                            <span aria-hidden="true">&raquo;</span>
+                          </a>
+
+                          <script>
+                            function p4Next(){
+                              const step1 = document.querySelector("#step1");
+                              const step4 = document.querySelector("#step4");
+                              step1.classList.remove("form--hidden");
+                              step4.classList.add("form--hidden");
+                            }
+                          </script>
+
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="col-lg-12 pt-4 p-2" style="position: relative; height: fit-content;
+                    border-top-right-radius: 2px; border-bottom-right-radius: 2px;">
+                      <h4 class="mb-2"><font font face="Raleway">CONTRIBUTE TO THE COMMUNITY - POST YOUR OWN ARTWORK</font></h4>
+                      <p style="text-align: center">
+                        <font font face="Raleway">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </font>
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div class="modal-footer">
+                    <a>
+                      <input type="button" class="btn btn-outline-primary mr-n3 mb-n2" data-mdb-dismiss="modal" style="float: right" value="CLOSE">
+                    </a>
+                  </div>
+
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <footer class="text-center text-white">
-        <div class="text-center p-3" data-mdb-toggle="modal" data-mdb-target="#exampleModal2" style="background-color: #001140">
+    <div class="text-box">
+    </div>
+
+    <footer>
+      <div class="footer">
+        <div class="text-center p-3 text-white" style="background-color: #001140">
           VirtuGal | Webmaster
         </div>
-      </footer>
-
+      </div>
+    </footer>
   </body>
 </html> 
