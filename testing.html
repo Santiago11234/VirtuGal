@@ -1,57 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Vertical Timeline</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
-
 <body>
-    <div class="container-timeline">
-        <div class="timeline">
-          <ul>
-            
-            <li>
-              <div class="timeline-css">
-                <div class="timeline-content">
-                
-                
-                  <h1>Heading 1</h1>
-                  
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="timeline-css">
-                <div class="timeline-content">
-                
-                
-                  <h1>Heading 1</h1>
+  <button value="10.11" name="product" id="button1" onclick="test(this);">value1</button>
 
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="timeline-css">
-                <div class="timeline-content">
-                
-                
-                  <h1>Heading 1</h1>
+<button value="20.00" name="product" id="button2" onclick="test(this);">value2</button>
+<style>
+  function test(button) {
+    var val = parseFloat(button.getAttribute("value"));
+    var total = parseFloat(document.getElementById('totaltext').getAttribute("value"));
 
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
-                </div>
-              </div>
-            </li>
-            
-            
-            
-          </ul>
-        </div>
-      </div>
+    document.getElementById('totaltext').innerHTML =  total + val;
+    document.getElementById('totaltext').setAttribute("value",total + val)
+} 
+</style>
+
 </body>
 </html>

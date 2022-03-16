@@ -401,6 +401,7 @@ h2 {
 
 .form__button:hover {
     background: var(--color-primary-dark);
+    
 }
 
 .form__button:active {
@@ -861,4 +862,12 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.nav-link a::before{
+    content: "";
+    width:0%;
+    height:3px;
+    display:block;
+    margin-bottom:10px;
 }
