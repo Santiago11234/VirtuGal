@@ -1,86 +1,142 @@
-<!DOCTYPE html>
+
+
+   
 <html lang="en">
   <head>
-
+    <title>Submit Art</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" >
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"
-    ></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" >
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"
+  ></script>
   </head>
 </html>
 
+<!DOCTYPE html>
 <html>
-  <body>
-    <div style="width: 100%; position: absolute; margin: auto; top: 50%; transform:translateY(-50%)">
-      <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-xl-10">
-          <div class="card text-black">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="card-body p-md-3 mx-md-2" id="buyTickets">
-                  <div class="text-center">
-                    <img src="logo.png" style="width: 185px; padding-top: 3%; padding-bottom: 3%" alt="logo">
-                    <h4 class="mt-1 mb-3 pb-1"><font font face="Raleway">YOUR COSTS</font></h4>
-                  </div>
-                  
-                  <div class="form mb-2 px-5">
-                    <label class="form-label mr-3" for="event" accesskey="s"><font font face="Raleway">CHOOSE YOUR EXHIBIT</font></label>
-                    <select class="form-select" aria-label="Default select example" autocompleted>
-                      <option selected="">Open this select menu</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>
+<body>
+  <div style="width: 100%; position: absolute; margin: auto; top: 50%; transform:translateY(-50%)">
+      <div class="row py-5 d-flex justify-content-center align-items-center">
+          <div class="col-xl-10">
+              <div class="card text-black">
+                  <div class="row">
+                      <div class="col-lg-6">
+                          <div class="card-body p-md-3 mx-md-2">
+                              <div class="text-center">
+                              <img src="logo.png" style="width: 150px; padding-top: 2%; padding-bottom: 3%" alt="logo">
+                              <h4 class="mt-1 mb-3 pb-1"><font font face="Raleway">BUY TICKET</font></h4>
+                              </div>
+                                  <div class="form mb-2 px-5">
+                                      <label class="form-label"><font font face="Raleway">Email</font></label>
+                                      <input type="Username" class="form-control" placeholder="Email"/>
+                                  </div>
+                                  
+                                  <div class="form mb-2 px-5">
+                                    <label class="form-label mr-3" for="event" accesskey="s"><font font face="Raleway">CHOOSE YOUR EXHIBIT</font></label>
+                                    <br>
+                                    <select class="form-select" aria-label="Default select example" autocompleted>
+                                      <option selected="">Exhibit:</option>
+                                        <option value="1">Abstract</option>
+                                        <option value="2">Modern</option>
+                                        <option value="3">Photography</option>
+                                    </select>
+                                  </div>
 
-                  <div class="text-center py-1 mb-3 px-5">
-                      <button class="btn btn-primary btn-block fa-lg mb-3" type="button"
-                      style="background-image:linear-gradient(135deg, #2a2a72, #009ffd);">SUBMIT</button>
+                                  <div class="form mb-2 px-5">
+                                    <label class="form-label mr-3" for="event" accesskey="s"><font font face="Raleway">CHOOSE YOUR EXHIBIT</font></label>
+                                    <br>
+                                    <select class="form-select" aria-label="Default select example" autocompleted>
+                                      <option selected="">Amount of Adults:</option>
+                                        <option value="0">0 Adults</option>
+                                        <option value="1">1 Adult</option>
+                                        <option value="2">2 Adults</option>
+                                        <option value="3">3 Adults</option>
+                                        <option value="4">4 Adults</option>
+                                        <option value="5">5 Adults</option>
+                                        <option value="6">6 Adults</option>
+                                    </select>
+                                  </div>
+
+                                  <div class="form mb-2 px-5">
+                                    <label class="form-label mr-3" for="event" accesskey="s"><font font face="Raleway">CHOOSE YOUR EXHIBIT</font></label>
+                                    <br>
+                                    <select class="form-select" aria-label="Default select example" autocompleted>
+                                      <option selected="">Amount of Children:</option>
+                                        <option value="0">0 Children</option>
+                                        <option value="1">1 Child</option>
+                                        <option value="2">2 Children</option>
+                                        <option value="3">3 Children</option>
+                                        <option value="4">4 Children</option>
+                                        <option value="5">5 Children</option>
+                                        <option value="6">6 Children</option>
+                                    </select>
+                                  </div>
+                                  
+                                  <div class="form mb-2 px-5">
+                                    <label class="form-label mr-3" for="event" accesskey="s"><font font face="Raleway">CHOOSE YOUR EXHIBIT</font></label>
+                                    <br>
+                                    <select class="form-select" aria-label="Default select example" autocompleted>
+                                      <option selected="">Time:</option>
+                                      <option value="1">10:15-11:15 AM</option>
+                                      <option value="2">11:30-12:30 AM</option>
+                                      <option value="3">1:00-2:00 PM</option>
+                                      <option value="4">2:15-3:15 PM</option>
+                                      <option value="5">3:30-4:30 PM</option>
+                                      <option value="6">4:45-5:45 PM</option>
+                                    </select>
+                                  </div>
+
+                                  <div class="text-center py-1 px-5">
+                                    <button class="btn btn-primary btn-block fa-lg mb-3" type="button" onclick="buyTicket()" 
+                                    style="background-image:linear-gradient(135deg, #2a2a72, #009ffd);">Submit</button>
+                                  </div>
+                                  <script>
+                                    function buyTicket() {
+                                      alert("Yo u bought a ticket thats crazy");
+                                    }
+                                  </script>
+                                  <div class="d-flex align-items-center justify-content-center pb-2">
+                                    <p class="mb-0 me-2"><font font face="Raleway">Want a preview?</font></p>
+                                    <button type="button" class="btn btn-outline-primary ml-3" onclick="demo()">DEMO</button>
+                                    <script>
+                                        function demo(){
+                                          alert("This is a demo isnt it cool")
+                                        }
+                                    </script>
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
+                      
+                      <div class="col-lg-6 d-flex align-items-center" style="background-image:linear-gradient(225deg, #2a2a72, #009ffd);">
+                          <div class="text-white px-1 py-2 p-md-3 mx-md-2">
+                              <h4 class="mb-2"><font font face="Raleway">WHY BUY TICKETS?</font></h4>
+                              <p class="small mb-0"><font font face="Raleway">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</font></p>
+
+                          </div>
+                      </div>
                   </div>
-                  <div class="d-flex align-items-center justify-content-center pb-2">
-                    <p class="mb-0 me-2"><font font face="Raleway">Want a preview?</font></p>
-                    <a>
-                      <input type="button" class="btn btn-outline-primary ml-3" onclick="demo()" value="DEMO">
-                    </a>
-                    <script>
-                      function demo(){
-                        const buyTickets = document.querySelector("#buyTickets");
-                        const demo = document.querySelector("#demo");
-                        login.classList.add("form--hidden");
-                        createAcc.classList.remove("form--hidden");
-                      }
-                    </script>
-                  </div>
-                </div>
               </div>
-              <div class="col-lg-6 d-flex align-items-center" style="background-image:linear-gradient(225deg, #2a2a72, #009ffd);">
-                <div class="text-white px-1 py-2 p-md-3 mx-md-2">
-                  <h4 class="mb-2"><font font face="Raleway">WHY VISIT EXHIBITS?</font></h4>
-                  <p class="small mb-0"><font font face="Raleway">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</font></p>
-                </div>
-              </div>
-            </div>
+
+              <button class="btn-back btn btn-outline-primary btn-sm ml-0" onclick="history.back()"style="position:absolute">
+                  Back
+              </button>
+
           </div>
-
-          <a>
-            <input value="BACK" class="btn btn btn-outline-primary btn-sm ml-0" onclick="history.back()" style="position: absolute">
-          </a>
-
-        </div>
       </div>
-    </div>
+  </div>
   </body>
 </html>
