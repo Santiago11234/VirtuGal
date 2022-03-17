@@ -211,6 +211,10 @@ img.card-home{
     animation-duration: 2s;
 }
 
+p{
+  font-family: Raleway;
+}
+
 h2 {
     font-family: Arial, Verdana;
     font-weight: 800;
@@ -754,4 +758,14 @@ html {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+}
+
+select {
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid #ced4da;
+  padding: 6px;
+  border-radius: 3px;
+  height: 34px; 
+  font-family: Raleway;
 }

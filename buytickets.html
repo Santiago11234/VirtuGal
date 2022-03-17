@@ -15,6 +15,10 @@
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
   
+  <style>
+    
+  </style>
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" >
@@ -28,8 +32,11 @@
 <!DOCTYPE html>
 <html>
 <body>
-  <div class="my-5" style="width: 100%; position: absolute; margin: auto; top: 50%; transform:translateY(-50%)">
-      <div class="row py-5 d-flex justify-content-center align-items-center">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <div class="mt-5" style="width: 100%; position: absolute; margin: auto; top: 50%; transform:translateY(-50%)">
+      <div class="row mt-5 d-flex justify-content-center align-items-center">
           <div class="col-xl-10">
               <div class="card text-black">
                   <div class="row">
@@ -37,17 +44,17 @@
                           <div class="card-body p-md-3 mx-md-2">
                               <div class="text-center">
                               <img src="logo.png" style="width: 150px; padding-top: 2%; padding-bottom: 3%" alt="logo">
-                              <h4 class="mt-1 mb-3 pb-1"><font font face="Raleway">BUY TICKET</font></h4>
+                              <h4 class="mt-1 mb-3 pb-1"><font font face="Raleway">BUY TICKETS</font></h4>
                               </div>
                                   <div class="form mb-2 px-5">
-                                      <label class="form-label"><font font face="Raleway">Email</font></label>
+                                      <label class="form-label"><font font face="Raleway">EMAIL</font></label>
                                       <input type="Username" class="form-control" placeholder="Email"/>
                                   </div>
                                   
                                   <div class="form mb-2 px-5">
-                                    <label class="form-label mr-3" for="event" accesskey="s"><font font face="Raleway">CHOOSE YOUR EXHIBIT</font></label>
+                                    <label class="form-label mr-3" for="event" accesskey="s"><font font face="Raleway">EXHIBIT</font></label>
                                     <br>
-                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                    <select class="form-select mb-2">
                                       <option selected="">Exhibit:</option>
                                         <option value="1">Abstract</option>
                                         <option value="2">Modern</option>
@@ -56,11 +63,10 @@
                                   </div>
 
                                   <div class="form mb-2 px-5">
-                                    <label class="form-label mr-3" for="event" accesskey="s"><font font face="Raleway">CHOOSE YOUR EXHIBIT</font></label>
+                                    <label class="form-label mr-3" for="event" accesskey="s"><font font face="Raleway">AMOUNT OF ADULTS</font></label>
                                     <br>
-                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                    <select class="form-select mb-2">
                                       <option selected="">Amount of Adults:</option>
-                                        <option value="0">0 Adults</option>
                                         <option value="1">1 Adult</option>
                                         <option value="2">2 Adults</option>
                                         <option value="3">3 Adults</option>
@@ -71,9 +77,9 @@
                                   </div>
 
                                   <div class="form mb-2 px-5">
-                                    <label class="form-label mr-3" for="event" accesskey="s"><font font face="Raleway">CHOOSE YOUR EXHIBIT</font></label>
+                                    <label class="form-label mr-3" for="event" accesskey="s"><font font face="Raleway">AMOUNT OF CHILDREN</font></label>
                                     <br>
-                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                    <select class="form-select mb-2">
                                       <option selected="">Amount of Children:</option>
                                         <option value="0">0 Children</option>
                                         <option value="1">1 Child</option>
@@ -86,9 +92,9 @@
                                   </div>
                                   
                                   <div class="form mb-2 px-5">
-                                    <label class="form-label mr-3" for="event" accesskey="s"><font font face="Raleway">CHOOSE YOUR EXHIBIT</font></label>
+                                    <label class="form-label mr-3" for="event" accesskey="s"><font font face="Raleway">TIME</font></label>
                                     <br>
-                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                    <select class="form-select mb-2">
                                       <option selected="">Time:</option>
                                       <option value="1">10:15-11:15 AM</option>
                                       <option value="2">11:30-12:30 AM</option>
@@ -131,7 +137,7 @@
                   </div>
               </div>
 
-              <button class="btn-back btn btn-outline-primary btn-sm ml-0" onclick="history.back()"style="position:absolute">
+              <button class="btn-back btn btn-outline-primary btn-sm ml-0" onclick="history.back()"style="position: relative">
                   Back
               </button>
 
