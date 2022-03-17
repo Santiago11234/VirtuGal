@@ -754,45 +754,4 @@ html {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-  }
-
-
-
-
-.buyTickets-container {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-}
-
-.demo-container {
-    min-height: 0;
-    height: 0;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 0;
-    opacity: 0;
-}
-
-.demo {
-    min-height: fit-content;
-    background: darkblue;
-    padding: 2em;
-    padding-right: 4em;
-    padding-left: 4em;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav-link a::before{
-    content: "";
-    width:0%;
-    height:3px;
-    display:block;
-    margin-bottom:10px;
 }

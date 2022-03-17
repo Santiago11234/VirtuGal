@@ -1,145 +1,4 @@
 <!DOCTYPE html>
-<header>
-  <div class="header" style="background-image: url(citybackground.png)">  
-    <nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong sticky-top">
-      
-      <div class="container-fluid">
-        
-        <a class="navbar-brand me-2" href="index.html">
-          <img
-            src="logo.png"
-            height="60px"
-            alt="VirtuGal logo"
-            loading="lazy"
-            style="margin-top: -5px; margin-left: -20px; margin-right: -5px;"
-          />
-        </a>
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html"><font font face="Raleway">HOME</font></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="aboutUs.html"><font font face="Raleway">ABOUT US</font></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="Gallery.html"><font font face="Raleway">GALLERY</font></a>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                
-                id="navbarDropdown"
-                role="button"
-                data-mdb-toggle="dropdown"
-                aria-expanded="false"
-              >
-              <font font face="Raleway">EVENTS</font>
-              </a>
-              
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" href="Auctions.html"><font font face="Raleway">AUCTIONS</font></a>
-                </li>
-                <hr class="dropdown-divider"/>
-                <li>
-                  <a class="dropdown-item" href="Exhibits.html"><font font face="Raleway">EXHIBITS</font></a>
-                </li>
-                
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                
-                id="navbarDropdown"
-                role="button"
-                data-mdb-toggle="dropdown"
-                aria-expanded="false"
-              >
-              <font font face="Raleway">CONTRIBUTE</font>
-              </a>
-              
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" href="Vote.html"><font font face="Raleway">VOTE</font></a>
-                </li>
-                <hr class="dropdown-divider"/>
-                <li>
-                  <a class="dropdown-item" href="Submissions.html"><font font face="Raleway">SUBMIT ART</font></a>
-                </li>
-                
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                
-                id="navbarDropdown"
-                role="button"
-                data-mdb-toggle="dropdown"
-                aria-expanded="false"
-              >
-              <font font face="Raleway">HELP</font>
-              </a>
-              
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" href="FAQ.html"><font font face="Raleway">FAQ'S</font></a>
-                </li>
-                <hr class="dropdown-divider"/>
-                <li>
-                  <a class="dropdown-item" href="contactUs.html"><font font face="Raleway">CONTACT US</font></a>
-                </li>
-                
-              </ul>
-            </li>
-
-          </ul>
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <div class="d-flex align-items-center">
-              <li class="nav-item">
-                <a class="nav-link" href="login.html"><font font face="Raleway">LOGIN</font></a>
-              </li>
-              <li class="nav-item" style="margin-right: -20px">
-                <a class="nav-link" href="Sources.html"><font font face="Raleway">SOURCES</font></a>
-              </li>
-            </div>
-          </ul>
-        </div>
-    </nav>
-    <div id="particles-js">
-      <div class="d-flex align-items-center position-absolute" style="top: 50%; transform: translateY(-50%); left: 50%; transform: translateX(-50%)">
-        <div class="text-white animate__animated animate__fadeInUp animate__delay-0.5s">
-          <h1 class="mb-3">
-            <font font face="Raleway">
-              BUY TICKETS
-            </font>
-          </h1>
-          <a href="#">
-            <input type="button" value="WHY BUY TICKETS?" 
-            class="btn btn-lg btn-outline-light ml-0 my-2 mr-2 animate__animated animate__fadeInLeft animate__delay-0.5s" 
-            role="button">
-          </a>
-          <a href="#">
-            <input type="button" value="DEMO" 
-            class="btn-demo btn btn-lg btn-outline-light ml-0 my-2 mr-2 animate__animated animate__fadeInLeft animate__delay-0.5s"
-            role="button">
-          </a>
-        </div>
-      </div>
-    </div>
-    </div>
-    <script src="particles.js"></script>
-    <script src="app.js"></script>
-  </div>
-
-</header>
-
 <html lang="en">
   <head>
 
@@ -162,64 +21,66 @@
     ></script>
   </head>
 </html>
-  
 
+<html>
+  <body>
+    <div style="width: 100%; position: absolute; margin: auto; top: 50%; transform:translateY(-50%)">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-xl-10">
+          <div class="card text-black">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="card-body p-md-3 mx-md-2" id="buyTickets">
+                  <div class="text-center">
+                    <img src="logo.png" style="width: 185px; padding-top: 3%; padding-bottom: 3%" alt="logo">
+                    <h4 class="mt-1 mb-3 pb-1"><font font face="Raleway">YOUR COSTS</font></h4>
+                  </div>
+                  
+                  <div class="form mb-2 px-5">
+                    <label class="form-label mr-3" for="event" accesskey="s"><font font face="Raleway">CHOOSE YOUR EXHIBIT</font></label>
+                    <select class="form-select" aria-label="Default select example" autocompleted>
+                      <option selected="">Open this select menu</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
 
-  <!DOCTYPE html>
-  <div class="container-fluid  buyTickets-container">
-    <div class="demo">
-        <h2><font font color="white">Cost For You</font></h2>
-        <form>
-            <div class="mb-3"> 
-              <label for="event" accesskey="s"><font font size="5" font color="white">Exhibit? </font></label>
-              <select name="event" id="event">
-                  <option value=""> -- choose one --
-                    <option value="Modern">Modern Art
-                    <option value="abstract">Abstract Art
-                </optgroup>
-                    <option value="b&w">Black And White
-                </optgroup>
-            </select>
-            <br>
-            <label for="child" accesskey="s"><font font size="5" font color="white">How Many Children?</font></label>
-            <select name="child" id="Child Amount(1-12)">
-              <option value=""> -- choose one --
-              <option value="one"> One Child
-              <option value="two">Two Children
-              <option value="three">Three Children
-              <option value="Four">Four Children
-               <option value="Five">Five Children
-               <option value="Six">Six Children
-            </optgroup>
-          </select>
-          <br>
-          <label for="adult" accesskey="s"> <font font size="5" font color="white">How Many Adults? </font>
-          </label>
-            <select name="adult" id="Child Amount(1-12)">
-              <option value=""> -- choose one --
-              <option value="oneAdults"> One Adult
-              <option value="twoAdults">Two Adults
-              <option value="threeAdults">Three Adults
-              <option value="FourAdults">Four Adults
-               <option value="FiveAdults">Five Adults
-               <option value="SixAdults">Six Adults
-            </optgroup>
-          </select>
-          <br>
-          <label for="time" accesskey="s"> <font font size="5" font color="white">What Time? </font>
-            </label>
-            <select name="time" id="Child Amount(1-12)">
-              <option value=""> -- choose one --
-              <option value="firstTime"> 10:15-11:15 AM
-              <option value="secondTime">11:30-12:30 AM
-              <option value="thirdTime"> 1:00-2:00 PM
-              <option value="fourthTime">2:15-3:15 PM
-               <option value="fifthTime">3:30-4:30 PM
-               <option value="sixthTime">4:45-5:45 PM
-            </optgroup>
-          </select>
-          <br>
-            <a onclick="login();" class="btn btn-primary" style="margin-top: 2em;">Submit</a>
-          </form>
+                  <div class="text-center py-1 mb-3 px-5">
+                      <button class="btn btn-primary btn-block fa-lg mb-3" type="button"
+                      style="background-image:linear-gradient(135deg, #2a2a72, #009ffd);">SUBMIT</button>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-center pb-2">
+                    <p class="mb-0 me-2"><font font face="Raleway">Want a preview?</font></p>
+                    <a>
+                      <input type="button" class="btn btn-outline-primary ml-3" onclick="demo()" value="DEMO">
+                    </a>
+                    <script>
+                      function demo(){
+                        const buyTickets = document.querySelector("#buyTickets");
+                        const demo = document.querySelector("#demo");
+                        login.classList.add("form--hidden");
+                        createAcc.classList.remove("form--hidden");
+                      }
+                    </script>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 d-flex align-items-center" style="background-image:linear-gradient(225deg, #2a2a72, #009ffd);">
+                <div class="text-white px-1 py-2 p-md-3 mx-md-2">
+                  <h4 class="mb-2"><font font face="Raleway">WHY VISIT EXHIBITS?</font></h4>
+                  <p class="small mb-0"><font font face="Raleway">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</font></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a>
+            <input value="BACK" class="btn btn btn-outline-primary btn-sm ml-0" onclick="history.back()" style="position: absolute">
+          </a>
+
+        </div>
+      </div>
     </div>
-</div>
+  </body>
+</html>
