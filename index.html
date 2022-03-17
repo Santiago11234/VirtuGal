@@ -149,7 +149,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" href="style.css" >
     
     <script
@@ -175,7 +175,7 @@
       <div class="lightbox mt-4 pl-4 pr-4">
         <div class="row">
           <div class="col-lg-3">
-            <div class="card" data-mdb-toggle="modal" data-mdb-target="#exampleModal" style="background-image: url(Explore.jpg);background-size: cover; background-position-y: 50%;">
+            <div class="card" data-aos="fade in" data-mdb-toggle="modal" data-mdb-target="#exampleModal" style="background-image: url(Explore.jpg);background-size: cover; background-position-y: 50%;">
               <div class="card-body shadow-5-strong text-white" style="background-color: rgba(0, 0, 0, 0.5);">
                 <img src="eye.png" style="width: 10%; float: right">
                 <h3>
@@ -188,7 +188,7 @@
             </div>
           </div>
           <div class="col-lg-3">
-            <div class="card" data-mdb-toggle="modal" data-mdb-target="#exampleModal" style=" background-image: url(Share.jpg);background-size: cover; background-position-y: 50%;">
+            <div class="card" data-aos="fade in" data-mdb-toggle="modal" data-mdb-target="#exampleModal" style=" background-image: url(Share.jpg);background-size: cover; background-position-y: 50%;">
               <div class="card-body shadow-5-strong text-white" style="background-color: rgba(0, 0, 0, 0.5);">
                 <img src="pencil.png" style="width: 15%; float: right; margin-top: -3%; margin-left: -3%">
                 <h3>
@@ -201,7 +201,7 @@
             </div>
           </div>
           <div class="col-lg-3">
-            <div class="card" data-mdb-toggle="modal" data-mdb-target="#exampleModal" style=" background-image: url(Visit.jpg);background-size: cover; background-position-y: 50%;">
+            <div class="card" data-aos="fade in" data-mdb-toggle="modal" data-mdb-target="#exampleModal" style=" background-image: url(Visit.jpg);background-size: cover; background-position-y: 50%;">
               <div class="card-body shadow-5-strong text-white" style="background-color: rgba(0, 0, 0, 0.5);">
                 <img src="car.png" style="width: 10%; float: right">
                 <h3>
@@ -214,7 +214,7 @@
             </div>
           </div>
           <div class="col-lg-3">
-            <div class="card" data-mdb-toggle="modal" data-mdb-target="#exampleModal" style=" background-image: url(Contribute.jpg);background-size: cover; background-position-y: 50%;">
+            <div class="card" data-aos="fade in" data-mdb-toggle="modal" data-mdb-target="#exampleModal" style=" background-image: url(Contribute.jpg);background-size: cover; background-position-y: 50%;">
               <div class="card-body shadow-5-strong text-white" style="background-color: rgba(0, 0, 0, 0.5);">
                 <img src="art.png" style="width: 10%; float: right">
                 <h3>
@@ -228,6 +228,7 @@
           </div>
           
         </div>
+        
       </div>
 
       <div class="d-flex justify-content-center align-items-center my-4">
@@ -499,6 +500,13 @@
           </div>
         </div>
       </div>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({
+            offset: 200,
+            duration: 1400
+          });
+        </script>
     </div>
 
     <footer>
