@@ -9,31 +9,28 @@
 }
 
 .header{
-    height: 100vh;
-    width: 100%; 
-    background-image:linear-gradient(135deg, #2a2a72, #009ffd);
-    background-size: cover;
-    background-position-y: 50%;
+  height: 100vh;
+  width: 100%; 
+  background-image:linear-gradient(135deg, #2a2a72, #009ffd);
 }
 
 .header2{
-    height: 50vh;
-    width: 100%; 
-    background-size: cover;
-    background-position-y: 50%;
+  height: 50vh;
+  background-size: cover;
+  background-position-y: 50%;
 }
 
 body{
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 body.Gallery-Comments{
-    background-color: rgb(255, 255, 255);
-    height: 100vh;
-    background-size: cover;
-    background-attachment: fixed;
-    overflow-x: hidden;
-    overflow-y: hidden;
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 h1 {
@@ -50,6 +47,11 @@ h4 {
 
 h5 {
   font-family: Raleway;
+}
+
+h6 {
+  font-family: Raleway;
+  font-weight: bolder;
 }
 
 h2 {
