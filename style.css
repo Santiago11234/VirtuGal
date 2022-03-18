@@ -37,19 +37,30 @@ body.Gallery-Comments{
 }
 
 h1 {
-    text-align: center;
-    font-weight: 900;
+  text-align: center;
+  font-weight: 900;
+  font-family: Raleway;
 }
 
 h4 {
     text-align: center;
     font-weight: 900;
+    font-family: Raleway;
+}
+
+h5 {
+  font-family: Raleway;
 }
 
 h2 {
     color: rgb(146, 143, 179);
     padding: 20px;
     padding-top: 5px;
+    font-family: Raleway;
+}
+
+h3{
+  font-family: Raleway;
 }
 
 .nav-item{
@@ -88,68 +99,14 @@ section.box {
 }
 
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.container{
-    background-color:#fff;
-    padding: 42px 32px;
-    border-radius: 32px;
-    width: 80%;
-    margin: auto;
-}
-
-.container-home{
-    background-color:#f8f9fa;
-    padding: 42px 42px;
-    border-radius: 32px;
-    width: 800px;
-    height: fit content;
-    margin: 0 auto;
-}
-
-.container-login{
-    background-color:#f8f9fa;
-    padding: 42px 32px 24px;
-    border-radius: 16px;
-    line-height: 65%;
-    align-items: center;
-    align-content: center;
-    width: fit-content;
-    margin: auto;
-}
-
-.container-submission{
-    background-color:#f8f9fa;
-    padding: 42px 32px;
-    border-radius: 32px;
-    width: 600px;
-    margin: auto;
-}
-
-.container-FAQ{
-    background-color:#f8f9fa;
-    padding: 42px 32px;
-    border-radius: 32px;
-    width: 800px;
-    margin: auto;
-}
-
-.container-contact{
-    background-color:#f8f9fa;
-    padding: 42px 32px;
-    border-radius: 32px;
-    width: 600px;
-    margin: auto;
-}
-
-#the-count {
-    
-    padding: 0.1rem 0 0 0;
-    font-size: 0.875rem;
+#the-count {   
+  padding: 0.1rem 0 0 0;
+  font-size: 0.875rem;
 }
 
 .text-box{
