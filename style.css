@@ -729,3 +729,9 @@ select {
   font-family: Raleway;
 }
 
+
+@media (max-width: 992px) {
+  nav.navbar {
+    background: #2a2a72;
+  }
+}
