@@ -274,383 +274,113 @@
     </div>
 
     <div id="leaderboard" class="form--hidden">
-      <div class="d-flex justify-content-center align-items-center mb-5">
-        <button type="button" class="btn btn-lg btn-primary" onclick="Vote()"
-        style="width: 9%; max-width: 9%; height: 55px; max-height: 55px">VOTE</button>
-        <script>
-          function Vote(){
-            const vote = document.querySelector("#vote");
-            const leaderboard = document.querySelector("#leaderboard");
-            vote.classList.remove("form--hidden");
-            leaderboard.classList.add("form--hidden");   
-          }
-        </script>
-        </div>
-        <style>
-          table{
-            margin: 20px;
-          }
-          #myImg {
-            border-radius: 5px;
-            cursor: pointer;
-            transition: 0.3s;
-          }
-
-          #myImg:hover {opacity: 0.7;}
-          #myImg1 {
-            border-radius: 5px;
-            cursor: pointer;
-            transition: 0.3s;
-          }
-
-          #myImg1:hover {opacity: 0.7;}
-          #myImg2 {
-            border-radius: 5px;
-            cursor: pointer;
-            transition: 0.3s;
-          }
-
-          #myImg2:hover {opacity: 0.7;}
-          #myImg3 {
-            border-radius: 5px;
-            cursor: pointer;
-            transition: 0.3s;
-          }
-
-          #myImg3:hover {opacity: 0.7;}
-          #myImg4 {
-            border-radius: 5px;
-            cursor: pointer;
-            transition: 0.3s;
-          }
-
-          #myImg4:hover {opacity: 0.7;}
-          #myImg5 {
-            border-radius: 5px;
-            cursor: pointer;
-            transition: 0.3s;
-          }
-
-          #myImg5:hover {opacity: 0.7;}
-
-          /* The Modal (background) */
-          .modal {
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1; /* Sit on top */
-            padding-top: 100px; /* Location of the box */
-            left: 0;
-            top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            overflow: auto; /* Enable scroll if needed */
-            background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-          }
-
-          /* Modal Content (image) */
-          .modal-content {
-            margin: auto;
-            display: block;
-            width: 80%;
-            max-width: 700px;
-          }
-
-          /* Caption of Modal Image */
-          #caption {
-            margin: auto;
-            display: block;
-            width: 80%;
-            max-width: 700px;
-            text-align: center;
-            color: #ccc;
-            padding: 10px 0;
-            height: 150px;
-          }
-
-          /* Add Animation */
-          .modal-content, #caption {  
-            animation-name: zoom;
-            animation-duration: 0.6s;
-          }
-
-          @keyframes zoom {
-            from {transform: scale(0.1)} 
-            to {transform: scale(1)}
-          }
-
-          /* The Close Button */
-          .close {
-            position: absolute;
-            top: 15px;
-            right: 35px;
-            color: #f1f1f1;
-            font-size: 40px;
-            font-weight: bold;
-            transition: 0.3s;
-          }
-
-          .close:hover,
-          .close:focus {
-            color: #bbb;
-            text-decoration: none;
-            cursor: pointer;
-          }
-
-          /* 100% Image Width on Smaller Screens */
-          @media only screen and (max-width: 700px){
-            .modal-content {
-              width: 100%;
+      
+      <table class="table align-middle mb-0 bg-white">
+        <thead class="bg-light">
+          <tr>
+            <th>Artwork</th>
+            <th>Artist</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Votes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="d-flex align-items-center">
+                <img
+                    src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+                    alt=""
+                    style="width: 45px; height: 45px"
+                    class="rounded-circle"
+                    />
+                <div class="ms-3">
+                  <p class="fw-bold mb-1">John Doe</p>
+                  <p class="text-muted mb-0">john.doe@gmail.com</p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <p class="fw-normal mb-1">Software engineer</p>
+              <p class="text-muted mb-0">IT department</p>
+            </td>
+            <td>
+              <span class="badge badge-success rounded-pill">Active</span>
+            </td>
+            <td>Senior</td>
+            <td>
+              
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="d-flex align-items-center">
+                <img
+                    src="https://mdbootstrap.com/img/new/avatars/6.jpg"
+                    class="rounded-circle"
+                    alt=""
+                    style="width: 45px; height: 45px"
+                    />
+                <div class="ms-3">
+                  <p class="fw-bold mb-1">Alex Ray</p>
+                  <p class="text-muted mb-0">alex.ray@gmail.com</p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <p class="fw-normal mb-1">Consultant</p>
+              <p class="text-muted mb-0">Finance</p>
+            </td>
+            <td>
+              <span class="badge badge-primary rounded-pill">Onboarding</span>
+            </td>
+            <td>Junior</td>
+            <td>
+              
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="d-flex align-items-center">
+                <img
+                src="https://mdbootstrap.com/img/new/avatars/7.jpg"
+                class="rounded-circle"
+                alt=""
+                style="width: 45px; height: 45px"
+                />
+                <div class="ms-3">
+                  <p class="fw-bold mb-1">Kate Hunington</p>
+                  <p class="text-muted mb-0">kate.hunington@gmail.com</p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <p class="fw-normal mb-1">Designer</p>
+              <p class="text-muted mb-0">UI/UX</p>
+            </td>
+            <td>
+              <span class="badge badge-warning rounded-pill">Awaiting</span>
+            </td>
+            <td>Senior</td>
+            <td>
+              
+            </td>
+          </tr>
+        </tbody>
+      </table>
+        <div class="d-flex justify-content-center align-items-center my-4">
+          <button type="button" class="btn btn-lg btn-primary" onclick="Vote()"
+          style="width: 9%; max-width: 9%; height: 55px; max-height: 55px">VOTE</button>
+          <script>
+            function Vote(){
+              const vote = document.querySelector("#vote");
+              const leaderboard = document.querySelector("#leaderboard");
+              vote.classList.remove("form--hidden");
+              leaderboard.classList.add("form--hidden");   
             }
-          }
-          img.leaderboardImg {
-            width: 100px;
-            height: 150px;
-          }
-        </style>
-        
-        <table class="table">
-          <thead class="thead-dark">
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Name</th>
-              <th scope="col">Points</th>
-              <th scope="col"></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Cat</td>
-              <td>7</td>
-              <td>
-                
-                <img class = "leaderboardImg" id="myImg" src="image4.jpg" alt="cat" width="300" height="200">
-
-                <!-- The Modal -->
-                <div id="myModal" class="modal">
-                  <span class="close">&times;</span>
-                  <img class="modal-content" id="img01">
-                  <div id="caption"></div>
-                </div>
-
-                <script>
-                // Get the modal
-                var modal = document.getElementById('myModal');
-
-                // Get the image and insert it inside the modal - use its "alt" text as a caption
-                var img = document.getElementById('myImg');
-                var modalImg = document.getElementById("img01");
-                var captionText = document.getElementById("caption");
-                img.onclick = function(){
-                  modal.style.display = "block";
-                  modalImg.src = this.src;
-                  captionText.innerHTML = this.alt;
-                }
-
-                // Get the <span> element that closes the modal
-                var span = document.getElementsByClassName("close")[0];
-
-                // When the user clicks on <span> (x), close the modal
-                span.onclick = function() { 
-                  modal.style.display = "none";
-                }
-                </script>
-
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Flower</td>
-              <td>6</td>
-              <td>
-                <img class = "leaderboardImg" id="myImg1" src="image2.jpg" alt="Flowers" width="300" height="200">
-
-                <!-- The Modal -->
-                <div id="myModal" class="modal">
-                  <span class="close">&times;</span>
-                  <img class="modal-content" id="img01">
-                  <div id="caption"></div>
-                </div>
-
-                <script>
-                // Get the modal
-                var modal = document.getElementById('myModal');
-
-                // Get the image and insert it inside the modal - use its "alt" text as a caption
-                var img = document.getElementById('myImg1');
-                var modalImg = document.getElementById("img01");
-                var captionText = document.getElementById("caption");
-                img.onclick = function(){
-                  modal.style.display = "block";
-                  modalImg.src = this.src;
-                  captionText.innerHTML = this.alt;
-                }
-
-                // Get the <span> element that closes the modal
-                var span = document.getElementsByClassName("close")[0];
-
-                // When the user clicks on <span> (x), close the modal
-                span.onclick = function() { 
-                  modal.style.display = "none";
-                }
-                </script>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Hands</td>
-              <td>5</td>
-              <td>
-                <img class = "leaderboardImg" id="myImg2" src="image0.jpg" alt="Hands" width="300" height="200">
-
-                <!-- The Modal -->
-                <div id="myModal" class="modal">
-                  <span class="close">&times;</span>
-                  <img class="modal-content" id="img01">
-                  <div id="caption"></div>
-                </div>
-
-                <script>
-                // Get the modal
-                var modal = document.getElementById('myModal');
-
-                // Get the image and insert it inside the modal - use its "alt" text as a caption
-                var img = document.getElementById('myImg2');
-                var modalImg = document.getElementById("img01");
-                var captionText = document.getElementById("caption");
-                img.onclick = function(){
-                  modal.style.display = "block";
-                  modalImg.src = this.src;
-                  captionText.innerHTML = this.alt;
-                }
-
-                // Get the <span> element that closes the modal
-                var span = document.getElementsByClassName("close")[0];
-
-                // When the user clicks on <span> (x), close the modal
-                span.onclick = function() { 
-                  modal.style.display = "none";
-                }
-                </script>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">4</th>
-              <td>Roses</td>
-              <td>4</td>
-              <td>
-                <img class = "leaderboardImg" id="myImg3" src="image5.jpg" alt="Roses" width="300" height="200">
-
-                <!-- The Modal -->
-                <div id="myModal" class="modal">
-                  <span class="close">&times;</span>
-                  <img class="modal-content" id="img01">
-                  <div id="caption"></div>
-                </div>
-
-                <script>
-                // Get the modal
-                var modal = document.getElementById('myModal');
-
-                // Get the image and insert it inside the modal - use its "alt" text as a caption
-                var img = document.getElementById('myImg3');
-                var modalImg = document.getElementById("img01");
-                var captionText = document.getElementById("caption");
-                img.onclick = function(){
-                  modal.style.display = "block";
-                  modalImg.src = this.src;
-                  captionText.innerHTML = this.alt;
-                }
-
-                // Get the <span> element that closes the modal
-                var span = document.getElementsByClassName("close")[0];
-
-                // When the user clicks on <span> (x), close the modal
-                span.onclick = function() { 
-                  modal.style.display = "none";
-                }
-                </script>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">5</th>
-              <td>Skateboard</td>
-              <td>3</td>
-              <td>
-                <img class = "leaderboardImg" id="myImg4" src="image3.jpg" alt="Skateboard" width="300" height="200">
-
-                <!-- The Modal -->
-                <div id="myModal" class="modal">
-                  <span class="close">&times;</span>
-                  <img class="modal-content" id="img01">
-                  <div id="caption"></div>
-                </div>
-
-                <script>
-                // Get the modal
-                var modal = document.getElementById('myModal');
-
-                // Get the image and insert it inside the modal - use its "alt" text as a caption
-                var img = document.getElementById('myImg4');
-                var modalImg = document.getElementById("img01");
-                var captionText = document.getElementById("caption");
-                img.onclick = function(){
-                  modal.style.display = "block";
-                  modalImg.src = this.src;
-                  captionText.innerHTML = this.alt;
-                }
-
-                // Get the <span> element that closes the modal
-                var span = document.getElementsByClassName("close")[0];
-
-                // When the user clicks on <span> (x), close the modal
-                span.onclick = function() { 
-                  modal.style.display = "none";
-                }
-                </script>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">6</th>
-              <td>Whirl</td>
-              <td>3</td>
-              <td>
-                <img class = "leaderboardImg" id="myImg5" src="image1.jpg" alt="Whirl" width="300" height="200">
-
-                <!-- The Modal -->
-                <div id="myModal" class="modal">
-                  <span class="close">&times;</span>
-                  <img class="modal-content" id="img01">
-                  <div id="caption"></div>
-                </div>
-
-                <script>
-                // Get the modal
-                var modal = document.getElementById('myModal');
-
-                // Get the image and insert it inside the modal - use its "alt" text as a caption
-                var img = document.getElementById('myImg5');
-                var modalImg = document.getElementById("img01");
-                var captionText = document.getElementById("caption");
-                img.onclick = function(){
-                  modal.style.display = "block";
-                  modalImg.src = this.src;
-                  captionText.innerHTML = this.alt;
-                }
-
-                // Get the <span> element that closes the modal
-                var span = document.getElementsByClassName("close")[0];
-
-                // When the user clicks on <span> (x), close the modal
-                span.onclick = function() { 
-                  modal.style.display = "none";
-                }
-                </script>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+          </script>
+        </div>
       </div>
 
     <footer class="text-center text-white">
