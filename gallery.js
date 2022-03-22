@@ -43,12 +43,14 @@ await getDocs(collection(db, "gallery")).then(arts => {
 
         artColumnHtmlOutput += `<div class="card">
         <div class="shadow-5-strong">
-          <img src="${art1ImageUrl}" class="card-img-top" style="margin: auto; width: 100%; padding-top: 5%; padding-left: 5%; padding-right: 5%">
+          <img src="${art1ImageUrl}" class="card-img-top" style="margin: auto; width: 100%; padding-top: 5%; padding-left: 5%; padding-right: 5%; background-size: cover; background-">
         </div>
         <div class="card-body shadow-5-strong" id="card-id-${art1Id}">
           <h5 class="card-title">Card Title</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="galleryArt.html" class="btn-comments btn btn-primary m-0" id="btn-comments-id-${art1Id}" data-id=${art1Id} data-image-url=${art1ImageUrl} >Comments</a>
+          <a href="galleryArt.html">
+            <input type="button" value="COMMENTS" class="btn btn-lg btn-outline-primary" style="margin: 0" id="btn-comments-id-${art1Id}" data-id=${art1Id} data-image-url=${art1ImageUrl}>
+          </a>
         </div>
       </div>
       <br>`;

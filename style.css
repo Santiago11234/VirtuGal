@@ -20,6 +20,10 @@
   background-position-y: 50%;
 }
 
+input{
+  cursor: pointer;
+}
+
 body{
   overflow-x: hidden;
 }
