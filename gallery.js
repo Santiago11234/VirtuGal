@@ -49,7 +49,7 @@ await getDocs(collection(db, "gallery")).then(arts => {
         <div class="card-body shadow-5-strong" id="card-id-${art1Id}">
           <h5 class="card-title">Card Title</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="galleryArt.html">
+          <a href="GalleryArt.html">
             <input type="button" value="COMMENTS" class="btn btn-lg btn-outline-primary" style="margin: 0" id="btn-comments-id-${art1Id}" data-id=${art1Id} data-image-url=${art1ImageUrl}>
           </a>
         </div>
