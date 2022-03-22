@@ -43,7 +43,8 @@ await getDocs(collection(db, "gallery")).then(arts => {
 
         artColumnHtmlOutput += `<div class="card">
         <div class="shadow-5-strong">
-          <img src="${art1ImageUrl}" class="card-img-top" style="margin: auto; width: 100%; padding-top: 5%; padding-left: 5%; padding-right: 5%">
+          <img src="${art1ImageUrl}" class="card-img-top" style="margin: auto; width: 100%; padding-top: 5%; padding-left: 5%; padding-right: 5%;
+          object-fit: cover; width: 100%; height: 600px">
         </div>
         <div class="card-body shadow-5-strong" id="card-id-${art1Id}">
           <h5 class="card-title">Card Title</h5>
