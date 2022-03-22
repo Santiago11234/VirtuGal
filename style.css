@@ -25,10 +25,6 @@ body{
 }
 
 body.Gallery-Comments{
-  background-color: rgb(255, 255, 255);
-  height: 100vh;
-  background-size: cover;
-  background-attachment: fixed;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -772,7 +768,7 @@ select {
 
 
 #scrollable-content {
-  height: 500px;
+  height: 57vh;
   overflow-x: hidden;
   overflow-y: auto;
 }
