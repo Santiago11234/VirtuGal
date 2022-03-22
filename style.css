@@ -771,13 +771,8 @@ select {
 }
 
 
-
-
-
-
-
-
-
-
-
-
+#scrollable-content {
+  height: 500px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}

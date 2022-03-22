@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light shadow-5-strong sticky-top">
+    <div class="container-fluid">
+      
+      <a class="navbar-brand me-2" href="index.html">
+        <img src="logo.png" style="height: 45px; margin-left: -15px"
+        />
+      </a>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html"><font font face="Raleway">HOME</font></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="aboutUs.html"><font font face="Raleway">ABOUT US</font></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="Gallery.html"><font font face="Raleway">GALLERY</font></a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              
+              id="navbarDropdown"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+            <font font face="Raleway">EVENTS</font>
+            </a>
+            
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="Auctions.html"><font font face="Raleway">AUCTIONS</font></a>
+              </li>
+              <hr class="dropdown-divider"/>
+              <li>
+                <a class="dropdown-item" href="Exhibits.html"><font font face="Raleway">EXHIBITS</font></a>
+              </li>
+              
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              
+              id="navbarDropdown"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+            <font font face="Raleway">CONTRIBUTE</font>
+            </a>
+            
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="Vote.html"><font font face="Raleway">VOTE</font></a>
+              </li>
+              <hr class="dropdown-divider"/>
+              <li>
+                <a class="dropdown-item" href="Submissions.html"><font font face="Raleway">SUBMIT ART</font></a>
+              </li>
+              
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              
+              id="navbarDropdown"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+            <font font face="Raleway">HELP</font>
+            </a>
+            
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="FAQ.html"><font font face="Raleway">FAQ'S</font></a>
+              </li>
+              <hr class="dropdown-divider"/>
+              <li>
+                <a class="dropdown-item" href="contactUs.html"><font font face="Raleway">CONTACT US</font></a>
+              </li>
+              
+            </ul>
+          </li>
+
+        </ul>
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <div class="d-flex align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="login.html"><font font face="Raleway">LOGIN</font></a>
+            </li>
+            <li class="nav-item" style="margin-right: -20px">
+              <a class="nav-link" href="Sources.html"><font font face="Raleway">SOURCES</font></a>
+            </li>
+          </div>
+        </ul>
+      </div>
+  </nav>
+
+   
+  <html lang="en">
+    <head>
+      <title>Title</title>
+      <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" >
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"
+    ></script>
+
+    <!-- <script src="GalleryCmtPage.js"></script> -->
+    </body>
+  </html>
+
+<!DOCTYPE html>
+<html>
+  <body class="Gallery-Comments">
+    <link rel="stylesheet" href="style.css">
+    <div class="lightbox" style="margin: 2%">
+      <div class="row">
+        <div class="col-lg-4">
+          <img id="gallery-art-image-url" style="height: 100%; width: 100%; object-fit: cover; border-radius: 4px;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);">
+        </div>
+        <div class="col-lg-8">
+          <div class="container-comments" id="comments">
+            <div class="card text-dark" id="gallery-art-card-id" data-id="empty-art-id">
+              <div class="card-body">
+                <h5 class="mb-0 me-5" style="float: left"><font font face="Raleway">COMMENTS</font></h5>
+              </div>
+              <hr class="my-0"/>
+
+              <!--comment should end up here-->
+
+              <div class="card-body pt-3 pl-3 pr-3 pb-2">
+                <div class="comment-area d-flex flex-row align-items-start">
+                  <img class="rounded-circle" src="profile.png" width="40">
+                  <textarea class="form-control ml-1 shadow-none textarea" id="cmtText" maxlength="200"
+                    style="resize: none"></textarea>
+                  <div id="count">
+                  </div>
+                </div>
+                <span id="current" style="margin-left: 42px">0</span>
+                <span id="maximum">/ 200</span>
+                <a onclick="cmtFunction()">
+                  <input type="button" value="POST COMMENT" class="btn btn-sm btn-primary mt-2 mr-0" id="post_cmt_btn"
+                    style="float: right">
+                </a>
+                <script>
+                  $('textarea').keyup(function () {
+                    var characterCount = $(this).val().length,
+                      current = $('#current'),
+                      maximum = $('#maximum'),
+                      theCount = $('#count');
+                    current.text(characterCount);
+                  });
+
+                  function cmtFunction() {
+                    var cmt = document.getElementById("cmtText").value;
+
+                    const node = document.createElement("div");
+                    node.innerHTML = '<div class="cmt card-body p-3"><div class="d-flex flex-start"><img class="rounded-circle shadow-1-strong me-3" src="profile.png" alt="avatar" width="60" height="60"/><div><h6 class="fw-bold mb-1">&nbsp;&nbsp;&nbsp;Name</h6><div class="d-flex align-items-center mb-3"><p class="mb-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Month Day, Year</p></div><p class="mb-0">&nbsp;&nbsp;&nbsp;' + cmt; + '</p>';
+                    node.innerHTML += '</div></div><hr class="my-0"/>';
+
+                    var numCmts = $('.cmt').length;
+
+                    document.getElementById("commentRoot").prepend(node);
+
+                  }
+                </script>
+              </div>
+
+              <div id="scrollable-content">
+              <hr class="my-0"/>
+              <div id="commentRoot">
+              </div>
+              <div class="comments-list" id="comments-list-id"></div>              
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <script src="./galleryCommentsPage.js"></script>
+    <script type="module" src="./postComment.js"></script>
+  </body>
+</html>

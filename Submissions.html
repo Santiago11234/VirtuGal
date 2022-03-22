@@ -41,7 +41,7 @@
                               </div>
                                   <div class="form mb-2 px-5">
                                       <label class="form-label"><font font face="Raleway">Username</font></label>
-                                      <input type="Username" class="form-control" placeholder="Username"/>
+                                      <input type="Username" class="form-control" id="user-name-id" placeholder="Username"/>
                                   </div>
                                   <div class="form mb-2 px-5">
                                       <label class="form-label"><font font face="Raleway">Title</font></label>
@@ -55,17 +55,14 @@
                                   <div class="form mb-2 px-5">
                                     <label class="form-label"><font font face="Raleway">Your Artwork</font></label>
                                     <br>
-                                    <input class="mb-2" type="file" name="upload" accept="application/pdf,application/vnd.ms-excel"/>
+                                    <input class="mb-2" type="file" name="upload" id="input-file-select" accept="image/png, image/gif, image/jpeg"/>
                                   </div>
                                   <div class="text-center py-1 mb-3 px-5">
-                                    <button class="btn btn-primary btn-block fa-lg mb-3" type="button" onclick="submitFunction()" 
+                                    <button class="btn btn-primary btn-block fa-lg mb-3" type="button" id="art-submit-btn"
                                     style="background-image:linear-gradient(135deg, #2a2a72, #009ffd);">Submit</button>
+                                    <label id="upload-progress"></label>
                                   </div>
-                                  <script>
-                                    function submitFunction() {
-                                      alert("Thank you for submitting your artwork\nWe look forward to reviewing it!!");
-                                    }
-                                  </script>
+                                  <script type="module" src="submissions.js" ></script>
                               </form>
                           </div>
                       </div>
