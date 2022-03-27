@@ -766,7 +766,6 @@ select {
   transform-origin: center; 
 }
 
-
 #scrollable-content {
   height: 57vh;
   overflow-x: hidden;
