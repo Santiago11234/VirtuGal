@@ -580,9 +580,9 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 100px 0;
-  background-color: rgb(0, 4, 7);
-  background: linear-gradient(to bottom right,#ff5100, #27064d);
+  padding: 50px 0;
+  
+  
 
 }
 .timeline {
@@ -599,7 +599,7 @@ html {
   
 }
 .timeline ul li {
-  color: rgb(233, 39, 39);
+  color: rgb(255, 255, 255);
 }
 
 .timeline ul li:last-child {
@@ -608,7 +608,7 @@ html {
 }
 
 .timeline-css{
-  background-color: #19063b;
+  background-image: linear-gradient(135deg, #2a2a72, #009ffd);
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -620,8 +620,18 @@ html {
   font-weight: 500;
   font-size: 25px;
   line-height: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   
+}
+
+.timeline-content h2 {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 15px;
+  margin-bottom: 10px;
+  padding: 5;
+  color: #dddddd;
+  text-align: center;
 }
 .timeline-content p {
   font-size: 16px;
@@ -669,7 +679,7 @@ html {
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background-color: rgb(250, 111, 220);
+    background-color: #009ffd;
     top: 0px;
   }
   .timeline ul li:nth-child(odd)::before {
@@ -685,7 +695,7 @@ html {
     top: -30px;
   }
   .timeline ul li:hover::before {
-    background-color: rgb(226, 17, 17);
+    background-color: #2a2a72;
   }
 
   @keyframes fadeInDown {
