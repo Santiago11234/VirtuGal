@@ -151,7 +151,10 @@ img.card-home{
     margin: 0;
     width: 25%;
 }
-
+.card {
+  background-color: white;
+  background-image: linear-gradient(rgb(0, 108, 209), rgb(152, 217, 255));
+}
 .my-element {
     display: inline-block;
     margin: 0 0.5rem;
@@ -748,7 +751,7 @@ select {
 }
 
 .nav-link::before {
-  background: white;
+  background: rgb(255, 255, 255);
   content: '';
   position: absolute;
   transform: scaleX(0);
