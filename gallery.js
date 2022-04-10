@@ -12,7 +12,7 @@ const firebaseConfig = {
 };
 // Initialize Firebase
 initializeApp(firebaseConfig);
-const db = getFirestore();
+const db = getFirestore(); 
 
 let galleryCards = document.getElementById('gallery-post');
 
@@ -22,7 +22,7 @@ await getDocs(collection(db, "gallery")).then(arts => {
      arts.forEach((doc)=>{
        //console.log(doc.id, " => ", doc.data());
        //console.log(doc.data().imageUrl);
-       artArray.push({"id": doc.id, "imageUrl": doc.data().imageUrl})
+       artArray.push({"id": doc.id, "imageUrl": doc.data().imageUrl, "title": doc.title, "description": doc.description})
     })
      
     let columnCounts = [];
@@ -48,7 +48,7 @@ await getDocs(collection(db, "gallery")).then(arts => {
             object-fit: cover; width: 100%; height: 600px">
           </div>
           <div class="card-body shadow-5-strong" id="card-id-${art1Id}">
-            <h5 class="card-title">Card Title</h5>
+            <h5 class="card-title">${art1Id}</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             <a href="GalleryArt.html">
               <input type="button" value="COMMENTS" class="btn btn-lg btn-outline-primary" style="margin: 0" id="btn-comments-id-${art1Id}" data-id=${art1Id} data-image-url=${art1ImageUrl}>
