@@ -2,7 +2,7 @@
 let imageUrlElement = document.getElementById('gallery-art-image-url');
 let commentCardElement = document.getElementById('gallery-art-card-id');
 
-let imageUrl = 'image4.jpg'
+let imageUrl = ''
 if(localStorage) {
     console.log(localStorage);
 
