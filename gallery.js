@@ -12,7 +12,7 @@ const firebaseConfig = {
 };
 // Initialize Firebase
 initializeApp(firebaseConfig);
-const db = getFirestore();
+const db = getFirestore(); 
 
 let galleryCards = document.getElementById('gallery-post');
 
