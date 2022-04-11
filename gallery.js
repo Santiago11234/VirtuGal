@@ -22,7 +22,8 @@ await getDocs(collection(db, "gallery")).then(arts => {
      arts.forEach((doc)=>{
        //console.log(doc.id, " => ", doc.data());
        //console.log(doc.data().imageUrl);
-       artArray.push({"id": doc.id, "imageUrl": doc.data().imageUrl, "title": doc.title, "description": doc.description})
+       artArray.push({"id": doc.id, "imageUrl": doc.data().imageUrl, "title": doc.data().title, 
+       "description": doc.data().description})
     })
      
     let columnCounts = [];
@@ -39,8 +40,10 @@ await getDocs(collection(db, "gallery")).then(arts => {
       let artColumnHtmlOutput = `<div class="col-lg-4">`;
       while (artIndex < columnCounts[i]) {
         let art1Id = artArray[artIndex].id;
+        let art1Title = artArray[artIndex].title;
+        let art1Description = artArray[artIndex].description;
         let art1ImageUrl = artArray[artIndex++].imageUrl;
-
+        
         artColumnHtmlOutput += `
         <div class="card">
           <div class="shadow-5-strong">
@@ -48,8 +51,8 @@ await getDocs(collection(db, "gallery")).then(arts => {
             object-fit: cover; width: 100%; height: 600px">
           </div>
           <div class="card-body shadow-5-strong" id="card-id-${art1Id}">
-            <h5 class="card-title">${art1Id}</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title">${art1Title}</h5>
+            <p class="card-text">${art1Description}</p>
             <a href="GalleryArt.html">
               <input type="button" value="COMMENTS" class="btn btn-lg btn-outline-primary" style="margin: 0" id="btn-comments-id-${art1Id}" data-id=${art1Id} data-image-url=${art1ImageUrl}>
             </a>
