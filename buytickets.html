@@ -47,7 +47,7 @@
                                   <div class="form mb-2 px-5" id="event">
                                     <label class="form-label mr-3" for="event" accesskey="s"><font font face="Raleway">EXHIBIT</font></label>
                                     <br>
-                                    <select class="form-select mb-2">
+                                    <select class="form-select mb-2" id="event">
                                       <option selected="">Exhibit:</option>
                                         <option value="1">Abstract</option>
                                         <option value="2">Modern</option>
@@ -58,7 +58,7 @@
                                   <div class="form mb-2 px-5" id="adult">
                                     <label class="form-label mr-3" for="event" accesskey="s"><font font face="Raleway">AMOUNT OF ADULTS</font></label>
                                     <br>
-                                    <select class="form-select mb-2">
+                                    <select class="form-select mb-2" id="adult">
                                       <option selected="">Amount of Adults:</option>
                                         <option value="1">1 Adult</option>
                                         <option value="2">2 Adults</option>
@@ -72,7 +72,7 @@
                                   <div class="form mb-2 px-5" id="child">
                                     <label class="form-label mr-3" for="event" accesskey="s"><font font face="Raleway">AMOUNT OF CHILDREN</font></label>
                                     <br>
-                                    <select class="form-select mb-2">
+                                    <select class="form-select mb-2" id="child">
                                       <option selected="">Amount of Children:</option>
                                         <option value="0">0 Children</option>
                                         <option value="1">1 Child</option>
@@ -102,20 +102,12 @@
                                     <button class="btn btn-primary btn-block fa-lg mb-3" type="button" onclick="buyTicket()" 
                                     style="background-image:linear-gradient(135deg, #2a2a72, #009ffd);">Submit</button>
                                   </div>
-                                  <script>
-                                    function buyTicket() {
-                                      alert("Yo u bought a ticket thats crazy");
-                                    }
+                                  <script>  
+                                    function buyTicket() {  
+                                    var mylist = document.getElementById("child");  
+                                    alert(child);
+                                      }  
                                   </script>
-                                  <div class="d-flex align-items-center justify-content-center pb-2">
-                                    <p class="mb-0 me-2"><font font face="Raleway">Want a preview?</font></p>
-                                    <button type="button" class="btn btn-outline-primary ml-3" onclick="demo()">DEMO</button>
-                                    <script>
-                                        function demo(){
-                                          alert("This is a demo isnt it cool")
-                                        }
-                                    </script>
-                                  </div>
                               </form>
                           </div>
                       </div>
