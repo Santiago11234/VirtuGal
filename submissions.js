@@ -59,16 +59,14 @@ uploadTask.on('state-changed', (snapshot)=>{
 },
 ()=>{
     getDownloadURL(uploadTask.snapshot.ref).then(async (downloadURL)=>{
-    //console.log('File available at', downloadURL);
-    let nameText = document.getElementById('user-name-id').value;
-    let title = document.getElementById('title-id').value;
+    let artistText = document.getElementById('user-name-id').value;
+    let titleText = document.getElementById("title-id").value;
+    let descriptionText = document.getElementById("description-id").value;
     let artDocRef = await addDoc(collection(db, "gallery"), {
-        user: nameText,
-        description: nameText,
-        title: nameText,
+        artist: artistText,
+        title: titleText,
+        description: descriptionText,
         date: serverTimestamp(),
-        status: 'pending',
-        likes: '1',
         imageUrl: downloadURL,
         comments: []
     });
