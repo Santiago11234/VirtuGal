@@ -56,14 +56,6 @@ await getDocs(collection(db, "gallery")).then(arts => {
             <a href="GalleryArt.html">
               <input type="button" value="COMMENTS" class="btn btn-lg btn-outline-primary" style="margin: 0" id="btn-comments-id-${art1Id}" data-id=${art1Id} data-image-url=${art1ImageUrl}>
             </a>
-            <select class="form-select mb-2" style="float: right; width: 50%">
-              <option selected="">Rate</option>
-              <option value="1">1 Star</option>
-              <option value="2">2 Stars</option>
-              <option value="3">3 Stars</option>
-              <option value="4">4 Stars</option>
-              <option value="5">5 Stars</option>
-            </select>
           </div>
         </div>
         <br>`;
