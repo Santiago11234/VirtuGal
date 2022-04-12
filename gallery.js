@@ -42,7 +42,6 @@ await getDocs(collection(db, "gallery")).then(arts => {
         let art1Id = artArray[artIndex].id;
         let art1Title = artArray[artIndex].title;
         let art1Description = artArray[artIndex].description;
-        let art1User = array[artIndex].user;
         let art1ImageUrl = artArray[artIndex++].imageUrl;
         
         artColumnHtmlOutput += `
@@ -54,8 +53,6 @@ await getDocs(collection(db, "gallery")).then(arts => {
           <div class="card-body shadow-5-strong" id="card-id-${art1Id}">
             <h5 class="card-title">${art1Title}</h5>
             <p class="card-text">${art1Description}</p>
-            <br>
-            <p class="card-text">"By: " + ${art1User}</p>
             <a href="GalleryArt.html">
               <input type="button" value="COMMENTS" class="btn btn-lg btn-outline-primary" style="margin: 0" id="btn-comments-id-${art1Id}" data-id=${art1Id} data-image-url=${art1ImageUrl}>
             </a>
