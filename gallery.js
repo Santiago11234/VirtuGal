@@ -22,8 +22,13 @@ await getDocs(collection(db, "gallery")).then(arts => {
      arts.forEach((doc)=>{
        //console.log(doc.id, " => ", doc.data());
        //console.log(doc.data().imageUrl);
+<<<<<<< HEAD
        artArray.push({"id": doc.id, "imageUrl": doc.data().imageUrl, "title": doc.data().title, "artist": doc.data().artist, 
        "description": doc.data().description})
+=======
+       artArray.push({"id": doc.id, "imageUrl": doc.data().imageUrl, "title": doc.data().title, 
+       "description": doc.data().description, "artist": doc.data().artist})
+>>>>>>> b7b509c2ead16a43a944794e5f0db92b873c10fd
     })
      
     let columnCounts = [];
