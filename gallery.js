@@ -22,7 +22,7 @@ await getDocs(collection(db, "gallery")).then(arts => {
      arts.forEach((doc)=>{
        //console.log(doc.id, " => ", doc.data());
        //console.log(doc.data().imageUrl);
-       artArray.push({"id": doc.id, "imageUrl": doc.data().imageUrl, "title": doc.data().title, 
+       artArray.push({"id": doc.id, "imageUrl": doc.data().imageUrl, "title": doc.data().title, "artist": doc.data().artist, 
        "description": doc.data().description})
     })
      
@@ -54,8 +54,7 @@ await getDocs(collection(db, "gallery")).then(arts => {
           <div class="card-body shadow-5-strong" id="card-id-${art1Id}">
             <h5 class="card-title">${art1Title}</h5>
             <p class="card-text">${art1Description}</p>
-            <br>
-            <p class="card-text">${art1Artist}</p>
+            <p class="card-text">By: ${art1Artist}</p>
             <a href="GalleryArt.html">
               <input type="button" value="COMMENTS" class="btn btn-lg btn-outline-primary" style="margin: 0" id="btn-comments-id-${art1Id}" data-id=${art1Id} data-image-url=${art1ImageUrl}>
             </a>
