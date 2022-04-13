@@ -23,7 +23,7 @@ await getDocs(collection(db, "gallery")).then(arts => {
        //console.log(doc.id, " => ", doc.data());
        //console.log(doc.data().imageUrl);
        artArray.push({"id": doc.id, "imageUrl": doc.data().imageUrl, "title": doc.data().title, 
-       "description": doc.data().description})
+       "description": doc.data().description, "artist": doc.data().artist})
     })
      
     let columnCounts = [];
