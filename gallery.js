@@ -16,7 +16,6 @@ const db = getFirestore();
 
 let galleryCards = document.getElementById('gallery-post');
 
-
 let artArray = [];
 await getDocs(collection(db, "gallery")).then(arts => {
      arts.forEach((doc)=>{
@@ -89,3 +88,6 @@ await getDocs(collection(db, "gallery")).then(arts => {
       });
     });
 });
+
+
+
